@@ -3,6 +3,7 @@
 
     $rotas = array(
         "" => "index",
+        "Início" => "index",
         "404" => "404",
         "blog" => [
             "" => "blog",
