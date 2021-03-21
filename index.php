@@ -29,8 +29,12 @@
             $rota = $rotas[$indice];
 
             if (isset($url_dividida[1])) {
-                if (array_key_exists($url_dividida[1], $rota)) $page = $rota[$url_dividida[1]];
-                else $page = $nao_encontrado;
+                if ($url_dividida[1] == "") {
+                    header("Location: ../$url_dividida[0]");
+                } else {
+                    if (array_key_exists($url_dividida[1], $rota)) $page = $rota[$url_dividida[1]];
+                    else $page = $nao_encontrado;
+                }
             } else $page = $rota[''];
         } else $page = $nao_encontrado;
     } else $page = 'index';
