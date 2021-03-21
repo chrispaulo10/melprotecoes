@@ -10,8 +10,8 @@
             "detalhes" => "blog-details"
         ],
         "Cerca-de-Piscina" => $prefixo."cerca-piscina",
-        "Redes-des-Proteção-Zona-Leste" => $prefixo."protecao-zona-leste",
-        "Redes-des-Proteção-Zona-Oeste" => $prefixo."protecao-zona-oeste",
+        "Redes-de-Proteção-Zona-Leste" => $prefixo."protecao-zona-leste",
+        "Redes-de-Proteção-Zona-Oeste" => $prefixo."protecao-zona-oeste",
         "Redes-de-Proteção" => $prefixo."redes-de-protecao",
         "Tela-para-Pets" => $prefixo."tela-gatos",
     //  "URL" => "NOME ARQUIVO"
