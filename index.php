@@ -9,11 +9,11 @@
             "" => "blog",
             "detalhes" => "blog-details"
         ],
-        "CercadePiscina" => $prefixo."cerca-piscina",
-        "ProtecaoZonaLeste" => $prefixo."protecao-zona-leste",
-        "ProtecaoZonaOeste" => $prefixo."protecao-zona-oeste",
-        "RedesdeProtecao" => $prefixo."redes-de-protecao",
-        "TelaGatos" => $prefixo."tela-gatos",
+        "Cerca-de-Piscina" => $prefixo."cerca-piscina",
+        "Redes-des-Proteção-Zona-Leste" => $prefixo."protecao-zona-leste",
+        "Redes-des-Proteção-Zona-Oeste" => $prefixo."protecao-zona-oeste",
+        "Redes-de-Proteção" => $prefixo."redes-de-protecao",
+        "Tela-para-Pets" => $prefixo."tela-gatos",
     //  "URL" => "NOME ARQUIVO"
     );
 
