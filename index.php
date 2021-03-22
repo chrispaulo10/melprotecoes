@@ -33,8 +33,8 @@
         "redes-de-protecao-na-mooca" => $prefixo."protecao-zona-leste",
         "redes-de-protecao-em-patriarca" => $prefixo."protecao-zona-leste",
         "redes-de-protecao-na-penha" => $prefixo."protecao-zona-leste",
-        "redes-de-protecao-em-sao-mateus" => $prefixo."protecao-zona-leste",
-        "redes-de-protecao-em-sao-mateus" => $prefixo."protecao-zona-leste",
+        "redes-de-protecao-em-são-mateus" => $prefixo."protecao-zona-leste",
+        "redes-de-protecao-em-são-mateus" => $prefixo."protecao-zona-leste",
         // CIDADES DA ZONA OESTE
         "redes-de-protecao-na-zona-oeste" => $prefixo."protecao-zona-oeste",
         // CIDADES DA ZONA SUL
