@@ -817,22 +817,6 @@ Fazemos  parte das  empresas  fundadoras no único curso de rede de proteção e
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    $("#enviar_email").click(function() {
-      const dados = {
-        enviar_email : true,
-        email : $("#email").val(),
-        nome : $("#nome").val(),
-        assunto : $("#assunto").val(),
-        mensagem : $("#mensagem").val(),
-      };
-
-      $.post("back-end/controller/ControllerMail.php", dados, function(retorno) {
-        alert(retorno)
-      });
-    });
-  </script>
   
 
 </body>
