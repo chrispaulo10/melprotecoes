@@ -1,5 +1,5 @@
 <?php
-    require_once "back-end/database/Conexao.class.php";
+    require_once "../database/Conexao.class.php";
 
     class Listagem {
 
@@ -13,6 +13,8 @@
 
             try {
                 $sql = "SELECT * FROM `regioes`";
+
+                $sql .= " ORDER BY regiao";
 
                 $consulta = $connection->prepare($sql);
 
@@ -76,6 +78,8 @@
                 $sql = "SELECT * FROM `estados`";
                 ($id_regiao > 0) && $sql .= "WHERE id_regiao_fk = :id_regiao";
 
+                $sql .= " ORDER BY estados.nome";
+
                 $consulta = $connection->prepare($sql);
                 ($id_regiao > 0) && $consulta->bindParam("id_regiao", $id_regiao);
 
@@ -134,6 +138,8 @@
                             INNER JOIN regioes ON regioes.id = id_regiao_fk
                     ";
                 }
+
+                $sql .= " ORDER BY cidades.nome";
 
                 $consulta = $connection->prepare($sql);
 

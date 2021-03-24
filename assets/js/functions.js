@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    function titleize(text) {
+        var words = text.split(" ");
+
+        for (var a = 0; a < words.length; a++) {
+            if (words[a] != "") {
+                var w = words[a];
+                words[a] = w[0].toUpperCase() + w.slice(1);
+            }
+        }
+    
+        return words.join(" ");
+    }
+
     const chars_especiais = {
         "%C3%80" : "À", 
         "%C3%81" : "Á", 
@@ -7,7 +20,7 @@ $(document).ready(function() {
 
         "%C3%A0" : "à", 
         "%C3%A1" : "á", 
-        "%C3%A3" : "â",
+        "%C3%A2" : "â",
         "%C3%A3" : "ã", 
 
         "%C3%88" : "È",
@@ -66,4 +79,21 @@ $(document).ready(function() {
     });
 
     $(".local").text(local);
+    document.title = `Redes de Proteção ${titleize(local)} | Mel Redes de Proteções`;
+
+    if (page[page.length-1] == "") {
+        $.get("back-end/controller/ControllerListagem.php", function(retorno) {
+            var regioes = JSON.parse(retorno);
+    
+            $.each(regioes, function(idx, regiao) {
+
+                $.each(regiao['estados'], function(idx, estados) {
+
+                    $.each(estados['cidades'], function(idx, cidade) {
+
+                    });
+                });
+            });
+        });
+    }
 });
