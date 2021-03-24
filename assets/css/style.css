@@ -154,7 +154,7 @@ body {
 }
 
 .back-to-top:hover {
-  background: var(--secondary);
+
   color: #fff;
 }
 
@@ -430,11 +430,13 @@ div#preloader {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #165a64;
+  color: var(--primary);
+  transition: 0.5s;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: var(--primary);
+  color: #fff;
+  background-color: var(--primary);
 }
 
 .nav-menu .drop-down > a:after {
@@ -1981,6 +1983,13 @@ preview-2
   transition: all 0.3s ease 0s;
   border-radius: 30px;
 }
+
+.php-email-form button[type="submit"]:hover {
+  background: var(--primary);
+  border: var(--primary);
+  color: #fff;
+}
+
 
 @-webkit-keyframes animate-loading {
   0% {
