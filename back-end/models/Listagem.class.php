@@ -14,6 +14,8 @@
             try {
                 $sql = "SELECT * FROM `regioes`";
 
+                $sql .= " ORDER BY regiao";
+
                 $consulta = $connection->prepare($sql);
 
                 $consulta->execute();
@@ -39,7 +41,22 @@
 
                             array_push($dados, $regiao);
                         }
-                    } else $dados = $regioes;
+                    } else if ($cidades) {
+                        $cidades = $this->cidades(false, $cidades);
+
+                        foreach ($regioes as $indice => $regiao) {
+                            $regiao['cidades'] = [];
+
+                            foreach ($cidades as $indice => $cidade) {
+                                if ($cidade['id_regiao_fk'] == $regiao['id']) {
+                                    array_push($regiao['cidades'], $cidade);
+                                }
+                            }
+
+                            array_push($dados, $regiao);
+                        }
+                    }
+                    else $dados = $regioes;
                 } else $dados = self::SEM_REGISTROS;
 
                 return $dados;
@@ -60,6 +77,8 @@
             try {
                 $sql = "SELECT * FROM `estados`";
                 ($id_regiao > 0) && $sql .= "WHERE id_regiao_fk = :id_regiao";
+
+                $sql .= " ORDER BY estados.nome";
 
                 $consulta = $connection->prepare($sql);
                 ($id_regiao > 0) && $consulta->bindParam("id_regiao", $id_regiao);
@@ -101,16 +120,32 @@
 
         /*======================================================================================*/
 
-        public function cidades($id_estado = 0) {
+        public function cidades($id_estado = 0, $regiao = false) {
             $conexao = new Conexao();
             $connection = $conexao->conectar();
 
             try {
-                $sql = "SELECT * FROM `cidades`";
-                ($id_estado > 0) && $sql .= "WHERE id_estado_fk = :id_estado";
+                $colunas = '*';
+
+                ($id_estado == 0 && $regiao) && $colunas = "id_regiao_fk, cidades.nome";
+
+                $sql = "SELECT $colunas FROM `cidades`";
+
+                if ($id_estado > 0) {
+                    $sql .= " WHERE id_estado_fk = :id_estado";
+                } else if ($regiao) {
+                    $sql .= " INNER JOIN estados ON estados.id = id_estado_fk	
+                            INNER JOIN regioes ON regioes.id = id_regiao_fk
+                    ";
+                }
+
+                $sql .= " ORDER BY cidades.nome";
 
                 $consulta = $connection->prepare($sql);
-                ($id_estado > 0) && $consulta->bindParam("id_estado", $id_estado);
+
+                if ($id_estado > 0) {
+                    ($id_estado > 0) && $consulta->bindParam("id_estado", $id_estado);
+                }
 
                 $consulta->execute();
 

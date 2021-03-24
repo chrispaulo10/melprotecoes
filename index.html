@@ -751,7 +751,7 @@ Fazemos  parte das  empresas  fundadoras no único curso de rede de proteção e
               <div class="form contact-form">
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" id="nome" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
@@ -759,11 +759,11 @@ Fazemos  parte das  empresas  fundadoras no único curso de rede de proteção e
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
+                    <textarea class="form-control" name="message" id="mensagem" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
                     <div class="validate"></div>
                   </div>
                   <div class="mb-3">
@@ -771,7 +771,7 @@ Fazemos  parte das  empresas  fundadoras no único curso de rede de proteção e
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div>
-                  <div class="text-center"><button type="submit">Enviar</button></div>
+                  <div class="text-center"><button id="enviar_email">Enviar</button></div>
                 </form>
               </div>
             </div>
@@ -876,6 +876,22 @@ Fazemos  parte das  empresas  fundadoras no único curso de rede de proteção e
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    $("#enviar_email").click(function() {
+      const dados = {
+        enviar_email : true,
+        email : $("#email").val(),
+        nome : $("#nome").val(),
+        assunto : $("#assunto").val(),
+        mensagem : $("#mensagem").val(),
+      };
+
+      $.post("back-end/controller/ControllerMail.php", dados, function(retorno) {
+        alert(retorno)
+      });
+    });
+  </script>
   
 
 </body>
