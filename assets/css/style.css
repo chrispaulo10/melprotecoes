@@ -129,7 +129,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: var(--primary);
+  background: #044E4E;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -148,7 +148,7 @@ body {
 }
 
 .back-to-top:focus {
-  background: var(--primary);
+  background: #044E4E;
   color: #fff;
   outline: none;
 }
@@ -2765,6 +2765,7 @@ span.email-notes {
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+
   .slider-area {
     margin-top: 60px;
   }
@@ -2922,4 +2923,18 @@ span.email-notes {
 
 .list-link:hover {
   color: var(--primary);
+}
+
+
+@media (max-width: 767.98px){
+  
+  .bread-cont{
+    margin-top: 100px;
+  }
+  .mt-m4{
+    margin-top: -1.5rem!important;
+  }
+  .text-ex-center{
+    text-align: center!important;
+  }
 }
