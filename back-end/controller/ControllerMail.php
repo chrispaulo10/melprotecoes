@@ -11,11 +11,21 @@
         if ( !(empty($email) && empty($nome) && empty($assunto) && empty($mensagem)) ) {
         
             if (smtpmailer($email, $nome, $assunto, $mensagem)) {
-                $retorno = [ "success" => "Email Enviado!" ];
+                $retorno = [
+                    "tipo" => "success",
+                    "resposta" => "Email Enviado!"
+                ];
             } else {
-                $retorno = [ "danger" => "Não foi possível envial o email!" ];
+                $retorno = [
+                    "tipo" => "danger",
+                    "resposta" => "Não foi possível envial o email!"
+                ];
             }
 
+        } else {
+            $retorno = [ 
+                "tipo" => "warning",
+                "resposta" => "Preencha todos os campo!" ];
         }
 
         echo json_encode($retorno);

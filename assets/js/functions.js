@@ -81,18 +81,52 @@ $(document).ready(function () {
     $(".local").text(local);
     document.title = `Redes de Proteção ${titleize(local)} | Mel Redes de Proteções`;
 
-    if (page[page.length - 1] == "") {
+    if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
         $.get("back-end/controller/ControllerListagem.php", function (retorno) {
             var regioes = JSON.parse(retorno);
 
             $.each(regioes, function (idx, regiao) {
+                let html_regiao = `
+                            <li>
+                                <!-- REGIÃO -->
+                                <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed">Redes de Proteção Região ${regiao.regiao} <i class="icofont-simple-up"></i></a>
+                                <!-- ESTADOS -->
+                                <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
+                                    <ul class="faq-list2 mt-1">
+                `;
 
-                $.each(regiao['estados'], function (idx, estados) {
+                $.each(regiao['estados'], function (idx, estado) {
+                    html_regiao += `
+                                        <li style="padding-bottom: 3px; padding-top: 3px;">
+                                            <a data-toggle="collapse" href="#estado_${estado.id}" class="collapsed" style="font-size: 16.5px;">${estado.nome} <i class="icofont-simple-up"></i></a>
+                                            <!-- CIDADES -->
+                                            <div id="estado_${estado.id}" class="collapse" data-parent=".faq-list2">
+                                                <div class="list-group-links">
+                                        
+                    `;
 
-                    $.each(estados['cidades'], function (idx, cidade) {
-
+                    $.each(estado['cidades'], function (idx, cidade) {
+                        html_regiao += `                        
+                                                    <a href="redes-de-protecao-${(cidade.nome).replace(" ", "-").toLowerCase()}">
+                                                        <span class="list-link">Redes de Proteção ${cidade.nome}</span>
+                                                    </a>
+                        `;
                     });
+
+                    html_regiao += ` 
+                                                </div>
+                                            </div>
+                                        </li>
+                    `;
                 });
+
+                html_regiao += `
+                                </ul>
+                            </div>            
+                        </li>
+                `;
+
+                $("#regioes").append(html_regiao);
             });
         });
     }
@@ -103,8 +137,8 @@ $("#enviar_email").click(function () {
     const button = $(this);
     button.prop('disabled', true);
 
-    const class_icone = $("#icone-enviar_email").attr('class');
-    $("#icone-enviar_email").removeClass().addClass("fas fa-sync-alt fa-spin");
+    // const class_icone = $("#icone-enviar_email").attr('class');
+    // $("#icone-enviar_email").removeClass().addClass("fa fa-sync-alt fa-spin");
 
     const dados = {
         enviar_email: true,
@@ -116,13 +150,21 @@ $("#enviar_email").click(function () {
 
     $.post("back-end/controller/ControllerMail.php", dados, function (retorno) {
         button.prop('disabled', false);
-        $("#icone-enviar_email").removeClass().addClass(class_icone);
+        // $("#icone-enviar_email").removeClass().addClass(class_icone);
 
         $("#email").val('')
         $("#nome").val('')
         $("#assunto").val('')
         $("#mensagem").val('')
 
-        alert(retorno)
+        const mensagem = JSON.parse(retorno);
+
+        $("#alerta_mail").removeClass().addClass(`alert alert-${mensagem.tipo} mt-2`);
+        $("#alerta_mail").text(mensagem.resposta);
+        $("#alerta_mail").show("fast");
+        
+        setTimeout(() => {
+            $("#alerta_mail").fadeOut("slow");
+        }, 3000);
     });
 });

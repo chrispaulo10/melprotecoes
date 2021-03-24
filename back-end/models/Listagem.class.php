@@ -14,7 +14,7 @@
             try {
                 $sql = "SELECT * FROM `regioes`";
 
-                $sql .= " ORDER BY regiao";
+                $sql .= " ORDER BY id";
 
                 $consulta = $connection->prepare($sql);
 
