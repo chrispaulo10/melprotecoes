@@ -27,10 +27,7 @@
             $rotas["redes-de-protecao-{$cidade['nome']}"] = "{$prefixo}protecao-".strtolower($regiao['regiao'])."";
         }
     }
-echo '<pre>';
-    var_dump($rotas);
-    exit;
-
+    
     $page = $nao_encontrado = '404';
 
     if (isset($_GET['url'])) {        
