@@ -15,6 +15,14 @@
             "" => "blog",
             "detalhes" => "blog-details"
         ],
+        "redes-de-protecao" => $prefixo."redes-de-protecao",
+        "cerca-de-piscina" => $prefixo."cerca-piscina",
+        "tela-para-pets" => $prefixo."tela-gatos",
+        "mosquiteira" => $prefixo."mosquiteira",
+        "limitadores" => $prefixo."limitadores",
+        "redes-esportivas" => $prefixo."redes-esportivas",
+        "grades" => $prefixo."grades",
+        "capas" => $prefixo."capas",
     //  "URL" => "NOME ARQUIVO"
     );
 
