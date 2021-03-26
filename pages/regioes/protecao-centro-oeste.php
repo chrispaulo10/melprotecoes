@@ -1,24 +1,3 @@
-<?php
-
-$url_completa = $_SERVER["REQUEST_URI"];
-$url_particionada = explode('/', $url_completa);
-
-$titulo = explode('-', end($url_particionada));
-$local = "";
-
-for ($i = 3; $i < count($titulo); $i++) {
-  $local .= $titulo[$i]." ";
-}
-
-$canonical = $url_completa;
-$title = "Redes de Proteção ".ucwords($local)."| Mel Redes de Proteções";
-
-$descricao = "Buscando Redes de proteção ${local}com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. Rede de Proteção ${local}.";
-$keywords = "Redes de Proteção ${local}, rede de proteção ${local}, tela de proteção ${local}, telas de proteção ${local}, Redes de Proteção para janelas ${local}, rede de proteção ${local}para apartamento, tela de proteção ${local}para gatos, telas de proteção ${local}para quadra, Redes de Proteção ${local}para sacada, rede de proteção ${local}para piscinas, tela de proteção ${local}escadas, telas de proteção ${local}para mezaninos.";
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
