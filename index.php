@@ -9,9 +9,9 @@
     $regioes = $listagem->regioes(false, true);
 
     $rotas = array(
-        "" => "index",
-        "home" => "index",
-        "404" => "404",
+        "" => "index". $extensao,
+        "home" => "index". $extensao,
+        "404" => "404". $extensao,
         "blog" => [
             "" => "blog",
             "detalhes" => "blog-details"
@@ -48,7 +48,7 @@ if (isset($_GET['url'])) {
     $url_dividida   = explode('/', $_GET['url']);
 
     if (count($url_dividida) == 1 && array_key_exists($url_dividida[0], $rotas) && !is_array($rotas[$url_dividida[0]])) {
-        $page = $rotas[$url_dividida[0]] . $extensao;
+        $page = $rotas[$url_dividida[0]];
     } else if (array_key_exists($url_dividida[0], $rotas)) {
         $indice = $url_dividida[0];
         $rota = $rotas[$indice];
