@@ -2,6 +2,7 @@
     require "back-end/models/Rotas.class.php";
 
     $prefixo = "pages/";
+    $extensao = ".html";
 
     $listagem = new Listagem();
     
@@ -47,7 +48,7 @@ if (isset($_GET['url'])) {
     $url_dividida   = explode('/', $_GET['url']);
 
     if (count($url_dividida) == 1 && array_key_exists($url_dividida[0], $rotas) && !is_array($rotas[$url_dividida[0]])) {
-        $page = $rotas[$url_dividida[0]];
+        $page = $rotas[$url_dividida[0]] . $extensao;
     } else if (array_key_exists($url_dividida[0], $rotas)) {
         $indice = $url_dividida[0];
         $rota = $rotas[$indice];
@@ -56,10 +57,10 @@ if (isset($_GET['url'])) {
             if ($url_dividida[1] == "") {
                 header("Location: ../$url_dividida[0]");
             } else {
-                if (array_key_exists($url_dividida[1], $rota)) $page = $rota[$url_dividida[1]];
+                if (array_key_exists($url_dividida[1], $rota)) $page = $rota[$url_dividida[1]] . $extensao;
                 else $page = $nao_encontrado;
             }
-        } else $page = $rota[''];
+        } else $page = $rota[''] . $extensao;
     } else $page = $nao_encontrado;
 } else $page = 'index' . $extensao;
 
