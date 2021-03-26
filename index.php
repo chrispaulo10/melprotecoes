@@ -2,6 +2,7 @@
     require "back-end/models/Rotas.class.php";
 
     $prefixo = "pages/";
+    $extensao = ".html";
 
     $listagem = new Listagem();
     
@@ -20,7 +21,7 @@
 
     foreach ($regioes as $key => $regiao) {
         $regiao['regiao'] = strtolower(str_replace(" ", "-", $regiao['regiao']));
-        $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-".substr(str_replace("zona-", "", $regiao['regiao']), 3);
+        $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-".substr(str_replace("zona-", "", $regiao['regiao']), 3).".php";
 
         foreach ($regiao['cidades'] as $key => $cidade) {
             $cidade['nome'] = mb_strtolower( str_replace(" ", "-", $cidade['nome']) , 'UTF-8' );
@@ -32,7 +33,7 @@
     // var_dump($rotas);
     // exit;
 
-    $page = $nao_encontrado = '404';
+    $page = $nao_encontrado = '404'.$extensao;
 
     if (isset($_GET['url'])) {        
         $url            = $_GET['url'];
@@ -53,11 +54,9 @@
                 }
             } else $page = $rota[''];
         } else $page = $nao_encontrado;
-    } else $page = 'index';
+    } else $page = 'index'.$extensao;
 
-    $page .= '.html';
-
-    if (!file_exists($page)) $page = $nao_encontrado.'.html';
+    if (!file_exists($page)) $page = $nao_encontrado;
 
     require $page;
 ?>

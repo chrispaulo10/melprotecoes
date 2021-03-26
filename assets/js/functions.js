@@ -65,27 +65,7 @@ $(document).ready(function () {
     };
 
     const url_atual = window.location.href;
-
     let page = url_atual.split("/");
-    let titulo = page[page.length - 1].split("-");
-    let local = "";
-
-    for (let index = 3; index < titulo.length; index++) {
-        local += `${titulo[index]} `;
-    }
-
-    $.each(chars_especiais, function (codigo, char) {
-        local = local.replace(codigo, char);
-    });
-
-    $(".local").text(local);
-    document.title = `Redes de Proteção ${titleize(local)} | Mel Redes de Proteções`;
-
-    $("[name=canonical]").attr("href", url_atual);
-    $("[name=url]").attr("href", url_atual);
-    $("[name=title]").attr("content", document.title);
-    $("[name=description]").attr("content", `Buscando Redes de proteção ${local}com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. Rede de Proteção ${local}.`);
-    $("[name=keywords]").attr("content", `Redes de Proteção ${local}, rede de proteção ${local}, tela de proteção ${local}, telas de proteção ${local}, Redes de Proteção para janelas ${local}, rede de proteção ${local}para apartamento, tela de proteção ${local}para gatos, telas de proteção ${local}para quadra, Redes de Proteção ${local}para sacada, rede de proteção ${local}para piscinas, tela de proteção ${local}escadas, telas de proteção ${local}para mezaninos.`);
 
     if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
         $.get("back-end/controller/ControllerListagem.php", function (retorno) {
