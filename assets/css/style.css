@@ -125,6 +125,12 @@ body {
   line-height: 22px;
 }
 
+#baner{
+  height: 100%;
+  width: 100%;
+
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;

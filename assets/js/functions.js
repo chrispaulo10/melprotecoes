@@ -75,7 +75,7 @@ $(document).ready(function () {
                 let html_regiao = `
                             <li>
                                 <!-- REGIÃO -->
-                                <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed">Redes de Proteção ${regiao.regiao} <i class="icofont-simple-up"></i></a>
+                                <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed"> Redes de Proteção <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i></a>
                                 <!-- ESTADOS -->
                                 <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
                                     <ul class="faq-list2 mt-1">

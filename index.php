@@ -1,21 +1,28 @@
 <?php
-require "back-end/models/Rotas.class.php";
+    require "back-end/models/Rotas.class.php";
 
-$prefixo = "pages/";
-$extensao = ".html";
+    $prefixo = "pages/";
 
-$listagem = new Listagem();
+    $listagem = new Listagem();
+    
+    $regioes = $listagem->regioes(false, true);
 
-$regioes = $listagem->regioes(false, true);
-
-$rotas = array(
-    "" => "index",
-    "home" => "index",
-    "404" => "404",
-    "blog" => [
-        "" => "blog",
-        "detalhes" => "blog-details"
-    ],
+    $rotas = array(
+        "" => "index",
+        "home" => "index",
+        "404" => "404",
+        "blog" => [
+            "" => "blog",
+            "detalhes" => "blog-details"
+        ],
+        "redes-de-protecao" => $prefixo."redes-de-protecao",
+        "cerca-de-piscina" => $prefixo."cerca-piscina",
+        "tela-para-pets" => $prefixo."tela-gatos",
+        "mosquiteira" => $prefixo."mosquiteira",
+        "limitadores" => $prefixo."limitadores",
+        "redes-esportivas" => $prefixo."redes-esportivas",
+        "grades" => $prefixo."grades",
+        "capas" => $prefixo."capas",
     //  "URL" => "NOME ARQUIVO"
 );
 
