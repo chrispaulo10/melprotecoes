@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    function titleize(text) {
-        var words = text.split(" ");
-
-        for (var a = 0; a < words.length; a++) {
-            if (words[a] != "") {
-                var w = words[a];
-                words[a] = w[0].toUpperCase() + w.slice(1);
-            }
-        }
-
-        return words.join(" ");
-    }
-
     const chars_especiais = {
         "%C3%80": "À",
         "%C3%81": "Á",
@@ -74,7 +61,7 @@ $(document).ready(function () {
     }
 
     $.each(chars_especiais, function (codigo, char) {
-        local = local.replace(codigo, char);
+        local = local.replaceAll(codigo, char);
     });
 
     $(".local").text(local);
@@ -105,7 +92,7 @@ $(document).ready(function () {
 
                     $.each(estado['cidades'], function (idx, cidade) {
                         html_regiao += `                        
-                                                    <a href="redes-de-protecao-${(cidade.nome).replace(" ", "-").toLowerCase()}">
+                                                    <a href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
                                                         <span class="list-link">Redes de Proteção ${cidade.nome}</span>
                                                     </a>
                         `;
