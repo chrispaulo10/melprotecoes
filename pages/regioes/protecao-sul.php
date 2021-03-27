@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title><?php echo $title;?></title>
 
   <meta name="description" content="<?php echo $descricao;?>"/>
@@ -21,6 +20,7 @@
   <meta property="article:modified_time" content="2021-01-14T07:40:17+00:00"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="keywords" content="<?php echo $keywords;?>">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -101,7 +101,7 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-  <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
+    <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção <span class="local"></span></h6></div>
@@ -114,7 +114,7 @@
           </div>
         </div>
       </div>
-    </nav>    
+    </nav>
 
     <!-- ======= Blog Header ======= -->
     <div class="header-bg page-area">
@@ -137,77 +137,6 @@
     <div id="services" class="services section-bg pt-5">
       <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-                <div class="card">
-                  <div class="card-img">
-                    <a href="http://wa.me/5511998730710" target="_blank">
-                      <img src="assets/img/zonas/leste/img2.jpg" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                        Para instalação de Redes de Proteção  <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas <span class="local"></span>.</p>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-                <div class="card">
-                  <div class="card-img">
-                    <a href="http://wa.me/5511998730710" target="_blank">
-                      <img src="assets/img/zonas/leste/img3.jpg" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA ESCADAS?</span>
-                        Instalamos Rede de Proteção   <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção   <span class="local"></span>.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-                <div class="card">
-                  <div class="card-img">
-                    <a href="http://wa.me/5511998730710" target="_blank">
-                      <img src="assets/img/zonas/leste/img4.jpg" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA IDOSOS?</span>
-                        Trabalhamos com Redes de Proteção   <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção   <span class="local"></span>.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-                <div class="card">
-                  <div class="card-img">
-                    <a href="http://wa.me/5511998730710" target="_blank">
-                      <img src="assets/img/zonas/leste/img5.jpg" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS   <span class="local text-uppercase"></span>?</span>
-                        Faça seu orçamento de Rede para Proteção de Piscina   <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
-                  </div>
-                </div>
-              </div>                     
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img1.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
-                      Mel Proteções você encontra Redes de Proteção <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
-              </div>
-            </div>
-          </div>
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
@@ -222,7 +151,21 @@
                 </p>
               </div>
             </div>
-          </div>           
+          </div>          
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/zonas/leste/img1.jpg" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
+                      Mel Proteções você encontra Redes de Proteção <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
@@ -253,6 +196,63 @@
               </div>
             </div>
           </div>          
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/zonas/leste/img2.jpg" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA JANELAS?</span>
+                    Para instalação de Redes de Proteção  <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas <span class="local"></span>.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/zonas/leste/img3.jpg" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA ESCADAS?</span>
+                    Instalamos Rede de Proteção   <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção   <span class="local"></span>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/zonas/leste/img4.jpg" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA IDOSOS?</span>
+                    Trabalhamos com Redes de Proteção   <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção   <span class="local"></span>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/zonas/leste/img5.jpg" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS   <span class="local text-uppercase"></span>?</span>
+                    Faça seu orçamento de Rede para Proteção de Piscina   <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div><!-- End Services Section -->
