@@ -275,11 +275,22 @@
   }
   var tamain = $(window).width();
   if (tamain<450) {
-    $('#baner').prop('src', 'assets/img/slider/mobile-slid.jpeg')
+    $('#baner').prop('src', 'assets/img/slider/mobile-slid.jpg')
   } else {
-    $('#baner').prop('src', 'assets/img/slider/toda-slid.jpeg')
+    $('#baner').prop('src', 'assets/img/slider/toda-slid.jpg')
   }
 
   $("#zona").text(titulo);
 
 })(jQuery);
+
+// updated 2019
+const input = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+const expand = () => {
+  searchBtn.classList.toggle("close");
+  input.classList.toggle("square");
+};
+
+searchBtn.addEventListener("click", expand);

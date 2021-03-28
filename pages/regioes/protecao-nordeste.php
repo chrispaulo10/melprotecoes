@@ -103,12 +103,12 @@
       <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
         <div class="container bread-cont">
           <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção <span class="local"></span></h6></div>
+            <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em <span class="local"></span></h6></div>
             <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
               <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
                 Você está aqui: &nbsp;
                 <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-                <li class="breadcrumb-item active" aria-current="page">Redes de Proteção <span class="local"></span></li>
+                <li class="breadcrumb-item active" aria-current="page">Redes de Proteção em <span class="local"></span></li>
               </ol>
             </div>
           </div>
@@ -124,7 +124,7 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Redes de Proteção <span class="local"></span></h1>
+                    <h1 class="title2 font-weight-bold"><?php echo $h1;?></h1>
                   </div>
                 </div>
               </div>
@@ -145,8 +145,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
-                      Mel Proteções você encontra Redes de Proteção <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
+                  Na Mel Proteções você encontra Redes de Proteção em <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção em <span class="local"></span>.</p>
               </div>
             </div>
           </div>
@@ -159,8 +159,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                    Para instalação de Redes de Proteção  <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas <span class="local"></span>.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA JANELAS?</span>
+                    Para instalação de Redes de Proteção em <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas em <span class="local"></span>.</p>
               </div>
             </div>
 
@@ -174,8 +174,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA ESCADAS?</span>
-                    Instalamos Rede de Proteção   <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção   <span class="local"></span>.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO  em <span class="local text-uppercase"></span> PARA ESCADAS?</span>
+                    Instalamos Rede de Proteção em <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção em <span class="local"></span>.</p>
               </div>
             </div>
           </div>
@@ -188,8 +188,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA IDOSOS?</span>
-                    Trabalhamos com Redes de Proteção   <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção   <span class="local"></span>.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA IDOSOS?</span>
+                    Trabalhamos com Redes de Proteção em <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção em <span class="local"></span>.</p>
               </div>
             </div>
           </div>
@@ -202,8 +202,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS   <span class="local text-uppercase"></span>?</span>
-                    Faça seu orçamento de Rede para Proteção de Piscina   <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS em <span class="local text-uppercase"></span>?</span>
+                    Faça seu orçamento de Rede para Proteção de Piscina em <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
               </div>
             </div>
           </div>
@@ -216,8 +216,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA sacadas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA INSTALAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA SACADA?</span>
-                    Redes de Proteção para Sacada   <span class="local"></span> com melhor custo benefício você encontra   aqui. Mel Redes de Proteção   <span class="local"></span>.
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA INSTALAR REDES DE PROTEÇÃO  em <span class="local text-uppercase"></span> PARA SACADA?</span>
+                    Redes de Proteção para Sacada em <span class="local"></span> com melhor custo benefício você encontra aqui. Mel Redes de Proteção em <span class="local"></span>.
                 </p>
               </div>
             </div>
@@ -231,8 +231,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
-                    Redes de Proteção   <span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras  <span class="local"></span>.
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
+                    Redes de Proteção em<span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras em <span class="local"></span>.
                 </p>
               </div>
             </div>
@@ -246,8 +246,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PETS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
-                    Nós trabalhamos com Redes de Proteção   <span class="local"></span> para seu Pet de estimação a mais de uma década ligue agora mesmo para: (11) 2682-3893.
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
+                    Nós trabalhamos com Redes de Proteção em <span class="local"></span> para seu Pet de estimação a mais de uma década ligue agora mesmo para: (11) 2682-3893.
                 </p>
               </div>
             </div>

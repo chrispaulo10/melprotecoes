@@ -4,6 +4,11 @@
 
         function conectar(){
 
+            // NOME BD : u421303045_mel
+            // USER : u421303045_melprotecoes
+            // SENHA : K#f:S>F9o
+ 
+
             $host= "mysql:host=localhost;dbname=melprotecoes";
             $user= "root";
             $pass= "";

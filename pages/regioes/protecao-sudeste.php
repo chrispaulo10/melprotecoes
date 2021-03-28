@@ -5,23 +5,22 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title></title>
-  <meta name="google-site-verification" content="m1ixm4oko906ZX1MyNArTQ9W3L4DqjbsPLijKlOFUrk"/>
-  <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
-  <meta name="description" content="Redes de proteção na Zona local é com a Mel Proteções, fazemos seu orçamento via WhatsApp (11) 99873-0710. Redes de Proteção na Zona local."/>
+  <title><?php echo $title;?></title>
+
+  <meta name="description" content="<?php echo $descricao;?>"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://redesdeprotecoes.com.br/redes-de-protecao-na-zona-local/"/>
+  <link rel="canonical" href="<?php echo $url_completa;?>"/>
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="Redes de Proteção na Zona local | Mel Redes de Proteção"/>
-  <meta property="og:description" content="Redes de proteção na Zona local é com a Mel Proteções, fazemos seu orçamento via WhatsApp (11) 99873-0710. Redes de Proteção na Zona local."/>
-  <meta property="og:url" content="https://redesdeprotecoes.com.br/redes-de-protecao-na-zona-local/"/>
+  <meta property="og:title" content="<?php echo $title;?>"/>
+  <meta property="og:description" content="<?php echo $descricao;?>"/>
+  <meta property="og:url" content="<?php echo $url_completa;?>"/>
   <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção"/>
-  <meta property="article:modified_time" content="2021-01-14T09:23:18+00:00"/>
+  <meta property="article:modified_time" content="2021-01-14T07:40:17+00:00"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="keywords" content="Redes de Proteção na Zona Leste, rede de proteção na Zona Leste, tela de proteção na Zona Leste, telas de proteção na Zona Leste, Redes de Proteção para janelas na Zona Leste, rede de proteção na Zona Leste para apartamento, tela de proteção na Zona Leste para gatos, telas de proteção na Zona Leste para quadra, Redes de Proteção na Zona Leste para sacada, rede de proteção na Zona Leste para piscinas, tela de proteção na Zona Leste escadas, telas de proteção na Zona Leste para mezaninos.">
+  <meta name="keywords" content="<?php echo $keywords;?>">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -105,12 +104,12 @@
     <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção <span class="local"></span></h6></div>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em <span class="local"></span></h6></div>
           <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
             <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
               Você está aqui: &nbsp;
               <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção <span class="local"></span></li>
+              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção em <span class="local"></span></li>
             </ol>
           </div>
         </div>
@@ -126,7 +125,7 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Redes de Proteção <span class="local"></span></h1>
+                    <h1 class="title2 font-weight-bold"><?php echo $h1;?></h1>
                   </div>
                 </div>
               </div>
@@ -193,7 +192,7 @@
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
-                      Mel Proteções você encontra Redes de Proteção <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
+                Aqui na Mel Proteções você encontra Redes de Proteção em <span class="local"></span> para Crianças. através do WhatsApp (11) 99873-0710 – Rede de Proteção <span class="local"></span>.</p>
               </div>
             </div>
           </div>
