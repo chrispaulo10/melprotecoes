@@ -63,6 +63,7 @@
           <i class="fa fa-whatsapp d-none d-md-inline"></i> <a target="_blank" class="d-none d-md-inline" href="https://api.whatsapp.com/send/?phone=5511998730710">(11) 99873-0710</a>
         </div>
         <div class="social-links">
+          <a type="button" data-toggle="modal" data-target="#exampleModal" class="facebook"><i class="icofont-search"></i></a>
           <a href="https://www.facebook.com/melprotecoes" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
           <a href="http://instagram.com/mel_protecoes/" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
           <a href="https://www.youtube.com/channel/UCsaM4KCZ93ebF-v4KQVJbUg" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
@@ -104,8 +105,8 @@
   <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em <span class="local"></span></h6></div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
+          <div class="col-lg-5 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em <span class="local"></span></h6></div>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-12 mt-m4">
             <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
               Você está aqui: &nbsp;
               <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
@@ -146,7 +147,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM<span class="local text-uppercase"></span> PARA JANELAS?</span>
+                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA JANELAS?</span>
                     Telas e Redes de Proteção em<span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
                   </div>
                 </div>
@@ -397,6 +398,35 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
+          <div class="input-group">
+            <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
+            <div class="input-group-append">
+              <button id="btn_pesquisa" class="btn btn-outline-primary"> <i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h6>Resultados da Pesquisa</h6>
+
+        <div class="list-group" id="div-resultados_pesquisa">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
   <div id="preloader"></div>

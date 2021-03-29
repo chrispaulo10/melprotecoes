@@ -93,7 +93,7 @@ $(document).ready(function () {
                     $.each(estado['cidades'], function (idx, cidade) {
                         html_regiao += `                        
                                                     <a class="links_cidades" href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                        <span class="list-link">Redes de Proteção ${cidade.nome}</span>
+                                                        <span class="list-link">Redes de Proteção em ${cidade.nome}</span>
                                                     </a>
                         `;
                     });

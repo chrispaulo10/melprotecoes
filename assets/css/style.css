@@ -135,7 +135,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #044E4E;
+  background: #128c7e;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -160,7 +160,7 @@ body {
 }
 
 .back-to-top:hover {
-
+  background: #044E4E;
   color: #fff;
 }
 
@@ -653,7 +653,7 @@ div#preloader {
 }
 
 .slider-content {
-  padding: 180px 60px;
+  padding: 100px 60px;
 }
 
 .nivo-caption::after {
@@ -768,7 +768,7 @@ div#preloader {
 /* Normal desktop :992px. */
 @media (min-width: 1400px) and (max-width: 1920px) {
   .slider-content {
-    padding: 340px 0;
+    padding: 150px 0;
   }
 }
 
@@ -2681,14 +2681,14 @@ span.email-notes {
 --------------------------------------------------------------*/
 @media (min-width: 1920px) {
   .work-right-text {
-    padding: 150px 150px;
+    padding: 100px 150px;
   }
 }
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
   .slider-content {
-    padding: 146px 0;
+    padding: 80px 0;
   }
   .work-right-text {
     padding: 40px 0;

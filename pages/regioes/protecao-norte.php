@@ -63,6 +63,7 @@
           <i class="fa fa-whatsapp d-none d-md-inline"></i> <a target="_blank" class="d-none d-md-inline" href="https://api.whatsapp.com/send/?phone=5511998730710">(11) 99873-0710</a>
         </div>
         <div class="social-links">
+          <a type="button" data-toggle="modal" data-target="#exampleModal" class="facebook"><i class="icofont-search"></i></a>
           <a href="https://www.facebook.com/melprotecoes" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
           <a href="http://instagram.com/mel_protecoes/" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
           <a href="https://www.youtube.com/channel/UCsaM4KCZ93ebF-v4KQVJbUg" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
@@ -397,6 +398,35 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
+          <div class="input-group">
+            <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
+            <div class="input-group-append">
+              <button id="btn_pesquisa" class="btn btn-outline-primary"> <i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h6>Resultados da Pesquisa</h6>
+
+        <div class="list-group" id="div-resultados_pesquisa">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
   <div id="preloader"></div>
@@ -416,8 +446,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
