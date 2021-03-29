@@ -159,26 +159,27 @@ $("#btn_pesquisa").click(function() {
     const button = $(this);
     const div_resultados = $("#div-resultados_pesquisa");
 
-    button.prop("disabled", true);
     div_resultados.html("");
     
     let pesquisa = ($("#input_pesquisa").val()).toLowerCase().replaceAll(" ", "-");
     
-    if (pesquisa == "") return "";
-
-    setTimeout(() => {
-        $(".links_cidades").each(function(idx, value) {
-            let link = $(this);
-            let a_href = link.attr('href');
-    
-            if (a_href.indexOf(pesquisa) > -1) {
-                div_resultados.append(`
-                    <a href="${a_href}" class="list-group-item list-group-item-action">${link[0].children[0].innerText}</a>
-                `);
-                // console.log(link[0]);
-            }
-        });
-    
-        button.prop("disabled", false);        
-    }, 100);
+    if (pesquisa.length >= 3) {
+        button.prop("disabled", true);
+        
+        setTimeout(() => {
+            $(".links_cidades").each(function(idx, value) {
+                let link = $(this);
+                let a_href = link.attr('href');
+        
+                if (a_href.indexOf(pesquisa) > -1) {
+                    div_resultados.append(`
+                        <a href="${a_href}" class="list-group-item list-group-item-action">${link[0].children[0].innerText}</a>
+                    `);
+                    // console.log(link[0]);
+                }
+            });
+        
+            button.prop("disabled", false);        
+        }, 100);
+    }
 });
