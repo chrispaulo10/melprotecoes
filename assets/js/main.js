@@ -280,8 +280,6 @@
     $('#baner').prop('src', 'assets/img/slider/toda-slid.jpg')
   }
 
-  $("#zona").text(titulo);
-
 })(jQuery);
 
 // updated 2019
