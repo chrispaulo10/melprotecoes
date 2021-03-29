@@ -146,8 +146,8 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                        Para instalação de Redes de Proteção  <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas <span class="local"></span>.</p>
+                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM<span class="local text-uppercase"></span> PARA JANELAS?</span>
+                    Telas e Redes de Proteção em<span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
                   </div>
                 </div>
     
@@ -161,8 +161,8 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA ESCADAS?</span>
-                        Instalamos Rede de Proteção   <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção   <span class="local"></span>.</p>
+                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA ESCADAS?</span>
+                    Redes de Proteção em <span class="local"></span> para Escadas faça um orçamento agora mesmo via WhatsApp (11) 99873-0710. Rede de Proteção em <span class="local"></span>.</p>
                   </div>
                 </div>
               </div>
@@ -175,8 +175,8 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA IDOSOS?</span>
-                        Trabalhamos com Redes de Proteção   <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção   <span class="local"></span>.</p>
+                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA IDOSOS?</span>
+                        Redes de Proteção em <span class="local"></span> para idosos entre em contato através do WhatsApp (11) 99873-0710 Mel Proteções. Redes de Proteção em <span class="local"></span>.</p>
                   </div>
                 </div>
               </div>
@@ -189,8 +189,8 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
-                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS   <span class="local text-uppercase"></span>?</span>
-                        Faça seu orçamento de Rede para Proteção de Piscina   <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
+                    <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
+                      Faça seu orçamento de Rede de Proteção para Piscina em <span class="local"></span> através do WhatsApp (11) 99873-0710 Mel Proteções mais de uma década de tradição.</p>
                   </div>
                 </div>
               </div>                     
@@ -203,8 +203,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
-                      Mel Proteções você encontra Redes de Proteção em <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE INSTALAÇÃO PARA REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
+                  Aqui na Mel Proteções você encontra Redes de Proteção em  <span class="local"></span> para Crianças através do WhatsApp (11) 99873-0710 Rede de Proteção em <span class="local"></span>.</p>
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PETS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
                     Nós trabalhamos com Redes de Proteção   <span class="local"></span> para seu Pet de estimação a mais de uma década ligue agora mesmo para: (11) 2682-3893.
                 </p>
               </div>
@@ -232,8 +232,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA sacadas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA INSTALAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA SACADA?</span>
-                    Redes de Proteção para Sacada   <span class="local"></span> com melhor custo benefício você encontra   aqui. Mel Redes de Proteção   <span class="local"></span>.
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA COLOCAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA SACADA?</span>
+                    Redes de Proteção para Sacada em <span class="local"></span> com melhor custo benefício você encontra aqui.  WhatsApp (11) 99873-0710. Mel Redes de Proteção em <span class="local"></span>.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
                     Redes de Proteção   <span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras  <span class="local"></span>.
                 </p>
               </div>
