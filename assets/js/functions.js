@@ -66,55 +66,55 @@ $(document).ready(function () {
 
     $(".local").text(local);
 
-    if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
-        $.get("back-end/controller/ControllerListagem.php", function (retorno) {
-            var regioes = JSON.parse(retorno);
+    // if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
+    $.get("back-end/controller/ControllerListagem.php", function (retorno) {
+        var regioes = JSON.parse(retorno);
 
-            $.each(regioes, function (idx, regiao) {
-                let html_regiao = `
-                            <li>
-                                <!-- REGIÃO -->
-                                <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed"> Redes de Proteção <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i></a>
-                                <!-- ESTADOS -->
-                                <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
-                                    <ul class="faq-list2 mt-1">
+        $.each(regioes, function (idx, regiao) {
+            let html_regiao = `
+                        <li>
+                            <!-- REGIÃO -->
+                            <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed"> Redes de Proteção <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i></a>
+                            <!-- ESTADOS -->
+                            <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
+                                <ul class="faq-list2 mt-1">
+            `;
+
+            $.each(regiao['estados'], function (idx, estado) {
+                html_regiao += `
+                                    <li style="padding-bottom: 3px; padding-top: 3px;">
+                                        <a data-toggle="collapse" href="#estado_${estado.id}" class="collapsed" style="font-size: 16.5px;">${estado.nome} <i class="icofont-simple-up"></i></a>
+                                        <!-- CIDADES -->
+                                        <div id="estado_${estado.id}" class="collapse" data-parent=".faq-list2">
+                                            <div class="list-group-links">
+                                    
                 `;
 
-                $.each(regiao['estados'], function (idx, estado) {
-                    html_regiao += `
-                                        <li style="padding-bottom: 3px; padding-top: 3px;">
-                                            <a data-toggle="collapse" href="#estado_${estado.id}" class="collapsed" style="font-size: 16.5px;">${estado.nome} <i class="icofont-simple-up"></i></a>
-                                            <!-- CIDADES -->
-                                            <div id="estado_${estado.id}" class="collapse" data-parent=".faq-list2">
-                                                <div class="list-group-links">
-                                        
-                    `;
-
-                    $.each(estado['cidades'], function (idx, cidade) {
-                        html_regiao += `                        
-                                                    <a class="links_cidades" href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                        <span class="list-link">Redes de Proteção em ${cidade.nome}</span>
-                                                    </a>
-                        `;
-                    });
-
-                    html_regiao += ` 
-                                                </div>
-                                            </div>
-                                        </li>
+                $.each(estado['cidades'], function (idx, cidade) {
+                    html_regiao += `                        
+                                                <a class="links_cidades" href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
+                                                    <span class="list-link">Redes de Proteção em ${cidade.nome}</span>
+                                                </a>
                     `;
                 });
 
-                html_regiao += `
-                                </ul>
-                            </div>            
-                        </li>
+                html_regiao += ` 
+                                            </div>
+                                        </div>
+                                    </li>
                 `;
-
-                $("#regioes").append(html_regiao);
             });
+
+            html_regiao += `
+                            </ul>
+                        </div>            
+                    </li>
+            `;
+
+            $("#regioes").append(html_regiao);
         });
-    }
+    });
+    // }
 });
 
 
@@ -162,6 +162,7 @@ $("#btn_pesquisa").click(function() {
     div_resultados.html("");
     
     let pesquisa = ($("#input_pesquisa").val()).toLowerCase().replaceAll(" ", "-");
+    let qtd_resultados = 0;
     
     if (pesquisa.length >= 3) {
         button.prop("disabled", true);
@@ -176,8 +177,15 @@ $("#btn_pesquisa").click(function() {
                         <a href="${a_href}" class="list-group-item list-group-item-action">${link[0].children[0].innerText}</a>
                     `);
                     // console.log(link[0]);
+                    qtd_resultados++;
                 }
             });
+
+            if (qtd_resultados == 0) {
+                div_resultados.append(`
+                    <a class="list-group-item list-group-item-action">Nenhum local encontrado</a>
+                `);
+            }
         
             button.prop("disabled", false);        
         }, 100);
