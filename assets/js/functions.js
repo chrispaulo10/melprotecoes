@@ -164,6 +164,8 @@ $("#btn_pesquisa").click(function() {
     
     let pesquisa = ($("#input_pesquisa").val()).toLowerCase().replaceAll(" ", "-");
     
+    if (pesquisa == "") return "";
+
     setTimeout(() => {
         $(".links_cidades").each(function(idx, value) {
             let link = $(this);
