@@ -133,7 +133,7 @@ else {
     }
     
     $canonical = $url_completa;
-    $title = "Redes de Proteção em " . ucwords($local) . "| Mel Redes de Proteções";
+    $title = "Redes de Proteção em <span class='text-capitalize'>" . ucwords($local) . "</span> | Mel Redes de Proteção";
     $h1 = "Redes de Proteção em <span class='text-capitalize'>" . ucwords($local). "</span>";
 
     $descricao = "Buscando Redes de proteção em ${local} com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. Rede de Proteção em ${local}.";

@@ -398,6 +398,8 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <ul class="faq-list d-none" data-aos="fade-up" data-aos-delay="100" id="regioes"></ul>
+
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -446,8 +448,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 

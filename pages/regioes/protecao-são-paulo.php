@@ -398,13 +398,14 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <ul class="faq-list d-none" data-aos="fade-up" data-aos-delay="100" id="regioes"></ul>
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="form-group">
-          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
+          <label for="input_pesquisa"> <h5 class="mb-1">Pesquisa de Regiões</h5></label>
           <div class="input-group">
             <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
             <div class="input-group-append">
@@ -446,8 +447,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/functions.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/functions.js"></script>
   
 </body>
 
