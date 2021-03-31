@@ -82,17 +82,22 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+          <li class="drop-down"><a href="#">Redes</a>
+            <ul>
+              <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+              <li ><a href="tela-para-pets">Tela para Pets</a></li>
+              <li><a href="redes-esportivas">Redes Esportivas</a></li>
+            </ul>
+          </li>
           <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
-          <li ><a href="tela-para-pets">Tela para Pets</a></li>
           <li><a href="mosquiteira">Mosquiteira</a></li>
           <li><a href="limitadores">Limitadores</a></li>
-          <li><a href="redes-esportivas">Redes Esportivas</a></li>
           <li><a href="grades">Grades</a></li>
           <li><a href="capas">Capas</a></li>
+          <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav><!-- .nav-menu -->
-
     </div>
   </header><!-- End Header -->
   
@@ -126,8 +131,8 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Redes de Proteção em <span class="local"></span></h1>
-                  </div>
+                  <h1 class="title2 font-weight-bold"><?php echo $h1;?></span></h1>  
+                </div>
                 </div>
               </div>
             </div>

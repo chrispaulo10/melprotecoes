@@ -218,6 +218,27 @@ div#preloader {
 }
 
 
+.section-headline h1 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-headline h1::after {
+  border: 1px solid #333;
+  bottom: -20px;
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+
 .section-headline h2 {
   display: inline-block;
   font-size: 40px;
