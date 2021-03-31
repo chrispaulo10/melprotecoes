@@ -148,7 +148,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
                     <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                    Telas e Redes de Proteção em<span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
+                    Telas e Redes de Proteção em <span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
                   </div>
                 </div>
     

@@ -233,7 +233,7 @@
               <div class="card-body">
                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO em <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
-                    Redes de Proteção em<span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras em <span class="local"></span>.
+                    Redes de Proteção em <span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras em <span class="local"></span>.
                 </p>
               </div>
             </div>

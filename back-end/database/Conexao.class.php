@@ -4,8 +4,8 @@
 
         function conectar(){
 
-            // NOME BD : u421303045_mel
-            // USER : u421303045_melprotecoes
+            // NOME BD : u402480197_melprotecoes
+            // USER : u402480197_melredes
             // SENHA : K#f:S>F9o
  
 

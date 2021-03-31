@@ -365,6 +365,19 @@ div#preloader {
   }
 }
 
+.header-bg2 {
+  background: url(../img/slider/parceiros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (min-width: 1025px) {
+  .header-bg2 {
+    background-attachment: fixed;
+  }
+}
+
 .home-overly {
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
