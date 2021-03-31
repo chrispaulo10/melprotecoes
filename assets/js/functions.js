@@ -129,6 +129,7 @@ $("#enviar_email").click(function () {
         enviar_email: true,
         email: $("#email").val(),
         nome: $("#nome").val(),
+        fone: $("#fone").val(),
         assunto: $("#assunto").val(),
         mensagem: $("#mensagem").val(),
     };
@@ -139,6 +140,7 @@ $("#enviar_email").click(function () {
 
         $("#email").val('')
         $("#nome").val('')
+        $("#fone").val('')
         $("#assunto").val('')
         $("#mensagem").val('')
 

@@ -4,116 +4,50 @@ header('Content-Type: text/html; charset=utf-8');
 /* Extender a classe do phpmailer para envio do email*/
 require_once("phpmailer/class.phpmailer.php");
 
-/* Definir Usuário e Senha do Gmail de onde partirá os emails*/
-define('GUSER', 'recuperar_senha@wrinfoteam.com.br');
-define('GPWD', "ZUxJx:yQ");
+/* Definir Usuário e Senha do Hmail de onde partirá os emails*/
+define('GUSER', 'contato@redesdeprotecoes.com.br');
+define('GPWD', "ZUxJx:yQ1");
 
-function smtpmailer($para, $nome, $assunto, $mensagem)
+function smtpmailer($email, $nome, $fone, $assunto, $mensagem)
 {
 	$mail = new PHPMailer();
 
-    $corpo = "<!DOCTYPE html>
-                    <html lang='pt-br'>
-                        <head>
-                            <meta charset='UTF-8'>
-                            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                            <title>Document</title>
-                            <link href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap' rel='stylesheet'>
-                            <style>
-                                .maior{
-                                    height:500px;
-                                    max-width:380px;
-                                    background-color: white;
-                                    border: 1px solid;  
-                                    border-color:grey;
-                                    border-radius: 10px;
-                                    padding: 3%;
-                                }
-                                h1 {
-                                    font-family: 'Roboto Condensed', sans-serif;
-                                    font-size: 20px;
-                                    margin-top: 5%;
-                                    color: rgb(49, 49, 49);
-                                }
-                                p{
-                                    font-family: 'Roboto Condensed', sans-serif;
-                                    font-size: 16px;
-                                    margin-top: 5%;
-                                    text-decoration: none;
-                                    color: rgb(83, 83, 83);
-                                }
-                                p.sm {
-                                    margin-top: 50px;
-                                    font-size: 14px; 
-                                }
-                                .ml{
-                                    margin-left: 10px;
-                                }
-                                .mr{
-                                    margin-right:10px;
-                                }
-                                .mb{
-                                    margin-bottom: -15px;
-                                }
-                                .mt{
-                                    margin-top: 25px;
-                                }
-                                .btn{
-                                    font-size: 15px;
-                                    height: 36px;
-                                    width: 100px;
-                                    color:white;
-                                    background-color:#F34A4F;
-                                    font-family: 'Roboto Condensed', sans-serif;
-                                    border-radius: 5px;
-                                    margin-top: 10px;
-                                    border: none;
-                                    transition:0.5s;
-                                    outline:none;
-                                    cursor:pointer;
-                                }
-
-                                .btn:hover{
-                                    background-color:#d62f34;
-                                    border: none;
-                                    transition:0.5s;
-                                    outline:none;
-                                }
-                                .img{
-                                    margin-bottom:30px;
-                                    margin-top:15px;
-                                }
-                                a {
-                                    color: #F34A4F;
-                                    text-decoration: none;
-                                }
-                                a:hover {
-                                    color: #850206;
-                                }
-                            </style>
-                        </head>
-                        <body>
-                            <div class='maior'>
-                                <div class='ml'>
-                                    <img src='https://wrinfoteam.com.br/cooperfam/assets/images/email.png' alt='' class='img'>
-                                    <h1>Bem-vindo, $nome</h1>  
-                                    <p>Você está recebendo este e-mail porque foi cadastrado na plataforma Aprovando Mais.</p>
-                                    <p>Clique no botão abaixo para acessar o sistema:</p>
-                                    <a href='http://aprovandomais.wrinfoteam.com.br/'>
-                                        <button class='btn'>Fazer&nbsp;Login</button>
-                                    </a>
-                                    <p class='sm'>
-                                        Caso você tenha recebido esta mensagem por engano, solicite o cancelamento do seu cadastro clicando
-                                        <a href='http://aprovandomais.wrinfoteam.com.br/views/pages/cancelar_conta/$para'>AQUI</a>.
-                                    </p>
-                                    <hr class='mr mt'>
-                                    <p class='mb'>Att,</p>
-                                    <p class='mb-2'>Equipe, <strong>Aprovando Mais.</strong></p>
-                                </div>
-                            </div>
-                            
-                        </body>
-                    </html>
+    $corpo = "
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand&display=swap' rel='stylesheet'>
+    
+    <div id='backEmail' style='width: 100%; height: 100%; background-color: #f8f8f8;  background-size:100%;'>
+        <center><br><br>
+            <div id='corpo' style='width: 90%; height: 100%; background-color: #FFFFFF; border: 1px solid #eaeaea;'>
+                <!--#449c50-->
+                <div id='logo'>
+                    <img src='https://64.media.tumblr.com/89881deeb856108db44eaeac3ec91d70/545fe8a6b692c9de-29/s2048x3072/9c637e526b085b917f8fa050c8173b07ee0a92e4.png' style='width: 13%; margin-top: 25px;' id='marca'>
+                </div><br>
+                
+                    <div style='background-color: #cc4848; height: 50px;'>
+                        <div id='tituloEmail' style='color: white; font-family: Quicksand, sans-serif; 
+                        font-size: 16pt; padding-top: 9px;'>
+                            Nova mensagem do site
+                        </div>
+                    </div>
+                    <br>
+                        <div id='tituloEmail' style='color: #3a3938; font-family: Quicksand, sans-serif; 
+                        font-size: 18pt;'>
+                            Dados do cliente:
+                        </div>				
+    
+                        <div id='textoEmail' style='font-family: Roboto, sans-serif; color: #3a3938; 
+                        text-align: left; width: 80%; margin-top: 20px; margin-bottom: 22px; font-size: 112%;'>
+                            <b>Nome: </b>".$nome." <br>
+                            <b>Email: </b> ".$email." <br>
+                            <b>Número: </b> ".$fone." <br>
+                            <b>Mensagem: </b> " . $mensagem ."<br>
+                        </div><br>		
+            </div>
+        </center><br><br>
+    </div>    
     ";
 	
 
@@ -127,10 +61,10 @@ function smtpmailer($para, $nome, $assunto, $mensagem)
 	$mail->Port = 465; /* A porta 465 deverá estar aberta em seu servidor*/
 	$mail->Username = GUSER;
 	$mail->Password = GPWD;
-	$mail->SetFrom('recuperar_senha@wrinfoteam.com.br', 'Mel Proteções');
+	$mail->SetFrom('contato@redesdeprotecoes.com.br', 'Mel Proteções');
 	$mail->Subject = $assunto;
 	$mail->Body = $corpo;
-	$mail->AddAddress($para);
+	$mail->AddAddress('atendimento@redesdeprotecoes.com.br');
 	$mail->IsHTML(true);
 
 	/* Função Responsável por Enviar o Email*/
