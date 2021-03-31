@@ -41,8 +41,8 @@ function smtpmailer($email, $nome, $fone, $assunto, $mensagem)
                         <div id='textoEmail' style='font-family: Roboto, sans-serif; color: #3a3938; 
                         text-align: left; width: 80%; margin-top: 20px; margin-bottom: 22px; font-size: 112%;'>
                             <b>Nome: </b>".$nome." <br>
+                            <b>Whatsapp: </b> ".$fone."<br>
                             <b>Email: </b> ".$email." <br>
-                            <b>Número: </b> ".$fone." <br>
                             <b>Mensagem: </b> " . $mensagem ."<br>
                         </div><br>		
             </div>

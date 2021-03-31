@@ -68,6 +68,7 @@ $(document).ready(function () {
 
     // if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
     $.get("back-end/controller/ControllerListagem.php", function (retorno) {
+        console.log(retorno)
         var regioes = JSON.parse(retorno);
 
         $.each(regioes, function (idx, regiao) {

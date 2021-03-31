@@ -353,7 +353,7 @@ div#preloader {
 }
 
 .header-bg {
-  background: url(../img/slider/rede-de-proteção.jpg);
+  background: url(../img/slider/rede-de-protecao.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -361,6 +361,19 @@ div#preloader {
 
 @media (min-width: 1025px) {
   .header-bg {
+    background-attachment: fixed;
+  }
+}
+
+.header-bg2 {
+  background: url(../img/slider/parceiros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (min-width: 1025px) {
+  .header-bg2 {
     background-attachment: fixed;
   }
 }

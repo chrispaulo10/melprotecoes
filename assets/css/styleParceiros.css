@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq2 .faq2-list {
+    padding: 0 100px;
+  }
+  
+  .faq2 .faq2-list ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .faq2 .faq2-list li + li {
+    margin-top: 15px;
+  }
+  
+  .faq2 .faq2-list #lista {
+    margin-top: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  
+  .faq2 .faq2-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .faq2 .faq2-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    outline: none;
+  }
+  
+  .faq2 .faq2-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #87c1ea;
+  }
+  
+  .faq2 .faq2-list .icon-show, .faq2 .faq2-list .icon-close {
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .faq2 .faq2-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .faq2 .faq2-list .icon-show {
+    display: none;
+  }
+  
+  .faq2 .faq2-list a.collapsed {
+    color: #343a40;
+  }
+  
+  .faq2 .faq2-list a.collapsed:hover {
+    color: #2487ce;
+  }
+  
+  .faq2 .faq2-list a.collapsed .icon-show {
+    display: inline-block;
+  }
+  
+  .faq2 .faq2-list a.collapsed .icon-close {
+    display: none;
+  }
+  
+  .numbers-order{
+    color: #0077c3;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  @media (max-width: 1200px) {
+    .faq2 .faq2-list {
+      padding: 0;
+    }
+  }
+  
+  
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#hero .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#hero .icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+
+#hero .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+#hero .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+
+#hero .icon-box:hover {
+  transform: scale(1.08);
+}
+
+#hero .icon-box:hover .title a {
+  color: #2487ce;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-height: 800px) {
+  #hero {
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

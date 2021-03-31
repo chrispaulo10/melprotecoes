@@ -148,7 +148,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
                     <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                    Telas e Redes de Proteção em<span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
+                    Telas e Redes de Proteção em <span class="local"></span> ligue agora mesmo para: (11) 2682-3893. Encontre aqui Rede de Proteção para janelas em <span class="local"></span>.</p>
                   </div>
                 </div>
     
@@ -398,13 +398,14 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <ul class="faq-list d-none" data-aos="fade-up" data-aos-delay="100" id="regioes"></ul>
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="form-group">
-          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
+          <label for="input_pesquisa"> <h5 class="mb-1">Pesquisa de Regiões</h5></label>
           <div class="input-group">
             <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
             <div class="input-group-append">
@@ -446,8 +447,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/functions.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/functions.js"></script>
   
 </body>
 
