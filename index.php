@@ -26,6 +26,7 @@
         "grades" => $prefixo."grades" . $extensao,
         "capas" => $prefixo."capas". $extensao,
         "seja-um-parceiro" => $prefixo."seja-um-parceiro". $extensao,
+        "protecao-anti-passaro" => $prefixo."conteudos/protecao-anti-passaros",
     //  "URL" => "NOME ARQUIVO"
 );
 

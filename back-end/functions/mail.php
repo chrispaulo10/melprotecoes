@@ -26,7 +26,7 @@ function smtpmailer($email, $nome, $fone, $assunto, $mensagem)
                     <img src='https://64.media.tumblr.com/89881deeb856108db44eaeac3ec91d70/545fe8a6b692c9de-29/s2048x3072/9c637e526b085b917f8fa050c8173b07ee0a92e4.png' style='width: 13%; margin-top: 25px;' id='marca'>
                 </div><br>
                 
-                    <div style='background-color: #cc4848; height: 50px;'>
+                    <div style='background-color: #0077c3; height: 50px;'>
                         <div id='tituloEmail' style='color: white; font-family: Quicksand, sans-serif; 
                         font-size: 16pt; padding-top: 9px;'>
                             Nova mensagem do site

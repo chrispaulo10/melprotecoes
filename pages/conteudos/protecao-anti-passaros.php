@@ -5,23 +5,22 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title></title>
-  <meta name="google-site-verification" content="m1ixm4oko906ZX1MyNArTQ9W3L4DqjbsPLijKlOFUrk"/>
-  <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
-  <meta name="description" content="Redes de proteção na Zona local é com a Mel Proteções, fazemos seu orçamento via WhatsApp (11) 99873-0710. Redes de Proteção na Zona local."/>
+  <title><?php echo $title;?></title>
+
+  <meta name="description" content="<?php echo $descricao;?>"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://redesdeprotecoes.com.br/redes-de-protecao-na-zona-local/"/>
+  <link rel="canonical" href="<?php echo $url_completa;?>"/>
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="Redes de Proteção na Zona local | Mel Redes de Proteção"/>
-  <meta property="og:description" content="Redes de proteção na Zona local é com a Mel Proteções, fazemos seu orçamento via WhatsApp (11) 99873-0710. Redes de Proteção na Zona local."/>
-  <meta property="og:url" content="https://redesdeprotecoes.com.br/redes-de-protecao-na-zona-local/"/>
+  <meta property="og:title" content="<?php echo $title;?>"/>
+  <meta property="og:description" content="<?php echo $descricao;?>"/>
+  <meta property="og:url" content="<?php echo $url_completa;?>"/>
   <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção"/>
-  <meta property="article:modified_time" content="2021-01-14T09:23:18+00:00"/>
+  <meta property="article:modified_time" content="2021-01-14T07:40:17+00:00"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="keywords" content="Redes de Proteção na Zona Leste, rede de proteção na Zona Leste, tela de proteção na Zona Leste, telas de proteção na Zona Leste, Redes de Proteção para janelas na Zona Leste, rede de proteção na Zona Leste para apartamento, tela de proteção na Zona Leste para gatos, telas de proteção na Zona Leste para quadra, Redes de Proteção na Zona Leste para sacada, rede de proteção na Zona Leste para piscinas, tela de proteção na Zona Leste escadas, telas de proteção na Zona Leste para mezaninos.">
+  <meta name="keywords" content="<?php echo $keywords;?>">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -108,20 +107,20 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-    <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
+  <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em <span class="local"></span></h6></div>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em em <span class="local"></span></h6></div>
           <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
             <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
               Você está aqui: &nbsp;
               <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção em <span class="local"></span></li>
+              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção em em <span class="local"></span></li>
             </ol>
           </div>
         </div>
       </div>
-    </nav>
+    </nav>    
 
     <!-- ======= Blog Header ======= -->
     <div class="header-bg page-area">
@@ -132,7 +131,7 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Redes de Proteção em <span class="local"></span></h1>
+                    <h1 class="title2 font-weight-bold">Proteção Anti Pássaros</span></h1>
                   </div>
                 </div>
               </div>
@@ -140,130 +139,160 @@
           </div>
         </div>
       </div><!-- End Blog Header -->
-    <!-- ======= Services Section ======= -->
-    <div id="services" class="services section-bg pt-5">
+        <!-- ======= About Section ======= -->
+        
+    <div id="about" class="about-area section-bg area-padding">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img6.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA sacadas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA INSTALAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA SACADA?</span>
-                    Redes de Proteção para Sacada   <span class="local"></span> com melhor custo benefício você encontra   aqui. Mel Redes de Proteção   <span class="local"></span>.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img7.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
-                    Redes de Proteção   <span class="local"></span> para Quadras ligue para: (11) 2682-3893. Fornecemos Redes de Proteção para quadras  <span class="local"></span>.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img8.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PETS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO EMPRESAS DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
-                    Nós trabalhamos com Redes de Proteção   <span class="local"></span> para seu Pet de estimação a mais de uma década ligue agora mesmo para: (11) 2682-3893.
-                </p>
-              </div>
-            </div>
-          </div>          
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img1.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
-                      Mel Proteções você encontra Redes de Proteção em <span class="local"></span> para Crianças. Ligue: (11) 2682-3893 – Rede de Proteção <span class="local"></span>.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img2.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA JANELAS?</span>
-                    Para instalação de Redes de Proteção  <span class="local"></span> ligue agora mesmo (11) 2682-3893. Rede de Proteção para janelas <span class="local"></span>.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img3.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PROCURANDO INSTALAÇÃO DE REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA ESCADAS?</span>
-                    Instalamos Rede de Proteção   <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710. Rede de Proteção   <span class="local"></span>.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img4.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO   <span class="local text-uppercase"></span> PARA IDOSOS?</span>
-                    Trabalhamos com Redes de Proteção   <span class="local"></span> para idosos. Orçamento pelo WhatsApp (11) 99873-0710. Redes de Proteção   <span class="local"></span>.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img5.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS   <span class="local text-uppercase"></span>?</span>
-                    Faça seu orçamento de Rede para Proteção de Piscina   <span class="local"></span> ligue: (11) 2682-3893. Mel Proteções mais de uma década de experiência.</p>
-              </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+            <div class="section-headline text-center"  >
+              <h2>Sobre nós</h2>
             </div>
           </div>
         </div>
-      </div>
-    </div><!-- End Services Section -->
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Redes de Proteção anti pássaros</h4>
+                </a>
+                <p>
+                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
+Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
+Encontre a rede de proteção para pássaros na Mel Redes de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
+As redes de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Redes de proteção anti pássaros é a única opção para afastamento dos pombos.
+Central telefônica: (11) 2682-3893
+Plantão WhatsApp: (11) 99873-0710
+Redes de Proteção para Anti Pássaros MEL Proteções.
 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
+        <div class="row ">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-last" >
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-first" >
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Telas de Proteção anti pássaros</h4>
+                </a>
+                <p>
+                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
+Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
+Encontre a rede de proteção para pássaros na Mel Telas de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
+As Telas de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Telas de proteção anti pássaros é a única opção para afastamento dos pombos.
+
+Central telefônica: (11) 2682-3893
+Plantão WhatsApp: (11) 99873-0710
+Telas de Proteção para Anti Pássaros MEL Proteções.
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Tela de Proteção anti pássaros</h4>
+                </a>
+                <p>
+                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
+Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
+Encontre a rede de proteção para pássaros na Mel Tela de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
+As Tela de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Tela de proteção anti pássaros é a única opção para afastamento dos pombos.
+
+Central telefônica: (11) 2682-3893
+Plantão WhatsApp: (11) 99873-0710
+Tela de Proteção para Anti Pássaros MEL Proteções.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
+
+
+      </div>
+    </div><!-- End About Section -->
+
+    <div class="row ">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-last" >
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-first" >
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Rede de Proteção anti pássaros</h4>
+                </a>
+                <p>
+                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
+Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
+Encontre a rede de proteção para pássaros na Mel Rede de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
+As Rede de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Rede de proteção anti pássaros é a única opção para afastamento dos pombos.
+
+Central telefônica: (11) 2682-3893
+Plantão WhatsApp: (11) 99873-0710
+Rede de Proteção para Anti Pássaros MEL Proteções.
+
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
     <!-- ======= Suscribe Section ======= -->
     <div class="suscribe-area mt-2">
       <div class="container">
@@ -404,6 +433,8 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <ul class="faq-list d-none" data-aos="fade-up" data-aos-delay="100" id="regioes"></ul>
+
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -452,8 +483,8 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 

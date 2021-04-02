@@ -280,4 +280,6 @@
     $('#baner').prop('src', 'assets/img/slider/toda-slid.jpg')
   }
 
+  $('#fone').mask( '(00) 00000-0000' );
+
 })(jQuery);
