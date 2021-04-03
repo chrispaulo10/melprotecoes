@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title><?php echo $title;?></title>
+  <title>Redes de Proteção Anti Pássaros | Mel Proteções</title>
 
   <meta name="description" content="<?php echo $descricao;?>"/>
   <meta name="robots" content="index, follow"/>
@@ -110,12 +110,12 @@
   <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção em em <span class="local"></span></h6></div>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção Anti Pássaros<span class="local"></span></h6></div>
           <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
             <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
               Você está aqui: &nbsp;
               <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção em em <span class="local"></span></li>
+              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção Anti Pássaros<span class="local"></span></li>
             </ol>
           </div>
         </div>
@@ -131,7 +131,7 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Proteção Anti Pássaros</span></h1>
+                    <h1 class="title2 font-weight-bold">Redes de Proteção Anti Pássaros</span></h1>
                   </div>
                 </div>
               </div>
@@ -140,23 +140,15 @@
         </div>
       </div><!-- End Blog Header -->
         <!-- ======= About Section ======= -->
-        
-    <div id="about" class="about-area section-bg area-padding">
+        <div id="about" class="about-area section-bg area-padding pb-0">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-            <div class="section-headline text-center"  >
-              <h2>Sobre nós</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <!-- single-well start-->
           <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
             <div class="well-left">
               <div class="single-well">
                 <a href="#">
-                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
+                  <img src="assets/img/conteudos/passaros.jpg" class="img-thumbnail shadow-sm" alt="">
                 </a>
               </div>
             </div>
@@ -165,159 +157,29 @@
           <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
             <div class="well-middle">
               <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">Redes de Proteção anti pássaros</h4>
+              <a href="#">
+                  <h4 class="sec-head">Redes de Proteção Anti Pássaros MEL Proteções.</h4>
                 </a>
-                <p>
-                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
-Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
-Encontre a rede de proteção para pássaros na Mel Redes de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
-As redes de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Redes de proteção anti pássaros é a única opção para afastamento dos pombos.
-Central telefônica: (11) 2682-3893
-Plantão WhatsApp: (11) 99873-0710
-Redes de Proteção para Anti Pássaros MEL Proteções.
-
+                <p class="text-justify">
+                  A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa. <br>
+                  Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. <br>
+                  Encontre a rede de proteção para pássaros na Mel Redes de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores. <br>
+                  As redes de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Redes de proteção anti pássaros é a única opção para afastamento dos pombos. <br>                  
                 </p>
               </div>
             </div>
           </div>
           <!-- End col-->
-        </div>
-        <div class="row ">
-          <!-- single-well start-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-last" >
-            <div class="well-left">
-              <div class="single-well">
-                <a href="#">
-                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- single-well end-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-first" >
-            <div class="well-middle">
-              <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">Telas de Proteção anti pássaros</h4>
-                </a>
-                <p>
-                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
-Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
-Encontre a rede de proteção para pássaros na Mel Telas de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
-As Telas de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Telas de proteção anti pássaros é a única opção para afastamento dos pombos.
-
-Central telefônica: (11) 2682-3893
-Plantão WhatsApp: (11) 99873-0710
-Telas de Proteção para Anti Pássaros MEL Proteções.
-
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End col-->
-        </div>
-        <div class="row">
-          <!-- single-well start-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
-            <div class="well-left">
-              <div class="single-well">
-                <a href="#">
-                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- single-well end-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
-            <div class="well-middle">
-              <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">Tela de Proteção anti pássaros</h4>
-                </a>
-                <p>
-                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
-Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
-Encontre a rede de proteção para pássaros na Mel Tela de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
-As Tela de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Tela de proteção anti pássaros é a única opção para afastamento dos pombos.
-
-Central telefônica: (11) 2682-3893
-Plantão WhatsApp: (11) 99873-0710
-Tela de Proteção para Anti Pássaros MEL Proteções.
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End col-->
-        </div>
-
-
-      </div>
-    </div><!-- End About Section -->
-
-    <div class="row ">
-          <!-- single-well start-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-last" >
-            <div class="well-left">
-              <div class="single-well">
-                <a href="#">
-                  <img src="assets/img/conteudos/passaros" class="img-thumbnail shadow-sm" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- single-well end-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 order-first" >
-            <div class="well-middle">
-              <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">Rede de Proteção anti pássaros</h4>
-                </a>
-                <p>
-                A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa.
-Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. 
-Encontre a rede de proteção para pássaros na Mel Rede de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores.
-As Rede de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Rede de proteção anti pássaros é a única opção para afastamento dos pombos.
-
-Central telefônica: (11) 2682-3893
-Plantão WhatsApp: (11) 99873-0710
-Rede de Proteção para Anti Pássaros MEL Proteções.
-
-
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End col-->
-        </div>
-    <!-- ======= Suscribe Section ======= -->
-    <div class="suscribe-area mt-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-            <div class="suscribe-text text-center">
-              <h3>Seja bem-vindo à melhor empresa de redes de proteção</h3>
-            </div>
-          </div>
         </div>
       </div>
-    </div><!-- End Suscribe Section -->
+    </div><!-- End About Section -->      
 
+    
     <!-- ======= Contact Section ======= -->
-    <div id="contact" class="contact-area section-bg">
+    <div id="contact" class="contact-area pt-0">
       <div class="contact-inner area-padding">
         <div class="contact-overly"></div>
         <div class="container ">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="section-headline text-center">
-                <h2>Contato</h2>
-              </div>
-            </div>
-          </div>
           <div class="row">
             <!-- Start contact icon column -->
             <div class="col-md-4 col-sm-4 col-xs-12">
@@ -360,9 +222,7 @@ Rede de Proteção para Anti Pássaros MEL Proteções.
       </div>
     </div><!-- End Contact Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
   <footer>
     <div class="footer-area">
       <div class="container">
