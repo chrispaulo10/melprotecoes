@@ -7,6 +7,7 @@
     $listagem = new Listagem();
     
     $regioes = $listagem->regioes(false, true);
+    $links = $listagem->links(false, true);
 
     $rotas = array(
         "" => "index". $extensao,
@@ -37,6 +38,13 @@ foreach ($regioes as $key => $regiao) {
     foreach ($regiao['cidades'] as $key => $cidade) {
         $cidade['nome'] = mb_strtolower(str_replace(" ", "-", $cidade['nome']), 'UTF-8');
         $rotas["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+    }
+}
+
+if (is_array($links)) {
+    foreach ($links as $idx => $link) {
+        $link['link'] = strtolower(str_replace(" ", "-", $link['link']));
+        $rotas["redes-de-protecao-{$link['link']}"] = "{$prefixo}pagina_a_mudar.php";
     }
 }
 
