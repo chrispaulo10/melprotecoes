@@ -44,7 +44,7 @@ foreach ($regioes as $key => $regiao) {
 if (is_array($links)) {
     foreach ($links as $idx => $link) {
         $link['link'] = strtolower(str_replace(" ", "-", $link['link']));
-        $rotas["redes-de-protecao-{$link['link']}"] = "{$prefixo}pagina_a_mudar.php";
+        $rotas["redes-de-protecao-{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
     }
 }
 
