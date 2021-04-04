@@ -1,6 +1,5 @@
 let id_link = 0;
-const prefixo = "../";
-const controller = prefixo + "back-end/controller/ControllerLinks.php";
+const controller = "back-end/controllers/ControllerLinks.php";
 
 $("#cadastrar_link").click(function() {
     const i = $(`#icone_editar`);
@@ -20,6 +19,7 @@ $("#cadastrar_link").click(function() {
             headers,
             success: function(retorno) 
             {   
+                console.log(retorno);
                 var retorno = JSON.parse(retorno);
 
                 if (Array.isArray(retorno)) {
@@ -51,7 +51,7 @@ function cadastrar_link(img, button, i, class_icone, upload = false) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
 
-        let resposta = JSON.parse($retorno)
+        let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
             $("#link").val("");
@@ -72,7 +72,7 @@ function cadastrar_link(img, button, i, class_icone, upload = false) {
 
 $.get(controller + "?listagem", function (retorno) {
     $("#tbody_links").html("");
-
+    
     let resposta = JSON.parse(retorno);
 
     if (Array.isArray(resposta)) {
@@ -116,7 +116,7 @@ function consultar_link(id) {
     }
 
     $.get(controller, dados, function (retorno) {
-        let resposta = JSON.parse($retorno)
+        let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
             $("#link_edit").val(reposta.link);
@@ -149,7 +149,7 @@ $("#editar_link").click(function () {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
         
-        let resposta = JSON.parse($retorno)
+        let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
             id_link = 0;
@@ -174,7 +174,7 @@ $("#deletar_link").click(function () {
     }
 
     $.get(controller, dados, function (retorno) {
-        let resposta = JSON.parse($retorno)
+        let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
             id_link = 0;
@@ -201,7 +201,7 @@ function mudancasAoFazerRequisicao(i, button)
 {
     var classe = i.attr('class');
 
-    button.prop('disabled', true);
+    // button.prop('disabled', true);
     i.removeClass().addClass('fas fa-sync-alt fa-spin');
 
     return classe;
