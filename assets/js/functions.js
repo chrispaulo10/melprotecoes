@@ -115,6 +115,31 @@ $(document).ready(function () {
         });
     });
     // }
+
+    if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
+        $.get("back-end/controller/ControllerListagem.php?listar_links", function(retorno) {
+            const links = JSON.parse(retorno);
+
+            $("#links").html("");
+
+            $.each(links, function(idx, link) {
+                $("#links").append(`                    
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="footer-content">
+                            <ul>
+                                <li> 
+                                    <a href="redes-de-protecao-${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
+                                        Redes de Proteção ${link.link}
+                                    </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                `);
+            })
+        })
+    
+    }
 });
 
 

@@ -7,7 +7,7 @@
     $listagem = new Listagem();
     
     $regioes = $listagem->regioes(false, true);
-    $links = $listagem->links(false, true);
+    $links = $listagem->links();
 
     $rotas = array(
         "" => "index". $extensao,
@@ -32,7 +32,7 @@
 );
 
 foreach ($regioes as $key => $regiao) {
-    $regiao['regiao'] = strtolower(str_replace(" ", "-", $regiao['regiao']));
+    $regiao['regiao'] = mb_strtolower(str_replace(" ", "-", $regiao['regiao']), 'UTF-8');
     $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
 
     foreach ($regiao['cidades'] as $key => $cidade) {
@@ -43,7 +43,7 @@ foreach ($regioes as $key => $regiao) {
 
 if (is_array($links)) {
     foreach ($links as $idx => $link) {
-        $link['link'] = strtolower(str_replace(" ", "-", $link['link']));
+        $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
         $rotas["redes-de-protecao-{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
     }
 }

@@ -170,6 +170,36 @@
 
         /*======================================================================================*/
 
+        public function links() {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "SELECT link FROM links";
+
+                $consulta = $connection->prepare($sql);
+
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+
+                $dados = [];
+
+                if ($vl > 0) {
+                    $dados = $consulta->fetchAll($connection::FETCH_ASSOC);
+                } else $dados = self::SEM_REGISTROS;
+
+                return $dados;
+
+            } catch (PDOException $e) {
+                return "Erro de consultar link: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
+
+        /*======================================================================================*/
+
         public function pegarDadosLink($link) {
             $conexao = new Conexao();
             $connection = $conexao->conectar();
