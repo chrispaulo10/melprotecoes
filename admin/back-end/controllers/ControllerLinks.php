@@ -68,7 +68,7 @@
     
                     $nome_completo = $novo_nome . '.' . $arquivo_extensao;
     
-                    if (move_uploaded_file($arquivo['tmp_name'], '../../admin/img/links/' . $nome_completo)) {
+                    if (move_uploaded_file($arquivo['tmp_name'], 'img/links/' . $nome_completo)) {
                         $retorno = [$nome_completo];
                     } else {
                         $retorno = "Não foi possível realizar o upload da imagem!";
@@ -84,7 +84,7 @@
     }
 
     if (isset($_GET['apagar_img'])) {
-        if (!unlink('../../admin/img/links/' . $_GET['img'])) $retorno = "erro";
+        if (!unlink('img/links/' . $_GET['img'])) $retorno = "erro";
     }
     
     echo json_encode($retorno);
