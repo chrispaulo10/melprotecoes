@@ -3,7 +3,7 @@
 
     class Links {
 
-        public const SEM_REGISTROS = "NENHUM RESULTADO";
+        public const SEM_REGISTROS = "Nenhum Resultado";
         public const TABELA = "links";
 
         /*======================================================================================*/
@@ -57,7 +57,7 @@
                 $dados = [];
 
                 if ($vl > 0) {
-                    $regioes = $consulta->fetch($connection::FETCH_ASSOC);
+                    $regioes = $consulta->fetchAll($connection::FETCH_ASSOC);
                     $dados = $regioes;
                 } else $dados = self::SEM_REGISTROS;
 

@@ -361,9 +361,12 @@
           local = local.replaceAll(codigo, char);
       });
       
-      // $.get("", {local}, function(retorno) {
+      $.get("back-end/controller/ControllerListagem.php", {link:local}, function(retorno) {
+        const dados = JSON.parse(console.log(retorno));
 
-      // });
+        $(".texto-link").html(dados.texto);
+        $(".img-link").attr("src", dados.nome_img);
+      });
     });
   </script>
 

@@ -167,4 +167,37 @@
                 return "Erro: " . $e->getMessage();
             }
         }
+
+        /*======================================================================================*/
+
+        public function pegarDadosLink($link) {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "SELECT * FROM links WHERE link = :link LIMIT 1";
+
+                $consulta = $connection->prepare($sql);
+
+                $consulta->bindValue(":link", $link);
+
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+
+                $dados = [];
+
+                if ($vl > 0) {
+                    $regioes = $consulta->fetch($connection::FETCH_ASSOC);
+                    $dados = $regioes;
+                } else $dados = self::SEM_REGISTROS;
+
+                return $dados;
+
+            } catch (PDOException $e) {
+                return "Erro de consultar link: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
     }

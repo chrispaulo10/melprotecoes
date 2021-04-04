@@ -22,7 +22,7 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    
+
     <link href="vendor/jquery-growl/stylesheets/jquery-growl.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -274,8 +274,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -286,8 +285,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -298,8 +296,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -331,8 +328,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -373,10 +369,11 @@
                         <div class="card-header py-3">
                             <div class="row align-items-center">
                                 <div class="col align-self-center">
-                                    <h5 class="m-0 font-weight-bold text-primary">Redes de Proteção</h5>                                    
+                                    <h5 class="m-0 font-weight-bold text-primary">Redes de Proteção</h5>
                                 </div>
                                 <div class="col text-right">
-                                    <button class="btn btn-success btn-sm mt-0 mb-0" data-toggle="modal" data-target="#exampleModal">
+                                    <button class="btn btn-success btn-sm mt-0 mb-0" data-toggle="modal"
+                                        data-target="#exampleModal">
                                         <i class="fa fa-plus"></i> Adicionar página
                                     </button>
                                 </div>
@@ -428,111 +425,141 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-<!-- Modal ADICIONAR -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Página</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Link</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Título">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Imagem</label>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Escolha a imagem</label>
-                    </div>
-                  </div>
+    <!-- Modal ADICIONAR -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Página</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress">Texto</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>                    
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="link">Link</label>
+                                <input type="text" class="form-control" id="link" placeholder="Título">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Imagem</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input id="img" type="file" class="custom-file-input" onchange="validarImagem()">
+                                        <label class="custom-file-label" id="label_img">
+                                            <i class="fas fa-upload"></i> Escolher Arquivo
+                                        </label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button type='button' title="Escolher outro arquivo" class='btn btn-danger'
+                                            style='display: none;' id="btn-limpar" onclick="limpar_arquivo()">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="texto">Texto</label>
+                            <textarea class="form-control" id="texto" rows="5"></textarea>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Adicionar</button>
-          <button type="button" class="btn btn-primary">Adicionar e fechar</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-<!-- Modal EDITAR -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Página</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Link</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Título">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Imagem</label>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Escolha a imagem</label>
-                    </div>
-                  </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="cadastrar_link">
+                        <i id="icone_cadastrar" class="fas fa-check"></i> Adicionar
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Fechar
+                    </button>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress">Texto</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>                    
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Adicionar</button>
-          <button type="button" class="btn btn-primary">Adicionar e fechar</button>
-        </div>
-      </div>
-    </div>
-</div>    
-
-<!-- MODAL DE DELETAR -->
-<div class="modal fade" id="modal_delete" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body p-4 text-center">
-                <!-- TITULO -->
-                <h4 class="modal-title mb-3">
-                    Você tem certeza?
-                </h4>
-
-                <!-- SUBTITULO -->
-                <h6 class="mb-4"><strong>Todas as informações</strong> relacionadas a esse produto serão deletadas!
-                </h6>
-
-                <!-- BOTÕES -->
-                <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
-                    aria-label="Close">
-                    <i class="fas fa-times"></i> Cancelar
-                </button>
-                <button type="button" class="btn btn-danger font-weight-bold" id="deletar">
-                    <i id="icone_deletar" class="fas fa-check"></i> Deletar
-                </button>
             </div>
         </div>
     </div>
-</div>
+
+
+    <!-- Modal EDITAR -->
+    <div class="modal fade" id="modal_editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Página</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="link_edit">Link</label>
+                                <input type="text" class="form-control" id="link_edit" placeholder="Título">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Imagem</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input id="novo_img" type="file" class="custom-file-input" onchange="validarImagem('novo_')">
+                                        <label class="custom-file-label" id="novo_label_img">
+                                            <i class="fas fa-upload"></i> Escolher Arquivo
+                                        </label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button type='button' title="Escolher outro arquivo" class='btn btn-danger'
+                                            style='display: none;' id="novo_btn-limpar" onclick="limpar_arquivo('novo_')">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="texto_edit">Texto</label>
+                            <textarea class="form-control" id="texto_edit" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="editar_link">
+                        <i id="icone_editar" class="fas fa-edit"></i> Atualizar
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE DELETAR -->
+    <div class="modal fade" id="modal_delete" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-4 text-center">
+                    <!-- TITULO -->
+                    <h4 class="modal-title mb-3">
+                        Você tem certeza?
+                    </h4>
+
+                    <!-- SUBTITULO -->
+                    <h6 class="mb-4"><strong>Todas as informações</strong> relacionadas a esse produto serão deletadas!
+                    </h6>
+
+                    <!-- BOTÕES -->
+                    <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                    <button type="button" class="btn btn-danger font-weight-bold" id="deletar_link">
+                        <i id="icone_deletar" class="fas fa-trash"></i> Deletar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
