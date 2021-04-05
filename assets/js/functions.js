@@ -124,12 +124,12 @@ $(document).ready(function () {
 
             $.each(links, function(idx, link) {
                 $("#links").append(`                    
-                    <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-content">
                             <ul>
                                 <li> 
-                                    <a href="redes-de-protecao-${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
-                                        Redes de Proteção ${link.link}
+                                    <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
+                                        ${link.link}
                                     </a>
                                     </li>
                                 </ul>
