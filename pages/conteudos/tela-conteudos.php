@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Redes de Proteção Anti Pássaros | Mel Proteções</title>
+  <title>  <?php echo $local; ?> | Mel Proteções</title>
 
   <meta name="description" content="<?php echo $descricao;?>"/>
   <meta name="robots" content="index, follow"/>
@@ -110,12 +110,12 @@
   <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
       <div class="container bread-cont">
         <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção Anti Pássaros<span class="local"></span></h6></div>
+          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center"><span class="local"></span></h6></div>
           <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
             <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
               Você está aqui: &nbsp;
               <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção Anti Pássaros<span class="local"></span></li>
+              <li class="breadcrumb-item active" aria-current="page"><span class="local"></span></li>
             </ol>
           </div>
         </div>
@@ -131,7 +131,7 @@
               <div class="slider-content text-center">
                 <div class="header-bottom">
                   <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 class="title2 font-weight-bold">Redes de Proteção Anti Pássaros</span></h1>
+                    <h1 class="title2 font-weight-bold text-capitalize"> <?php echo $local; ?></h1>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@
             <div class="well-middle">
               <div class="single-well">
               <a href="#">
-                  <h4 class="sec-head">Redes de Proteção Anti Pássaros MEL Proteções.</h4>
+                  <h4 class="sec-head text-uppercase"><span class="local"></span> MEL Proteções.</h4>
                 </a>
                 <p class="text-justify">
                   A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa. <br>

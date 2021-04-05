@@ -86,9 +86,13 @@ function listar() {
                     <tr id="link_${link.id}">
                         <td>${link.id}</td>
                         <td>${link.link}</td>
-                        <td>${link.texto}</td>
-                        <td>
-                            <img src="img/links/${img}">
+                        <td>${link.texto}
+                        <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">
+                        <i class="fas fa-file-alt"></i> Abrir texto
+                        </button>
+                        </td>
+                        <td class='text-center'>
+                            <img src="img/links/${img}" class="img-thumbnail" style="width : 150px; heigth : 150px;">
                         </td>
                         <td>
                             <button class="btn btn-warning btn-circle btn-md" title="Editar" onClick="consultar_link(${link.id})">
