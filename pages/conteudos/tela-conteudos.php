@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>  <?php echo $local; ?> | Mel Proteções</title>
+  <title>  <?php echo ucwords($local); ?> | Mel Proteções</title>
 
   <meta name="description" content="<?php echo $descricao;?>"/>
   <meta name="robots" content="index, follow"/>
@@ -148,7 +148,7 @@
             <div class="well-left">
               <div class="single-well">
                 <a href="#">
-                  <img src="assets/img/conteudos/passaros.jpg" class="img-thumbnail shadow-sm" alt="">
+                  <img src="" class="img-thumbnail img-link shadow-sm" alt="">
                 </a>
               </div>
             </div>
@@ -160,7 +160,7 @@
               <a href="#">
                   <h4 class="sec-head text-uppercase"><span class="local"></span> MEL Proteções.</h4>
                 </a>
-                <p class="text-justify">
+                <p class="text-justify texto-link">
                   A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa. <br>
                   Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. <br>
                   Encontre a rede de proteção para pássaros na Mel Redes de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores. <br>
@@ -363,9 +363,9 @@
       
       $.get("back-end/controller/ControllerListagem.php", {link : local}, function(retorno) {
         const dados = JSON.parse(retorno);
-
+        
         $(".texto-link").html(dados.texto);
-        $(".img-link").attr("src", dados.nome_img);
+        $(".img-link").attr("src", `admin/img/links/${dados.nome_img}`);
       });
     });
   </script>

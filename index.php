@@ -135,7 +135,9 @@ else {
     $titulo = explode('-', end($url_particionada));
     $local = "";
 
-    for ($i = 3; $i < count($titulo); $i++) {
+    $n = (count($titulo) > 3) ? 3 : 0;
+
+    for ($i = $n; $i < count($titulo); $i++) {
         $local .= $titulo[$i] . " ";
     }
 
