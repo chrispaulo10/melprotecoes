@@ -86,10 +86,10 @@ function listar() {
                     <tr id="link_${link.id}">
                         <td>${link.id}</td>
                         <td>${link.link}</td>
-                        <td>${link.texto}
-                        <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">
-                        <i class="fas fa-file-alt"></i> Abrir texto
-                        </button>
+                        <td>
+                            <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${link.link}', '${link.texto}')">
+                                <i class="fas fa-file-alt"></i> Abrir texto
+                            </button>
                         </td>
                         <td class='text-center'>
                             <img src="img/links/${img}" class="img-thumbnail" style="width : 150px; heigth : 150px;">
@@ -259,12 +259,31 @@ $("#deletar_link").click(function () {
 
 /*====================================================================================*/
 
+function alterarUrl(novo = "_edit") 
+{
+    const link = $(`#link${novo}`).val();
+
+    if (link != "")
+        $(`#url${novo}`).val(`/redes-de-protecao-${(link).replaceAll(" ", "-").toLowerCase()}`);
+}
+
+/*====================================================================================*/
+
 function deletar(id, img) 
 {
     id_link = id;
     img_link = img
 
     $("#modal_delete").modal('show');
+}
+
+/*====================================================================================*/
+
+function exibirDados(link, texto)
+{
+    $("#texto_modal").html(texto);
+    $("#link_modal").text(link);
+    $("#modalTexto").modal("show");
 }
 
 /*====================================================================================*/

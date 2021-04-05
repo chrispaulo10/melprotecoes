@@ -431,13 +431,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-dark" id="exampleModalLabel">Texto <span class="link"> "COLOCAR O LINK AQ" </span>  </h5>
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Texto <span id="link_modal"> </span>  </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-justify"></p>
+                    <p class="text-justify" id="texto_modal">
+
+                    </p>
 
                 </div>
                 <div class="modal-footer">
@@ -465,7 +467,8 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="link">Link</label>
-                                <input type="text" class="form-control" id="link" placeholder="Título">
+                                <input type="text" class="form-control" id="link" placeholder="Título" onchange="alterarUrl('')" onkeyup="alterarUrl('')">
+                                <input type="text" class="form-control" id="url" placeholder="Url" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Imagem</label>
@@ -569,8 +572,7 @@
                     </h4>
 
                     <!-- SUBTITULO -->
-                    <h6 class="mb-4"><strong>Todas as informações</strong> relacionadas a esse produto serão deletadas!
-                    </h6>
+                    <h6 class="mb-4"><strong>A página não poderá mais ser acessada!</strong></h6>
 
                     <!-- BOTÕES -->
                     <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
