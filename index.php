@@ -44,7 +44,7 @@ foreach ($regioes as $key => $regiao) {
 if (is_array($links)) {
     foreach ($links as $idx => $link) {
         $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
-        $rotas["redes-de-protecao-{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
+        $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
     }
 }
 

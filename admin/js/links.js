@@ -130,6 +130,7 @@ function consultar_link(id) {
         if (Array.isArray(resposta)) {
             $("#link_edit").val(resposta[0].link);
             $("#texto_edit").val(resposta[0].texto);
+            $(`#url_edit`).val(`/${(resposta[0].link).replaceAll(" ", "-").toLowerCase()}`);
             img_link = resposta[0].nome_img;
 
             $("#modal_editar").modal("show");
@@ -264,7 +265,7 @@ function alterarUrl(novo = "_edit")
     const link = $(`#link${novo}`).val();
 
     if (link != "")
-        $(`#url${novo}`).val(`/redes-de-protecao-${(link).replaceAll(" ", "-").toLowerCase()}`);
+        $(`#url${novo}`).val(`/${(link).replaceAll(" ", "-").toLowerCase()}`);
 }
 
 /*====================================================================================*/

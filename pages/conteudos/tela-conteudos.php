@@ -353,7 +353,7 @@
       let titulo = page[page.length - 1].split("-");
       let local = "";
 
-      for (let index = 3; index < titulo.length; index++) {
+      for (let index = 0; index < titulo.length; index++) {
           local += `${titulo[index]} `;
       }
 
@@ -361,8 +361,8 @@
           local = local.replaceAll(codigo, char);
       });
       
-      $.get("back-end/controller/ControllerListagem.php", {link:local}, function(retorno) {
-        const dados = JSON.parse(console.log(retorno));
+      $.get("back-end/controller/ControllerListagem.php", {link : local}, function(retorno) {
+        const dados = JSON.parse(retorno);
 
         $(".texto-link").html(dados.texto);
         $(".img-link").attr("src", dados.nome_img);

@@ -523,7 +523,8 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="link_edit">Link</label>
-                                <input type="text" class="form-control" id="link_edit" placeholder="Título">
+                                <input type="text" class="form-control" id="link_edit" placeholder="Título" onchange="alterarUrl()" onkeyup="alterarUrl()">
+                                <input type="text" class="form-control" id="url_edit" placeholder="Url" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Imagem</label>
