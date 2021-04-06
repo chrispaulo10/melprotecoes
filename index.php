@@ -27,7 +27,6 @@
         "grades" => $prefixo."grades" . $extensao,
         "capas" => $prefixo."capas". $extensao,
         "seja-um-parceiro" => $prefixo."seja-um-parceiro". $extensao,
-        "protecao-anti-passaro" => $prefixo."conteudos/protecao-anti-passaros.php",
     //  "URL" => "NOME ARQUIVO"
 );
 
@@ -146,10 +145,11 @@ else {
     }
     
     $canonical = $url_completa;
-    $title = "Redes de Proteção em " . ucwords($local) . " | Mel Redes de Proteção";
+    $title = "Redes de Proteção em " . ucwords($local) . "| Mel Redes de Proteção";
     $h1 = "Redes de Proteção em <span class='text-capitalize'>" . ucwords($local). "</span>";
 
     $descricao = "Buscando Redes de proteção em ${local} com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. Rede de Proteção em ${local}.";
+    $descricaoConteudo = "Buscando ${local}com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. ${local} Mel Proteções.";
     $keywords = "Redes de Proteção em ${local}, rede de proteção em ${local}, tela de proteção em ${local}, telas de proteção em ${local}, Redes de Proteção para janelas em ${local}, rede de proteção em ${local} para apartamento, tela de proteção em ${local} para gatos, telas de proteção em ${local} para quadra, Redes de Proteção em ${local} para sacada, rede de proteção em ${local} para piscinas, tela de proteção em ${local} escadas, telas de proteção em ${local} para mezaninos.";
 }
 

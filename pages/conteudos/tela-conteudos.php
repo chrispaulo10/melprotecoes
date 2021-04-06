@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>  <?php echo ucwords($local); ?> | Mel Proteções</title>
+  <title><?php echo ucwords($local); ?>| Mel Proteções</title>
 
-  <meta name="description" content="<?php echo $descricao;?>"/>
+  <meta name="description" content="<?php echo $descricaoConteudo;?>"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
@@ -15,12 +15,11 @@
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
   <meta property="og:title" content="<?php echo $title;?>"/>
-  <meta property="og:description" content="<?php echo $descricao;?>"/>
+  <meta property="og:description" content="<?php echo $descricaoConteudo;?>"/>
   <meta property="og:url" content="<?php echo $url_completa;?>"/>
   <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção"/>
   <meta property="article:modified_time" content="2021-01-14T07:40:17+00:00"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="keywords" content="<?php echo $keywords;?>">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -146,10 +145,10 @@
           <!-- single-well start-->
           <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
             <div class="well-left">
-              <div class="single-well">
-                <a href="#">
+              <div class="single-well text-center">
+                
                   <img src="" class="img-thumbnail img-link shadow-sm" alt="">
-                </a>
+                
               </div>
             </div>
           </div>
@@ -157,14 +156,9 @@
           <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
             <div class="well-middle">
               <div class="single-well">
-              <a href="#">
-                  <h4 class="sec-head text-uppercase"><span class="local"></span> MEL Proteções.</h4>
-                </a>
+                <h4 class="sec-head text-uppercase"><span class="local text-uppercase"></span> MEL Proteções</h4>
                 <p class="text-justify texto-link">
-                  A rede de proteção para pássaros é feita de materiais duráveis, mesmo que exposta ao sol, a maresia tem alta durabilidade e durabilidade, pois contém produtos anti ultravioleta e antioxidantes, é a melhor escolha para proteção externa. <br>
-                  Em armazéns, fábricas e escolas é instalada uma rede de proteção com malha de 3 e 5 cm e fio de 30/21. A rede de proteção é invisível à distância, mas é muito eficaz na questão de evitar o acesso de pássaros. <br>
-                  Encontre a rede de proteção para pássaros na Mel Redes de Proteção. É uma rede de proteção para pássaros feita de fio de polietileno virgem de alta densidade. Foi tratada com anti ultravioleta e degradação solar. Pode apresentar uma malha de 5x5 cm, adequada para pombos e pássaros grandes O uso da classe, ou malha 3x3 cm é adequado para pardais, calopsitas, pombos e outras aves menores. <br>
-                  As redes de proteção para pássaros também podem evitar os pombos, pois os pombos são animais com grande potencial de transmissão de doenças. Como medidas de extermínio do animal (envenenamento, captura, armas de fogo, etc.) são proibidas, as Redes de proteção anti pássaros é a única opção para afastamento dos pombos. <br>                  
+                    
                 </p>
               </div>
             </div>
@@ -221,6 +215,24 @@
         </div>
       </div>
     </div><!-- End Contact Section -->
+
+
+    <!-- ======= Rviews Section ======= -->
+    <div class="reviews-area mb-5">
+      <div class="row no-gutters">
+        <div class="col-lg-6 py-0">
+          <img src="assets/img/bannerquali.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 work-right-text d-flex align-items-center">
+          <div class="px-5 py-5 py-lg-0">
+            <h2>a qualidade que você merece</h2>
+            <h5>Nossa prioridade é levar segurança e tranquilidade a todos os lares.</h5>
+            <a href="#contact" class="ready-btn scrollto">Contate-nos</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->    
+
 
     <!-- ======= Footer ======= -->
   <footer>
