@@ -134,7 +134,7 @@ else {
     $titulo = explode('-', end($url_particionada));
     $local = "";
 
-    $n = ($titulo[0]." ".$titulo[1]." ".$titulo[2] == "redes de protecao") ? 3 : 0;
+    $n = ($titulo[0]." ".($titulo[1]??'')." ".($titulo[2]??'') == "redes de protecao") ? 3 : 0;
 
     for ($i = $n; $i < count($titulo); $i++) {
         $local .= $titulo[$i] . " ";
