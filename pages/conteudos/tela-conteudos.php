@@ -147,9 +147,7 @@
           <div class="col-md-6 col-sm-12 col-xs-12 col-12 " >
             <div class="well-left">
               <div class="single-well">
-                <a href="#">
-                  <img src="assets/img/conteudos/passaros.jpg" class="img-thumbnail shadow-sm" alt="">
-                </a>
+                  <img src="assets/img/conteudos/janela.passaros.jpg" class="img-thumbnail shadow-sm" alt="">
               </div>
             </div>
           </div>
