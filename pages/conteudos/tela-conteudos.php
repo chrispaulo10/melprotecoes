@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title><?php echo ucwords($local); ?>| Mel Proteções</title>
+  <title><?php echo ucwords($local); ?> | Mel Proteções</title>
 
   <meta name="description" content="<?php echo $descricaoConteudo;?>"/>
   <meta name="robots" content="index, follow"/>
@@ -373,7 +373,7 @@
         const dados = JSON.parse(retorno);
         
         $(".local").text(dados.link)
-        $(".texto-link").html((dados.texto).replaceAll("\n", ""));
+        $(".texto-link").html((dados.texto).replaceAll("\n", "<br>"));
         $(".img-link").attr("src", `admin/img/links/${dados.nome_img}`);
       });
     });

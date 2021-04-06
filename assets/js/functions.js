@@ -12,7 +12,8 @@ $(document).ready(function () {
 
     if (titulo[0]+" "+(titulo[1]??"")+" "+(titulo[2]??"")) {
         $.get("back-end/controller/ControllerListagem.php", {nome_cidade:local}, function (retorno) {
-            $(".local").text(JSON.parse(retorno)[0].nome)
+            if (retorno.indexOf("enhum") == -1)
+                $(".local").text(JSON.parse(retorno)[0].nome)
         });
     }
 

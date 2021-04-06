@@ -42,7 +42,7 @@ function cadastrar_link(img, button, i, class_icone, upload = false) {
     const dados = {
         cadastrar : true,
         link : $("#link").val(),
-        texto : ($("#texto").val()).replaceAll("\n", ""),
+        texto : ($("#texto").val()).replaceAll("\n", "<br>"),
         img,
     }
 
@@ -87,7 +87,7 @@ function listar() {
                         <td>${link.id}</td>
                         <td>${link.link}</td>
                         <td>
-                            <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${link.link}', '${(link.texto).replaceAll("\n", "")}')">
+                            <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${link.link}', '${(link.texto).replaceAll("\n", "<br>")}')">
                                 <i class="fas fa-file-alt"></i> Abrir texto
                             </button>
                         </td>
@@ -198,7 +198,7 @@ function editar_link(img, button, i, class_icone, upload = false) {
 
             $(`#link_${id_link} td:nth-child(2)`).text(dados.link)
             $(`#link_${id_link} td:nth-child(3)`).html(`            
-                <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${dados.link}', '${(dados.texto).replaceAll("\n", "")}')">
+                <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${dados.link}', '${(dados.texto).replaceAll("\n", "<br>")}')">
                     <i class="fas fa-file-alt"></i> Abrir texto
                 </button>
             `)

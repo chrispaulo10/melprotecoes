@@ -136,24 +136,23 @@ if (isset($_GET['url'])) {
 } else $page = 'index' . $extensao;
 
 if (!file_exists($page)) $page = $nao_encontrado;
-else {
+else if ($page != "404.html") {
     $url_completa = $_SERVER["REQUEST_URI"];
     $url_particionada = explode('/', $url_completa);
 
     $titulo = explode('-', end($url_particionada));
     $local = "";
 
-    $n = ($titulo[0]." ".($titulo[1]??'')." ".($titulo[2]??'') == "redes de protecao") ? 3 : 0;
-
-    for ($i = $n; $i < count($titulo); $i++) {
+    for ($i = 0; $i < count($titulo); $i++) {
         $local .= $titulo[$i] . " ";
     }
 
-    if ($titulo[0]." ".($titulo[1]??'')." ".($titulo[2]??'') == "redes de protecao") {
-        $local = $listagem->nomeCidade($local)[0]['nome'];
-    } else {
-        $local = $listagem->links($local)[0]['link'];
-    }
+    if ( is_array($pesquisa = $listagem->links($local)) )
+        $local = $pesquisa[0]['link'];
+    else if ( is_array($pesquisa = $listagem->nomeCidade(str_replace("redes de protecao ", "", $local)) ))
+        $local = $pesquisa[0]['nome'];
+    else 
+        $local = str_replace("redes de protecao ", "", $local);
     
     $canonical = $url_completa;
     $title = "Redes de Proteção em " . ucwords($local) . " | Mel Redes de Proteção";
