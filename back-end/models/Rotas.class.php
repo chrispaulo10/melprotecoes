@@ -235,22 +235,14 @@ class Listagem
         foreach ($rotas as $key => $rota) {
             if (!is_array($rota)) {
                 highlight_string("
-            <url>
-                <loc>https://redesdeprotecoes.com.br/{$key}</loc>
-                <lastmod>2021-03-31T17:11:35+00:00</lastmod>
-                <priority>0.80</priority>
-            </url>
+                Allow: /{$key}/
         ");
             } else {
                 foreach ($rota as $ke => $rot) {
                     $sub = ($ke != "") ? "/${ke}" : "";
 
                     highlight_string("
-                <url>
-                    <loc>https://redesdeprotecoes.com.br/{$key}{$sub}</loc>
-                    <lastmod>2021-03-31T17:11:35+00:00</lastmod>
-                    <priority>0.80</priority>
-                </url>
+                Allow: /{$key}{$sub}/
             ");
                 }
             }
