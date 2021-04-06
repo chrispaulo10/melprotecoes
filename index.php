@@ -40,16 +40,16 @@ foreach ($regioes as $key => $regiao) {
     }
 }
 
-// if (is_array($links)) {
-//     foreach ($links as $idx => $link) {
-//         $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
-//         $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
-//     }
-// }
+if (is_array($links)) {
+    foreach ($links as $idx => $link) {
+        $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
+        $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
+    }
+}
 
-echo '<pre>'; 
-var_dump($rotas);
-exit;
+// echo '<pre>'; 
+// var_dump($rotas);
+// exit;
 
 $page = $nao_encontrado = '404' . $extensao;
 
