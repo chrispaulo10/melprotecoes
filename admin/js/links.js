@@ -197,7 +197,11 @@ function editar_link(img, button, i, class_icone, upload = false) {
             $("#modal_editar").modal("hide");
 
             $(`#link_${id_link} td:nth-child(2)`).text(dados.link)
-            $(`#link_${id_link} td:nth-child(3)`).text(dados.texto)
+            $(`#link_${id_link} td:nth-child(3)`).text(`            
+                <button type="button" class="btn btn-info btn-sm" onClick="exibirDados('${dados.link}', '${dados.texto}')">
+                    <i class="fas fa-file-alt"></i> Abrir texto
+                </button>
+            `)
             $(`#link_${id_link} td:nth-child(4) img`).attr('src', `img/links/${dados.img}`);
 
             id_link = 0;

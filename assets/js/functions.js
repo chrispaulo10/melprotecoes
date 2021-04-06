@@ -118,30 +118,29 @@ $(document).ready(function () {
     });
     // }
 
-    if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
-        $.get("back-end/controller/ControllerListagem.php?listar_links", function(retorno) {
-            const links = JSON.parse(retorno);
+    // if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
+    $.get("back-end/controller/ControllerListagem.php?listar_links", function(retorno) {
+        const links = JSON.parse(retorno);
 
-            $("#links").html("");
+        $("#links").html("");
 
-            $.each(links, function(idx, link) {
-                $("#links").append(`                    
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="footer-content">
-                            <ul>
-                                <li> 
-                                    <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
-                                        ${link.link}
-                                    </a>
-                                    </li>
-                                </ul>
-                        </div>
+        $.each(links, function(idx, link) {
+            $("#links").append(`                    
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-content">
+                        <ul>
+                            <li> 
+                                <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
+                                    ${link.link}
+                                </a>
+                                </li>
+                            </ul>
                     </div>
-                `);
-            })
-        })
-    
-    }
+                </div>
+            `);
+        });
+    });
+    // }
 });
 
 
