@@ -376,7 +376,7 @@
       $.get("back-end/controller/ControllerListagem.php", {link : local}, function(retorno) {
         const dados = JSON.parse(retorno);
         
-        $(".texto-link").html(dados.texto);
+        $(".texto-link").html((dados.texto).replaceAll("\n", ""));
         $(".img-link").attr("src", `admin/img/links/${dados.nome_img}`);
       });
     });

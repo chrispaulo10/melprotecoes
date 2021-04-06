@@ -27,7 +27,7 @@
 
         $retorno = "Preencha todos os campos!";
 
-        if ( !(empty($link) || empty($texto) || empty($img)) ) $retorno = $links->cadastrar($link, $texto, $img);
+        if ( !(empty($link) || empty($texto)) ) $retorno = $links->cadastrar($link, $texto, $img);
     }
 
     if (isset($_POST['editar'])) {
@@ -38,7 +38,7 @@
 
         $retorno = "Preencha todos os campos!";
 
-        if ( !(empty($link) || empty($texto) || empty($img)) ) $retorno = $links->editar($id, $link, $texto, $img);
+        if ( !(empty($link) || empty($texto)) ) $retorno = $links->editar($id, $link, $texto, $img);
     }
 
     /*===============================================================================================*/
