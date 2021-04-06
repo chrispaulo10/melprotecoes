@@ -56,7 +56,9 @@ $(document).ready(function () {
     let titulo = page[page.length - 1].split("-");
     let local = "";
 
-    for (let index = 3; index < titulo.length; index++) {
+    let n = (titulo.length > 3) ? 3 : 0;
+
+    for (let index = n; index < titulo.length; index++) {
         local += `${titulo[index]} `;
     }
 
