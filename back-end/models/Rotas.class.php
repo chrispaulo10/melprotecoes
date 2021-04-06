@@ -164,14 +164,17 @@
 
         /*======================================================================================*/
         
-        public function links() {
+        public function links($link = "") {
             $conexao = new Conexao();
             $connection = $conexao->conectar();
 
             try {
                 $sql = "SELECT * FROM links ";
 
+                if ($link != "") $sql .= "WHERE link = :link";
+
                 $consulta = $connection->prepare($sql);
+                if ($link != "") $consulta->bindValue(":link", $link);
 
                 $consulta->execute();
 
@@ -188,6 +191,37 @@
 
             } catch (PDOException $e) {
                 return "Erro de listar links: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
+
+        /*======================================================================================*/
+
+        public function nomeCidade($cidade) {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "SELECT nome FROM cidades WHERE nome = :cidade LIMIT 1";
+
+                $consulta = $connection->prepare($sql);
+
+                $consulta->bindValue(":cidade", $cidade);
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+
+                $dados = [];
+
+                if ($vl > 0) {
+                    $dados = $consulta->fetchAll($connection::FETCH_ASSOC);
+                } else $dados = self::SEM_REGISTROS;
+
+                return $dados;
+
+            } catch (PDOException $e) {
+                return "Erro de consultar cidade: " . $e->getMessage();
             } catch (Exception $e) {
                 return "Erro: " . $e->getMessage();
             }

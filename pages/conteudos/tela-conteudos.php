@@ -368,14 +368,11 @@
       for (let index = 0; index < titulo.length; index++) {
           local += `${titulo[index]} `;
       }
-
-      $.each(chars_especiais, function (codigo, char) {
-          local = local.replaceAll(codigo, char);
-      });
       
       $.get("back-end/controller/ControllerListagem.php", {link : local}, function(retorno) {
         const dados = JSON.parse(retorno);
         
+        $(".local").text(dados.link)
         $(".texto-link").html((dados.texto).replaceAll("\n", ""));
         $(".img-link").attr("src", `admin/img/links/${dados.nome_img}`);
       });

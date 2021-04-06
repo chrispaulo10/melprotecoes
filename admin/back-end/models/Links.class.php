@@ -81,7 +81,7 @@
 
                 $consulta = $connection->prepare($sql);
 
-                $consulta->bindValue(":link", $link);
+                $consulta->bindValue(":link", str_replace("-", " ", $link));
                 $consulta->bindValue(":texto", $texto);
                 $consulta->bindValue(":img", $img);
 
