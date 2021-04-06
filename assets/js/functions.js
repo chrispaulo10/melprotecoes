@@ -56,7 +56,7 @@ $(document).ready(function () {
     let titulo = page[page.length - 1].split("-");
     let local = "";
 
-    let n = (titulo.length > 3) ? 3 : 0;
+    let n = (titulo[0]+" "+titulo[1]+" "+titulo[2] == "redes de protecao") ? 3 : 0;
 
     for (let index = n; index < titulo.length; index++) {
         local += `${titulo[index]} `;
