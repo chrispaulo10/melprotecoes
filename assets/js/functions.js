@@ -94,9 +94,15 @@ $(document).ready(function () {
                 `;
 
                 $.each(estado['cidades'], function (idx, cidade) {
+                    let nome_cidade = cidade.nome;
+
+                    $.each(chars_especiais, function(char, letra) {
+                        cidade.nome = (cidade.nome).replaceAll(char, letra);
+                    })
+
                     html_regiao += `                        
                                                 <a class="links_cidades" href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                    <span class="list-link">Redes de Proteção em ${cidade.nome}</span>
+                                                    <span class="list-link">Redes de Proteção em ${nome_cidade}</span>
                                                 </a>
                     `;
                 });
