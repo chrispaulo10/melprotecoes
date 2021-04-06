@@ -112,6 +112,8 @@ if (is_array($links)) {
 // var_dump($rotas);
 // exit;
 
+// $listagem->siteMap($rotas);
+
 $page = $nao_encontrado = '404' . $extensao;
 
 if (isset($_GET['url'])) {
