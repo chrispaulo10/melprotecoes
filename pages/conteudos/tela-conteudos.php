@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title><?php echo ucwords($local); ?> | Mel Proteções</title>
+  <title><?php echo ucwords($local); ?> | Mel Redes de Proteção</title>
 
   <meta name="description" content="<?php echo $descricaoConteudo;?>"/>
   <meta name="robots" content="index, follow"/>
@@ -288,6 +288,11 @@
             </div>
           </div>
         </div>
+        <div class="footer-head mt-4">
+          <h4 class="mb-0">SERVIÇOS MAIS BUSCADOS</h4>
+        </div>
+        <div class="row" id="links">
+        </div>   
       </div>
     </div>
     <div class="footer-area-bottom">
