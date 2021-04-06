@@ -1,3 +1,55 @@
+const chars_especiais = {
+    "À" : "A",
+    "Á" : "A",
+    "Â" : "A",
+    "Ã" : "A",
+
+    "à" : "a",
+    "á" : "a",
+    "â" : "a",
+    "ã" : "a",
+
+    "È" : "E",
+    "É" : "E",
+    "Ê" : "E",
+
+    "è" : "e",
+    "é" : "e",
+    "ê" : "e",
+
+    "Ì" : "I",
+    "Í" : "I",
+    "Î" : "I",
+
+    "ì" : "i",
+    "í" : "i",
+    "î" : "i",
+
+    "Ò" : "O",
+    "Ó" : "O",
+    "Ô" : "O",
+    "Õ" : "O",
+
+    "ò" : "o",
+    "ó" : "o",
+    "ô" : "o",
+    "õ" : "o",
+
+    "Ù" : "U",
+    "Ú" : "U",
+    "Û" : "U",
+
+    "ù" : "u",
+    "ú" : "u",
+    "û" : "u",
+
+    "Ç" : "C",
+    "ç" : "c",
+
+    "Ý" : "Y",
+    "ý" : "y",
+};
+
 $(document).ready(function () {
     const url_atual = window.location.href;
     let page = url_atual.split("/");
@@ -74,13 +126,19 @@ $(document).ready(function () {
         $("#links").html("");
 
         $.each(links, function(idx, link) {
+            let link_div = link.link;
+
+            $.each(chars_especiais, function(char, letra) {
+                link.link = (link.link).replaceAll(char, letra);
+            });
+
             $("#links").append(`                    
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="footer-content">
                         <ul>
                             <li> 
                                 <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
-                                    ${link.link}
+                                    ${link_div}
                                 </a>
                                 </li>
                             </ul>
