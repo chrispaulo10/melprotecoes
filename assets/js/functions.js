@@ -126,7 +126,7 @@ $(document).ready(function () {
 
             $.each(links, function(idx, link) {
                 $("#links").append(`                    
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-content">
                             <ul>
                                 <li> 
