@@ -375,7 +375,7 @@ div#preloader {
 }
 
 .header-bg {
-  background: url(../img/slider/rede-de-protecao.jpg);
+  background: url(../img/slider/rede-de-protecao.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1406,7 +1406,7 @@ preview-2
 # Review
 --------------------------------------------------------------*/
 .reviews-area {
-  background: url(../img/slider/slider3.jpg);
+  background: url(../img/slider/slider3.webp);
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1738,7 +1738,7 @@ preview-2
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials-area {
-  background: rgba(0, 0, 0, 0) url("../img/happyClient.png") no-repeat fixed center top/cover;
+  background: rgba(0, 0, 0, 0) url("../img/happyClient.webp") no-repeat fixed center top/cover;
   height: auto;
   width: 100%;
 }

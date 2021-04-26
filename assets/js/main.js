@@ -275,9 +275,12 @@
   }
   var tamain = $(window).width();
   if (tamain<450) {
-    $('#baner').prop('src', 'assets/img/slider/mobile-slid.jpg')
+    $('#baner').prop('src', 'assets/img/slider/mobile-slid.webp')
+    $('#baner').prop('height', '1920')
   } else {
-    $('#baner').prop('src', 'assets/img/slider/toda-slid.jpg')
+    $('#baner').prop('src', 'assets/img/slider/toda-slid.webp')
+    $('#baner').prop('height', '1080')
+
   }
 
   $('#fone').mask( '(00) 00000-0000' );
