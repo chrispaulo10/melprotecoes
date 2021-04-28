@@ -136,6 +136,8 @@ class Listagem
                     ";
             }
 
+            $sql .= " LIMIT 1000";
+
             $consulta = $connection->prepare($sql);
 
             if ($id_estado > 0) {
@@ -235,15 +237,15 @@ class Listagem
         foreach ($rotas as $key => $rota) {
             if (!is_array($rota)) {
                 highlight_string("
-                Allow: /{$key}/
-        ");
+                        Allow: /{$key}/
+                ");
             } else {
                 foreach ($rota as $ke => $rot) {
                     $sub = ($ke != "") ? "/${ke}" : "";
 
                     highlight_string("
-                Allow: /{$key}{$sub}/
-            ");
+                        Allow: /{$key}{$sub}/
+                    ");
                 }
             }
         }

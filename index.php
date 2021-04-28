@@ -62,25 +62,25 @@
     $links = $listagem->links();
 
     $rotas = array(
-        "" => "index". $extensao,
-        "home" => "index". $extensao,
-        "home#" => "index". $extensao,
-        "404" => "index". $extensao,
-        "blog" => [
-            "" => "blog",
-            "detalhes" => "blog-details"
-        ],
-        "redes-de-protecao" => $prefixo."redes-de-protecao". $extensao,
-        "cerca-de-piscina" => $prefixo."cerca-piscina". $extensao,
-        "tela-para-pets" => $prefixo."tela-gatos". $extensao,
-        "mosquiteira" => $prefixo."mosquiteira". $extensao,
-        "limitadores" => $prefixo."limitadores". $extensao,
-        "redes-esportivas" => $prefixo."redes-esportivas". $extensao,
-        "grades" => $prefixo."grades" . $extensao,
-        "capas" => $prefixo."capas". $extensao,
-        "seja-um-parceiro" => $prefixo."seja-um-parceiro". $extensao,
-        "laudos" => $prefixo."laudos". $extensao,
-    //  "URL" => "NOME ARQUIVO"
+    //     "" => "index". $extensao,
+    //     "home" => "index". $extensao,
+    //     "home#" => "index". $extensao,
+    //     "404" => "index". $extensao,
+    //     "blog" => [
+    //         "" => "blog",
+    //         "detalhes" => "blog-details"
+    //     ],
+    //     "redes-de-protecao" => $prefixo."redes-de-protecao". $extensao,
+    //     "cerca-de-piscina" => $prefixo."cerca-piscina". $extensao,
+    //     "tela-para-pets" => $prefixo."tela-gatos". $extensao,
+    //     "mosquiteira" => $prefixo."mosquiteira". $extensao,
+    //     "limitadores" => $prefixo."limitadores". $extensao,
+    //     "redes-esportivas" => $prefixo."redes-esportivas". $extensao,
+    //     "grades" => $prefixo."grades" . $extensao,
+    //     "capas" => $prefixo."capas". $extensao,
+    //     "seja-um-parceiro" => $prefixo."seja-um-parceiro". $extensao,
+    //     "laudos" => $prefixo."laudos". $extensao,
+    // //  "URL" => "NOME ARQUIVO"
 );
 
 foreach ($regioes as $key => $regiao) {
@@ -97,23 +97,23 @@ foreach ($regioes as $key => $regiao) {
     }
 }
 
-if (is_array($links)) {
-    foreach ($links as $idx => $link) {
-        $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
+// if (is_array($links)) {
+//     foreach ($links as $idx => $link) {
+//         $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
         
-        foreach ($chars_especiais as $codigo => $char) {
-            $link['link'] = str_replace($codigo, $char, $link['link']);
-        }
+//         foreach ($chars_especiais as $codigo => $char) {
+//             $link['link'] = str_replace($codigo, $char, $link['link']);
+//         }
 
-        $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
-    }
-}
+//         $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
+//     }
+// }
 
 // echo '<pre>'; 
 // var_dump($rotas);
 // exit;
 
-// $listagem->siteMap($rotas);
+$listagem->siteMap($rotas);
 
 $qtd_param_url = 0;
 $link = '';
