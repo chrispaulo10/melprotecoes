@@ -187,9 +187,9 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="row text-center">
-              <div class="col-lg-4">Redes de Proteção em Sla</div>
-              <div class="col-lg-4">Redes de Proteção em Sla</div>
-              <div class="col-lg-4">Redes de Proteção em Sla</div>
+              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
+              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
+              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
             </div>
             
           </div>
