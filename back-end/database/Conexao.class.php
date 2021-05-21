@@ -9,7 +9,7 @@
             // SENHA : K#f:S>F9o
  
 
-            $host= "mysql:host=localhost;dbname=melprotecoes";
+            $host= "mysql:host=localhost;dbname=redesdeprotecoes";
             $user= "root";
             $pass= "";
 
