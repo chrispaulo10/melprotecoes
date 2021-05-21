@@ -93,9 +93,9 @@
                     $estados = $consulta->fetchAll($connection::FETCH_ASSOC);
 
                     if ($all) {
-                        $cidades = $this->cidades();
-
                         foreach ($estados as $indice => $estado) {
+                            $cidades = $this->cidades($estado['id']);
+    
                             $estado['cidades'] = [];
 
                             foreach ($cidades as $indice => $cidade) {
@@ -139,7 +139,7 @@
                     ";
                 }
 
-                $sql .= " ORDER BY cidades.nome";
+                $sql .= " ORDER BY cidades.nome LIMIT 100";
 
                 $consulta = $connection->prepare($sql);
 

@@ -177,24 +177,54 @@
       <div class="container">
         <nav>
           <div class="nav nav-pills nav-justified" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Zona Norte</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Zona Sul</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Oeste</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Leste</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Centro de SP</a>
+            <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#zona31" role="tab" aria-controls="nav-home" aria-selected="false">Zona Norte</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#zona32" role="tab" aria-controls="nav-profile" aria-selected="false">Zona Sul</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona30" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Oeste</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona29" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Leste</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona33" role="tab" aria-controls="nav-contact" aria-selected="false">Centro de SP</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="tab-pane fade" id="zona31" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="row text-center">
-              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
-              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
-              <div class="col-lg-4"><h2 style="font-size: 15px; margin-bottom: 0;">Redes de Proteção em Sla</h2></div>
+              <div class="row text-center">
+                <h2>Carregando...</h2>
+              </div>
             </div>
             
           </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          <div class="tab-pane fade" id="zona32" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row text-center">
+              <div class="row text-center">
+                <h2>Carregando...</h2>
+              </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="zona30" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row text-center">
+              <div class="row text-center">
+                <h2>Carregando...</h2>
+              </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="zona29" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row text-center">
+              <div class="row text-center">
+                <h2>Carregando...</h2>
+              </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="zona33" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row text-center">
+              <div class="row text-center">
+                <h2>Carregando...</h2>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
@@ -510,6 +540,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/conteudo.js"></script>
     <script src="assets/js/main.js"></script>
 
     <script>

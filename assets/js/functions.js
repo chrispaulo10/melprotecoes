@@ -146,8 +146,8 @@ $(document).ready(function () {
                                 <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
                                     ${link_div}
                                 </a>
-                                </li>
-                            </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             `);
