@@ -56,15 +56,16 @@ $(document).ready(function () {
     let titulo = page[page.length - 1].split("-");
     let local = "";
 
-    let ultimo_parametro = titulo.splice("-");
-    ultimo_parametro = ultimo_parametro[ultimo_parametro.length - 1];
+    ultimo_parametro = titulo[titulo.length - 1];
 
-    let n = ((titulo[0]+" "+(titulo[1]??"")+" "+(titulo[2]??"")) == "redes de protecao") ? 3 : 0;
+    const prefixo_local = (titulo[0]+" "+(titulo[1]??"")+" "+(titulo[2]??""));
+
+    let n = (prefixo_local == "redes de protecao" || prefixo_local == "cerca de piscina") ? 3 : 0;
 
     for (let index = n; index < titulo.length; index++) {
         local += `${titulo[index]} `;
     }
-
+    
     if (titulo[0]+" "+(titulo[1]??"")+" "+(titulo[2]??"")) {
         $.get("back-end/controller/ControllerListagem.php", {nome_cidade:local}, function (retorno) {
             if (retorno.indexOf("enhum") == -1)
