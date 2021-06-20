@@ -61,6 +61,8 @@
     $regioes = $listagem->regioes(false, true);
     $links = $listagem->links();
 
+    $rotas_sp = [];
+
     $rotas = array(
         "" => "index". $extensao,
         "home" => "index". $extensao,
@@ -85,8 +87,14 @@
 
 foreach ($regioes as $key => $regiao) {
     $regiao['regiao'] = mb_strtolower(str_replace(" ", "-", $regiao['regiao']), 'UTF-8');
+
     $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
-    $rotas["cerca-de-piscina-{$regiao['regiao']}"] = "{$prefixo}/piscina/regioes/piscina-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
+    $rotas["cerca-de-piscina-{$regiao['regiao']}"] = "{$prefixo}piscina/regioes/piscina-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
+
+    if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
+        $rotas_sp["redes-de-protecao-{$regiao['regiao']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+        $rotas_sp["cerca-de-piscina-{$regiao['regiao']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+    }
 
     foreach ($regiao['cidades'] as $key => $cidade) {
         foreach ($chars_especiais as $codigo => $char) {
@@ -96,6 +104,11 @@ foreach ($regioes as $key => $regiao) {
         $cidade['nome'] = mb_strtolower(str_replace(" ", "-", $cidade['nome']), 'UTF-8');
         $rotas["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
         $rotas["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+
+        if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
+            $rotas_sp["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+            $rotas_sp["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+        }
     }
 }
 
@@ -112,10 +125,10 @@ if (is_array($links)) {
 }
 
 // echo '<pre>'; 
-// var_dump($rotas);
+// var_dump($rotas_sp);
 // exit;
 
-// $listagem->siteMap($rotas);
+$listagem->siteMap($rotas_sp);
 
 $qtd_param_url = 0;
 $link = '';
