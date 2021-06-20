@@ -77,7 +77,9 @@ $(document).ready(function () {
             let html_regiao = `
                         <li>
                             <!-- REGIÃO -->
-                            <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed"> Redes de Proteção <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i></a>
+                            <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed">
+                                ${page[page.length - 1] == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i>
+                            </a>
                             <!-- ESTADOS -->
                             <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
                                 <ul class="faq-list2 mt-1">
@@ -101,8 +103,8 @@ $(document).ready(function () {
                     })
 
                     html_regiao += `                        
-                                                <a class="links_cidades" href="redes-de-protecao-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                    <span class="list-link">Redes de Proteção em ${nome_cidade}</span>
+                                                <a class="links_cidades" href="${page[page.length - 1] == "piscina" ? 'cerca-de-piscina' : 'redes-de-protecao'}-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
+                                                    <span class="list-link">${page[page.length - 1] == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} em ${nome_cidade}</span>
                                                 </a>
                     `;
                 });
