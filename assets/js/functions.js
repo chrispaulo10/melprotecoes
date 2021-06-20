@@ -56,6 +56,9 @@ $(document).ready(function () {
     let titulo = page[page.length - 1].split("-");
     let local = "";
 
+    let ultimo_parametro = titulo.splice("-");
+    ultimo_parametro = ultimo_parametro[ultimo_parametro.length - 1];
+
     let n = ((titulo[0]+" "+(titulo[1]??"")+" "+(titulo[2]??"")) == "redes de protecao") ? 3 : 0;
 
     for (let index = n; index < titulo.length; index++) {
@@ -68,7 +71,7 @@ $(document).ready(function () {
                 $(".local").text(JSON.parse(retorno)[0].nome)
         });
     }
-
+    
     // if (page[page.length - 1] == "" || page[page.length - 1] == 'home') {
     $.get("back-end/controller/ControllerListagem.php", function (retorno) {
         var regioes = JSON.parse(retorno);
@@ -78,7 +81,7 @@ $(document).ready(function () {
                         <li>
                             <!-- REGIÃO -->
                             <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed">
-                                ${page[page.length - 1] == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i>
+                                ${ultimo_parametro == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i>
                             </a>
                             <!-- ESTADOS -->
                             <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
@@ -103,8 +106,8 @@ $(document).ready(function () {
                     })
 
                     html_regiao += `                        
-                                                <a class="links_cidades" href="${page[page.length - 1] == "piscina" ? 'cerca-de-piscina' : 'redes-de-protecao'}-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                    <span class="list-link">${page[page.length - 1] == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} em ${nome_cidade}</span>
+                                                <a class="links_cidades" href="${ultimo_parametro == "piscina" ? 'cerca-de-piscina' : 'redes-de-protecao'}-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
+                                                    <span class="list-link">${ultimo_parametro == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} em ${nome_cidade}</span>
                                                 </a>
                     `;
                 });
