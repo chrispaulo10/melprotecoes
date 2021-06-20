@@ -115,10 +115,6 @@
     }
   });
 
-  /*----------------------------
-   wow js active
-  ------------------------------ */
-  new WOW().init();
 
   //---------------------------------------------
   //Nivo slider
@@ -280,9 +276,6 @@
   } else {
     $('#baner').prop('src', 'assets/img/slider/toda-slid.webp')
     $('#baner').prop('height', '1080')
-
   }
-
-  $('#fone').mask( '(00) 00000-0000' );
 
 })(jQuery);

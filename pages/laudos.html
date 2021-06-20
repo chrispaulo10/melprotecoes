@@ -51,9 +51,24 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'UA-177683272-1');
-  </script>  
+gtag('config', 'AW-589691900');
+  </script> 
+  
+  <!-- Event snippet for Contato conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+    if (typeof(url) != 'undefined'){
+    window.location = url;
+    }
+    };
+    gtag('event', 'conversion', {
+    'send_to': 'AW-589691900/3p5aCI-44rECEPz3l5kC',
+    'event_callback': callback
+    });
+    return false;
+    }
+</script>
 
 </head>
 
@@ -473,7 +488,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="form-group">
-          <label for="input_pesquisa"> <h2 class="mb-1">  Pesquisa de Regiões </h2></label>
+          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
           <div class="input-group">
             <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
             <div class="input-group-append">
@@ -497,8 +512,13 @@
   </div>
 </div>
 
-  <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
-  <div id="preloader"></div>
+
+  <a target="_blank"
+  onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511998730710');"
+  href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+
+
+<div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

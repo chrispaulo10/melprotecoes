@@ -49,8 +49,23 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-177683272-1');
-  </script>  
+    gtag('config', 'AW-589691900');
+  </script>
+  <!-- Event snippet for Contato conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+    if (typeof(url) != 'undefined'){
+    window.location = url;
+    }
+    };
+    gtag('event', 'conversion', {
+    'send_to': 'AW-589691900/3p5aCI-44rECEPz3l5kC',
+    'event_callback': callback
+    });
+    return false;
+    }
+</script>
 
 </head>
 
@@ -151,7 +166,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PETS</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PETS</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA GATOS E CÃES?</span>
                 Trabalhamos a mais de uma década com Redes de Proteção para Gatos e Cachorros em <span class="local"></span>. Redes para Gatos e Cães ligue: (11) 2682-3893.
                 </p>
@@ -166,7 +181,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção para crianças</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO BOM PREÇO PARA REDES DE PROTEÇÃO <span class="local text-uppercase"></span> PARA CRIANÇAS?</span>
                   Redes de Proteção em <span class="local"></span> para Crianças é na Mel Proteções aqui você encontra qualidade e bom preço. Redes de Proteção em <span class="local"></span>.</p>
               </div>
@@ -180,7 +195,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA sacadas</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA sacadas</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA INSTALAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA SACADA?</span>
                     Redes de Proteção para Sacada em <span class="local"></span> com melhor custo benefício é na Mel Proteções ligue: (11) 2682-3893. Tela de Proteção em <span class="local"></span>.
                 </p>
@@ -195,7 +210,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA QUADRAS POLIESPORTIVAS?</span>
                     Compre sua Rede de Proteção para Quadra em <span class="local"></span> através do WhatsApp (11) 99873-0710. Telas de Proteção para quadras em <span class="local"></span>.
                 </p>
@@ -210,7 +225,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para janelas</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO REDES DE PROTEÇÃO PARA JANELAS EM <span class="local text-uppercase"></span>? </span>
                     Para instalação de Redes de Proteção em <span class="local"></span> entre em contato através do WhatsApp (11) 99873-0710. Rede de Proteção para janelas em <span class="local"></span>.</p>
               </div>
@@ -225,7 +240,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA escadas</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA ESCADAS DE MADEIRA?</span>
                     Instalamos Rede de Proteção para Escada de Madeira em <span class="local"></span> para Escada entre em contato pelo WhatsApp (11) 99873-0710 – Mel Tela e Rede de Proteção.</p>
               </div>
@@ -239,7 +254,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA idosos</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUERENDO COMPRAR REDES DE PROTEÇÃO EM <span class="local text-uppercase"></span> PARA IDOSOS?</span>
                     Trabalhamos com Redes de Proteção para idosos em <span class="local"></span>. Orçamento via WhatsApp (11) 99873-0710. Tela de Proteção em <span class="local"></span>.</p>
               </div>
@@ -253,7 +268,7 @@
                 </a>
               </div>
               <div class="card-body">
-                <h2 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h2>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA piscinas</a></h5>
                 <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
                   Ligue: (11) 2682-3893 e já faça seu orçamento de Rede de Proteção para Piscina em <span class="local"></span>. Mel Proteções mais de uma década de experiência.</p>
               </div>
@@ -416,7 +431,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="form-group">
-          <label for="input_pesquisa"> <h2 class="mb-1">  Pesquisa de Regiões </h2></label>
+          <label for="input_pesquisa"> <h5 class="mb-1">  Pesquisa de Regiões </h5></label>
           <div class="input-group">
             <input type="search" class="form-control" id="input_pesquisa" placeholder="Digite um local (min 3 letras)">
             <div class="input-group-append">
@@ -440,7 +455,11 @@
   </div>
 </div>
 
-  <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+  <a target="_blank"
+  onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511998730710');"
+  href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+
+
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->

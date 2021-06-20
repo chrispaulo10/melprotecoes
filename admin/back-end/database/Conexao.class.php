@@ -9,9 +9,9 @@
             // SENHA : K#f:S>F9o
  
 
-            $host= "mysql:host=localhost;dbname=melprotecoes";
-            $user= "root";
-            $pass= "";
+            $host= "mysql:host=localhost;dbname=u402480197_melprotecoes";
+            $user= "u402480197_melredes";
+            $pass= "K#f:S>F9o";
 
             try {
                 $pdo= new PDO($host, $user, $pass);

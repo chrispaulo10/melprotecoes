@@ -51,8 +51,24 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-177683272-1');
+    gtag('config', 'AW-589691900');
   </script>
+  
+<!-- Event snippet for Contato conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+    if (typeof(url) != 'undefined'){
+    window.location = url;
+    }
+    };
+    gtag('event', 'conversion', {
+    'send_to': 'AW-589691900/3p5aCI-44rECEPz3l5kC',
+    'event_callback': callback
+    });
+    return false;
+    }
+</script>  
 
 </head>
 
@@ -177,11 +193,11 @@
       <div class="container">
         <nav>
           <div class="nav nav-pills nav-justified" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#zona31" role="tab" aria-controls="nav-home" aria-selected="false">Zona Norte</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#zona32" role="tab" aria-controls="nav-profile" aria-selected="false">Zona Sul</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona30" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Oeste</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona29" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Leste</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#zona33" role="tab" aria-controls="nav-contact" aria-selected="false">Centro de SP</a>
+<a class="nav-item nav-link bg-primary-0 text-light" id="nav-home-tab" data-toggle="tab" href="#zona31" role="tab" aria-controls="nav-home" aria-selected="false">Zona Norte</a>
+            <a class="nav-item nav-link bg-primary-1 text-light" id="nav-profile-tab" data-toggle="tab" href="#zona32" role="tab" aria-controls="nav-profile" aria-selected="false">Zona Sul</a>
+            <a class="nav-item nav-link bg-primary-2 text-light" id="nav-contact-tab" data-toggle="tab" href="#zona30" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Oeste</a>
+            <a class="nav-item nav-link bg-primary-3 text-light" id="nav-contact-tab" data-toggle="tab" href="#zona29" role="tab" aria-controls="nav-contact" aria-selected="false">Zona Leste</a>
+            <a class="nav-item nav-link bg-primary-4 text-light" id="nav-contact-tab" data-toggle="tab" href="#zona33" role="tab" aria-controls="nav-contact" aria-selected="false">Centro de SP</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -299,12 +315,12 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                 <h2 style="font-size: 15px; margin-bottom: 0px; line-height: 18px;">QUAL A MELHOR MARCA DAS REDES?</h2>
               </button>
             </h2>
           </div>
-          <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               Trabalhamos com as marcas líderes de mercado tanto na rede propriamentedita como nos acessórios. Todos os produtos são de alta qualidade, sempre pensando na segurança e comodidade de nossos clientes.
             </div>
@@ -313,12 +329,12 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
                 <h2 style="font-size: 15px; margin-bottom: 0px; line-height: 18px;">QUAL A MELHOR REDE DE PROTEÇÃO PARA GATOS?</h2>
               </button>
             </h2>
           </div>
-          <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div id="collapse7" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               A melhor opção deve ser feita em polietileno, com malha entre 3 e 5cm de largura entre os nós. Para instalação das redes de proteção de gatos e cães, você deve verificar se a mesma contém todos os laudos técnicos conforme a norma NBR 16.046 estabelecida pela ABNT. Quanto às cores, você pode escolher entre a branca, preta, prata, areia e marrom.
               <br>
@@ -329,12 +345,12 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
                 <h2 style="font-size: 15px; margin-bottom: 0px; line-height: 18px;">POR QUÊ CONTRATAR A MEL PROTEÇÕES?</h2>
               </button>
             </h2>
           </div>
-          <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div id="collapse8" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               Esqueça os Freelancers, apesar de serem as opções mais baratas, o retrabalho e ausência de comprometimento pode custar caro no médio e longo prazo. Qual o Diferencial da Mel Proteções? O que nos diferencia das plataformas e aplicativos de serviços é a qualidade na hora de escolher o profissional. Os requisitos para fazer parte da equipe Mel Proteções são extremamente rigorosos. Saiba mais em nosso site"
             </div>
@@ -521,7 +537,11 @@
       </div>
     </div>
 
-    <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+  <a target="_blank"
+  onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511998730710');"
+  href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+
+
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->

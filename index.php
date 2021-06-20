@@ -86,6 +86,7 @@
 foreach ($regioes as $key => $regiao) {
     $regiao['regiao'] = mb_strtolower(str_replace(" ", "-", $regiao['regiao']), 'UTF-8');
     $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
+    $rotas["cerca-de-piscina-{$regiao['regiao']}"] = "{$prefixo}/piscina/regioes/piscina-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
 
     foreach ($regiao['cidades'] as $key => $cidade) {
         foreach ($chars_especiais as $codigo => $char) {
@@ -94,6 +95,7 @@ foreach ($regioes as $key => $regiao) {
 
         $cidade['nome'] = mb_strtolower(str_replace(" ", "-", $cidade['nome']), 'UTF-8');
         $rotas["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+        $rotas["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
     }
 }
 
@@ -165,6 +167,7 @@ else {
         
         $canonical = $url_completa;
         $title = "Redes de Proteção em " . ucwords($local) . " | Mel Redes de Proteção";
+        $titleConteudo = ucwords($local) . " | Mel Redes de Proteção";
         $h1 = "Redes de Proteção em <span class='text-capitalize'>" . ucwords($local). "</span>";
 
         $descricao = "Buscando Redes de proteção em ${local} com qualidade e preço justo entre em contato agora ligue para (11) 2682-3893. Rede de Proteção em ${local}.";

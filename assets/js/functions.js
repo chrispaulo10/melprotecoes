@@ -142,12 +142,15 @@ $(document).ready(function () {
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="footer-content">
                         <ul>
-                            <li> 
-                                <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" class="text-light">
+                            <li>
+
+                                <a href="${(link.link).replaceAll(" ", "-").toLowerCase()}" >
+                                    <h2 style='font-size: 14px; margin-bottom: 0px;line-height: 20px;' class="text-light"> 
                                     ${link_div}
+                                    </h2>
                                 </a>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             `);

@@ -135,7 +135,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #128c7e;
+  background: #25D366;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -1139,6 +1139,7 @@ preview-2
 
 .services .card-title {
   font-weight: 700;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -3136,4 +3137,20 @@ span.email-notes {
 #links {
   height: 200px;
   overflow : auto ;
+}
+
+.bg-primary-0{
+  background-color: rgba(0,123, 255, 1);
+}
+.bg-primary-1{
+  background-color: rgba(0,123, 255, 0.9);
+}
+.bg-primary-2{
+  background-color: rgba(0,123, 255, 0.8);
+}
+.bg-primary-3{
+  background-color: rgba(0,123, 255, 0.7);
+}
+.bg-primary-4{
+  background-color: rgba(0,123, 255, 0.6);
 }

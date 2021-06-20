@@ -7,7 +7,6 @@
             // NOME BD : u402480197_melprotecoes
             // USER : u402480197_melredes
             // SENHA : K#f:S>F9o
- 
 
             $host= "mysql:host=localhost;dbname=redesdeprotecoes";
             $user= "root";

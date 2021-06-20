@@ -139,7 +139,7 @@
                     ";
                 }
 
-                $sql .= " ORDER BY cidades.nome LIMIT 100";
+                $sql .= " ORDER BY cidades.nome";
 
                 $consulta = $connection->prepare($sql);
 
