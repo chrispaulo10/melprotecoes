@@ -128,7 +128,7 @@ if (is_array($links)) {
 // var_dump($rotas_sp);
 // exit;
 
-$listagem->siteMap($rotas_sp);
+// $listagem->siteMap($rotas_sp);
 
 $qtd_param_url = 0;
 $link = '';

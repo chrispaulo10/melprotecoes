@@ -204,6 +204,8 @@ class Listagem
         $connection = $conexao->conectar();
 
         try {
+            $cidade = str_replace(" ", "", $cidade);
+
             $sql = "SELECT nome FROM cidades WHERE nome = :cidade LIMIT 1";
 
             $consulta = $connection->prepare($sql);
@@ -214,7 +216,7 @@ class Listagem
             $vl = $consulta->rowCount();
 
             $dados = [];
-
+            
             if ($vl > 0) {
                 $dados = $consulta->fetchAll($connection::FETCH_ASSOC);
             } else $dados = self::SEM_REGISTROS;
