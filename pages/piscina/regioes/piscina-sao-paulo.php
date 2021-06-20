@@ -150,6 +150,65 @@
                             <h1 class="mb-5"><?php echo $h1; ?></h1>
                         </div>
                     </div>
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+                        <div class="card">
+                            <div class="card-img">
+                                <a href="http://wa.me/5511998730710" target="_blank">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">INSTALAÇÃO DE CERCA DE PROTEÇÃO PARA PISCINAS EM <span class="local text-uppercase"></span></a></h5>
+                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR CERCA REMOVÍVEL PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
+                                Cerca Removível para Piscinas em <span class="local"></span> é na Mel Proteções ligue: (11) 2682-3893 e faça já seu orçamento. Mel Proteções mais de uma década de experiência.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                        <div class="card">
+                            <div class="card-img">
+                                <a href="http://wa.me/5511998730710" target="_blank">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINA EM <span class="local text-uppercase"></span></a></h5>
+                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO PROFISSIONAIS PARA COLOCAR CERCA REMOVÍVEL PARA PISCINA EM <span class="local text-uppercase"></span>?</span>
+                                    Cerca Removível para Proteção de Crianças e Pets em <span class="local"></span> é na Mel Proteções. Aqui você encontra Cerca Removível para Proteção de Crianças e Pets de qualidade e preço justo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                        <div class="card">
+                            <div class="card-img">
+                                <a href="http://wa.me/5511998730710" target="_blank">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">ENCONTRE A MELHOR CERCA REMOVÍVEL EM <span class="local text-uppercase"></span> AQUI</a></h5>
+                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">POR QUE ESCOLHER A MEL PROTEÇÕES NA HORA DE COMPRAR SUA CERCA REMOVÍVEL PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
+                                Trabalhamos em <span class="local"></span> com Cerca Removível para Piscinas da mais alta qualidade, entre em contato através da nossa central telefônica (11) 2682-3893. Cerca Removível para Piscinas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+                        <div class="card">
+                            <div class="card-img">
+                                <a href="http://wa.me/5511998730710" target="_blank">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA PARA PROTEÇÃO DE CRIANÇAS EM PISCINAS EM <span class="local text-uppercase"></span></a></h5>
+                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO-BENEFÍCIO PARA COLOCAR CERCA REMOVÍVEL PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
+                                    Cerca Removível de Piscinas para Proteção de Crianças e Pets com melhor custo-benefício em <span class="local"></span> é na Mel Proteções ligue: (11) 2682-3893. Cerca Removível para Piscinas <span class="local"></span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
                         <div class="card">
                             <div class="card-img">
@@ -179,36 +238,7 @@
                                     A Mel Proteções instala Cerca Removível para Proteção de Crianças e Pets a mais de uma década em <span class="local"></span>. Orçamento imediato através do WhatsApp (11) 99873-0710.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-                        <div class="card">
-                            <div class="card-img">
-                                <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINA EM <span class="local text-uppercase"></span></a></h5>
-                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO PROFISSIONAIS PARA COLOCAR CERCA REMOVÍVEL PARA PISCINA EM <span class="local text-uppercase"></span>?</span>
-                                    Cerca Removível para Proteção de Crianças e Pets em <span class="local"></span> é na Mel Proteções. Aqui você encontra Cerca Removível para Proteção de Crianças e Pets de qualidade e preço justo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-                        <div class="card">
-                            <div class="card-img">
-                                <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA PARA PROTEÇÃO DE CRIANÇAS EM PISCINAS EM <span class="local text-uppercase"></span></a></h5>
-                                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO-BENEFÍCIO PARA COLOCAR CERCA REMOVÍVEL PARA PISCINAS EM <span class="local text-uppercase"></span>?</span>
-                                    Cerca Removível de Piscinas para Proteção de Crianças e Pets com melhor custo-benefício em <span class="local"></span> é na Mel Proteções ligue: (11) 2682-3893. Cerca Removível para Piscinas <span class="local"></span>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </div>                    
                     <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
                         <div class="card">
                             <div class="card-img">

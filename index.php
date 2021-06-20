@@ -128,7 +128,7 @@ if (is_array($links)) {
 // var_dump($rotas_sp);
 // exit;
 
-$listagem->siteMap($rotas_sp);
+// $listagem->siteMap($rotas_sp);
 
 $qtd_param_url = 0;
 $link = '';
@@ -186,7 +186,7 @@ else {
             $local = $local_pesquisa;
         
         $canonical = $url_completa;
-        $title = "{$texto} em " . ucwords($local) . " | Mel {$texto}";
+        $title = "{$texto} em " . ucwords($local) . " | Mel Redes de Proteção";
         $titleConteudo = ucwords($local) . " | Mel {$texto}";
         $h1 = "{$texto} em <span class='text-capitalize'>" . ucwords($local). "</span>";
 

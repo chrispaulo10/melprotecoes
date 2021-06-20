@@ -237,7 +237,7 @@ class Listagem
                 highlight_string("
                     <url>
                         <loc>https://redesdeprotecoes.com.br/{$key}</loc>
-                        <lastmod>2021-03-31T17:11:35+00:00</lastmod>
+                        <lastmod>2021-06-20T19:39:08+00:00</lastmod>
                         <priority>0.80</priority>
                     </url>
                 ");
@@ -248,7 +248,7 @@ class Listagem
                     highlight_string("
                         <url>
                             <loc>https://redesdeprotecoes.com.br/{$key}{$sub}</loc>
-                            <lastmod>2021-03-31T17:11:35+00:00</lastmod>
+                            <lastmod>2021-06-20T19:39:08+00:00</lastmod>
                             <priority>0.80</priority>
                         </url>
                     ");

@@ -82,7 +82,7 @@ $(document).ready(function () {
                         <li>
                             <!-- REGIÃO -->
                             <a data-toggle="collapse" href="#regiao_${regiao.id}" class="collapsed">
-                                ${ultimo_parametro == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i>
+                                ${ultimo_parametro == "piscina" ? 'Cerca de Piscina' : 'Redes de Proteção'} <span class='text-capitalize'> ${regiao.regiao} </span><i class="icofont-simple-up"></i>
                             </a>
                             <!-- ESTADOS -->
                             <div id="regiao_${regiao.id}" class="collapse" data-parent=".faq-list">
@@ -108,7 +108,7 @@ $(document).ready(function () {
 
                     html_regiao += `                        
                                                 <a class="links_cidades" href="${ultimo_parametro == "piscina" ? 'cerca-de-piscina' : 'redes-de-protecao'}-${(cidade.nome).replaceAll(" ", "-").toLowerCase()}">
-                                                    <span class="list-link">${ultimo_parametro == "piscina" ? 'Cercas de Piscina' : 'Redes de Proteção'} em ${nome_cidade}</span>
+                                                    <span class="list-link">${ultimo_parametro == "piscina" ? 'Cerca de Piscina' : 'Redes de Proteção'} em ${nome_cidade}</span>
                                                 </a>
                     `;
                 });
