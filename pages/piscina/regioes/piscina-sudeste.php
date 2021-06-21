@@ -154,7 +154,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -169,7 +169,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                    <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -184,7 +184,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -199,7 +199,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -213,7 +213,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -228,7 +228,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -243,7 +243,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                    <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -258,7 +258,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img2.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img2.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -272,7 +272,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img5.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img5.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -286,7 +286,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img6.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img6.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -301,7 +301,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -316,7 +316,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" title="<?php echo $h1; ?>" alt="<?php echo $h1; ?>">
+                                <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -393,6 +393,55 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mt-1">
+
+                        <!-- Start Google Map -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!-- Start Map -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7491010191266!2d-46.53587368520825!3d-23.505544965418174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fc85acab575%3A0xb6e544389da1d6b2!1.5sR.%20Iara%20Xavier%2C%2055%20-%20Jardim%20Piratininga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003716-070!5e0!3m2!1spt-BR!1.5sbr!4v1616541525897!5m2!1spt-BR!1.5sbr" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <!-- End Map -->
+                        </div>
+                        <!-- End Google Map -->
+
+                        <!-- Start  contact -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form contact-form">
+                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="name" class="form-control" id="fone" placeholder="Seu WhatsApp" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="mensagem" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-center"><button type="submit">Enviar</button></div>
+                                    </div>
+                                    <div class="" id="alerta_mail">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Left contact -->
                     </div>
                 </div>
             </div>

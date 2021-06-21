@@ -163,7 +163,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img1.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img1.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -177,7 +177,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img8.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img8.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -192,7 +192,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img6.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img6.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -207,7 +207,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img7.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img7.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -222,7 +222,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img2.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img2.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -237,7 +237,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img3.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img3.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -251,7 +251,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img4.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img4.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -265,7 +265,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img5.jpg" alt="...">
+                  <img src="assets/img/zonas/leste/img5.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">

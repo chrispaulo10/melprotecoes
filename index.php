@@ -186,7 +186,7 @@ else {
             $local = $local_pesquisa;
         
         $canonical = $url_completa;
-        $title = "{$texto} em " . ucwords($local) . " | Mel Redes de Proteção";
+        $title = "{$texto} em " . ucwords($local) . " | Mel {$texto}";
         $titleConteudo = ucwords($local) . " | Mel {$texto}";
         $h1 = "{$texto} em <span class='text-capitalize'>" . ucwords($local). "</span>";
 
