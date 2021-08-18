@@ -57,6 +57,20 @@
                     <span>Páginas Conteúdo</span></a>
             </li>
 
+            <!-- Nav Item - Tables -->
+            <li class="nav-item link_categorias">
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Categorias de Links</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item link_page">
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Links</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -119,44 +133,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Páginas Conteúdos</h1>
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <div class="row align-items-center">
-                                <div class="col align-self-center">
-                                    <h5 class="m-0 font-weight-bold text-primary">Redes de Proteção</h5>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-success btn-sm mt-0 mb-0" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                        <i class="fa fa-plus"></i> Adicionar página
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Link</th>
-                                            <th>Texto</th>
-                                            <th>Imagem</th>
-                                            <th>Ação</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tbody_links">
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                <div id="main-content" class="container-fluid">
 
                 </div>
                 <!-- /.container-fluid -->
@@ -211,143 +188,6 @@
         </div>
     </div>
 
-    <!-- Modal ADICIONAR -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Página</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="link">Link</label>
-                                <input type="text" class="form-control" id="link" placeholder="Título" onchange="alterarUrl('')" onkeyup="alterarUrl('')">
-                                <input type="text" class="form-control" id="url" placeholder="Url" disabled>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Imagem</label>
-                                <div class="input-group">
-                                    <div class="custom-file">
-                                        <input id="img" type="file" class="custom-file-input" onchange="validarImagem()">
-                                        <label class="custom-file-label" id="label_img">
-                                            <i class="fas fa-upload"></i> Escolher Arquivo
-                                        </label>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type='button' title="Escolher outro arquivo" class='btn btn-danger'
-                                            style='display: none;' id="btn-limpar" onclick="limpar_arquivo()">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="texto">Texto</label>
-                            <textarea class="form-control" id="texto" rows="5"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="cadastrar_link">
-                        <i id="icone_cadastrar" class="fas fa-check"></i> Adicionar
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        <i class="fas fa-times"></i> Fechar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal EDITAR -->
-    <div class="modal fade" id="modal_editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Página</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="link_edit">Link</label>
-                                <input type="text" class="form-control" id="link_edit" placeholder="Título" onchange="alterarUrl()" onkeyup="alterarUrl()">
-                                <input type="text" class="form-control" id="url_edit" placeholder="Url" disabled>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Imagem</label>
-                                <div class="input-group">
-                                    <div class="custom-file">
-                                        <input id="novo_img" type="file" class="custom-file-input" onchange="validarImagem('novo_')">
-                                        <label class="custom-file-label" id="novo_label_img">
-                                            <i class="fas fa-upload"></i> Escolher Arquivo
-                                        </label>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type='button' title="Escolher outro arquivo" class='btn btn-danger'
-                                            style='display: none;' id="novo_btn-limpar" onclick="limpar_arquivo('novo_')">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="texto_edit">Texto</label>
-                            <textarea class="form-control" id="texto_edit" rows="5"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="editar_link">
-                        <i id="icone_editar" class="fas fa-edit"></i> Atualizar
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        <i class="fas fa-times"></i> Fechar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL DE DELETAR -->
-    <div class="modal fade" id="modal_delete" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body p-4 text-center">
-                    <!-- TITULO -->
-                    <h4 class="modal-title mb-3">
-                        Você tem certeza?
-                    </h4>
-
-                    <!-- SUBTITULO -->
-                    <h6 class="mb-4"><strong>A página não poderá mais ser acessada!</strong></h6>
-
-                    <!-- BOTÕES -->
-                    <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
-                        aria-label="Close">
-                        <i class="fas fa-times"></i> Cancelar
-                    </button>
-                    <button type="button" class="btn btn-danger font-weight-bold" id="deletar_link">
-                        <i id="icone_deletar" class="fas fa-trash"></i> Deletar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -387,7 +227,7 @@
 
     <script src="vendor/jquery-growl/javascripts/jquery-growl.js"></script>
 
-    <script src="js/links.js"></script>
+    <script src="js/links_side_bar.js"></script>
 
 </body>
 

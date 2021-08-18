@@ -1,5 +1,5 @@
-let id_link = 0;
-let img_link = "";
+var id_link = 0;
+var img_link = "";
 const controller = "back-end/controllers/ControllerLinks.php";
 
 $("#cadastrar_link").click(function() {

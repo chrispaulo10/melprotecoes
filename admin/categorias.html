@@ -1,0 +1,124 @@
+<!-- Page Heading -->
+<h1 class="h3 mb-4 text-gray-800">Categorias</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row align-items-center">
+            <div class="col align-self-center">
+                <h5 class="m-0 font-weight-bold text-primary">Redes de Proteção</h5>
+            </div>
+            <div class="col text-right">
+                <button class="btn btn-success btn-sm mt-0 mb-0" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-plus"></i> Adicionar Categoria
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Titulo</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody_categorias">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal ADICIONAR -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Categoria</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Título" >
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="cadastrar_categoria">
+                    <i id="icone_cadastrar" class="fas fa-check"></i> Adicionar
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-times"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal EDITAR -->
+<div class="modal fade" id="modal_editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Categoria</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <label for="novo_titulo">Titulo</label>
+                        <input type="text" class="form-control" id="novo_titulo" placeholder="Título" >
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="editar_categoria">
+                    <i id="icone_editar" class="fas fa-edit"></i> Atualizar
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-times"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL DE DELETAR -->
+<div class="modal fade" id="modal_delete" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-4 text-center">
+                <!-- TITULO -->
+                <h4 class="modal-title mb-3">
+                    Você tem certeza?
+                </h4>
+
+                <!-- SUBTITULO -->
+                <h6 class="mb-4"><strong>TODOS OS LINKS DESSA CATEGORIA</strong> não poderão mais ser acessados!</h6>
+
+                <!-- BOTÕES -->
+                <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+                    aria-label="Close">
+                    <i class="fas fa-times"></i> Cancelar
+                </button>
+                <button type="button" class="btn btn-danger font-weight-bold" id="deletar_categoria">
+                    <i id="icone_deletar" class="fas fa-trash"></i> Deletar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/categorias_links.js"></script>
