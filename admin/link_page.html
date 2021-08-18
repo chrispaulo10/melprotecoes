@@ -21,9 +21,9 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Link</th>
-                        <th>Texto</th>
-                        <th>Imagem</th>
+                        <th>Categoria</th>
+                        <th>Title</th>
+                        <th>Keywords</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
@@ -33,3 +33,159 @@
         </div>
     </div>
 </div>
+
+<!-- Modal ADICIONAR -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Adicionar Link</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12">
+                            <label for="id_categoria">Categoria</label>
+                            <select id="id_categoria" class="custom-select select_categorias">
+                                <option value="" disabled selected>Selecione uma Categoria</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="h1">h1</label>
+                            <input type="text" class="form-control" id="h1" placeholder="h1" value="LINK H1">
+                        </div>
+                        <div class="col-6">
+                            <label for="url">url</label>
+                            <input type="text" class="form-control" id="url" placeholder="url" value="link-url" >
+                        </div>
+                        <div class="col-6">
+                            <label for="title">title</label>
+                            <input type="text" class="form-control" id="title" placeholder="title" value="Title Link">
+                        </div>
+                        <div class="col-6">
+                            <label for="og_title">og_title</label>
+                            <input type="text" class="form-control" id="og_title" placeholder="og_title" value="Og Title Link" >
+                        </div>
+                        <div class="col-6">
+                            <label for="site_name">site_name</label>
+                            <input type="text" class="form-control" id="site_name" placeholder="site_name" value="redeprotecoes" >
+                        </div>
+                        <div class="col-6">
+                            <label for="keywords">keywords</label>
+                            <input type="text" class="form-control" id="keywords" placeholder="keywords" value="redes protecoes link" >
+                        </div>
+                        <div class="col-12">
+                            <label for="description">description</label>
+                            <textarea id="description" rows="3">
+                                DKEWLFKINKLAJDNSKLADJASDJASLKkjanskdlajsdlasjdkal
+                            </textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="cadastrar_link_page">
+                    <i id="icone_cadastrar" class="fas fa-check"></i> Adicionar
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-times"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Editar -->
+<div class="modal fade" id="modal_editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Link</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12">
+                            <label for="novo_id_categoria">Categoria</label>
+                            <select id="novo_id_categoria" class="custom-select select_categorias">
+                                <option value="" disabled selected>Selecione uma Categoria</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_h1">h1</label>
+                            <input type="text" class="form-control" id="novo_h1" placeholder="h1" >
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_url">url</label>
+                            <input type="text" class="form-control" id="novo_url" placeholder="url" >
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_title">title</label>
+                            <input type="text" class="form-control" id="novo_title" placeholder="title" >
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_og_title">og_title</label>
+                            <input type="text" class="form-control" id="novo_og_title" placeholder="og_title" >
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_site_name">site_name</label>
+                            <input type="text" class="form-control" id="novo_site_name" placeholder="site_name" >
+                        </div>
+                        <div class="col-6">
+                            <label for="novo_keywords">keywords</label>
+                            <input type="text" class="form-control" id="novo_keywords" placeholder="keywords" >
+                        </div>
+                        <div class="col-12">
+                            <label for="novo_description">description</label>
+                            <textarea id="novo_description" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="editar_link_page">
+                    <i id="icone_editar" class="fas fa-edit"></i> Atualizar
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-times"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL DE DELETAR -->
+<div class="modal fade" id="modal_delete" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-4 text-center">
+                <!-- TITULO -->
+                <h4 class="modal-title mb-3">
+                    Você tem certeza?
+                </h4>
+
+                <!-- SUBTITULO -->
+                <h6 class="mb-4"><strong>Esse link não poderá mais ser acessado!</strong></h6>
+
+                <!-- BOTÕES -->
+                <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+                    aria-label="Close">
+                    <i class="fas fa-times"></i> Cancelar
+                </button>
+                <button type="button" class="btn btn-danger font-weight-bold" id="deletar_link_page">
+                    <i id="icone_deletar" class="fas fa-trash"></i> Deletar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/link_page.js"></script>

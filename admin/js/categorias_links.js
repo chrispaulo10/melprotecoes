@@ -158,10 +158,9 @@ $("#deletar_categoria").click(function () {
 
 /*====================================================================================*/
 
-function deletar(id, img) 
+function deletar(id) 
 {
     id_categoria = id;
-    img_categoria = img
 
     $("#modal_delete").modal('show');
 }
