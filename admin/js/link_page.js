@@ -70,7 +70,7 @@ categorias();
 
 function listar() {
     $.get(controller + "?listagem", function (retorno) {
-        $("#tbody_link_pages").html("");
+        $("#tbody_link_page").html("");
         
         let resposta = JSON.parse(retorno);
     
@@ -83,6 +83,9 @@ function listar() {
                         <td>${link.title}</td>
                         <td>${link.keywords}</td>
                         <td>
+                            <button class="btn btn-info btn-circle btn-md" onClick="consultar_textos(${link.id})" title="Textos">
+                                <i class="fas fa-file-alt"></i>
+                            </button>
                             <button class="btn btn-warning btn-circle btn-md" onClick="consultar_link_page(${link.id})" title="Editar">
                                 <i class="fas fa-pen"></i>
                             </button>
@@ -180,7 +183,6 @@ $("#editar_link_page").click(function() {
     });
 })
 
-
 /*====================================================================================*/
 
 $("#deletar_link_page").click(function () {
@@ -236,3 +238,73 @@ function mudancasAoFazerRequisicao(i, button)
     return classe;
 }
 
+
+/*====================================================================================*/
+
+function consultar_textos(id) {
+    id_link_page = id;
+
+    const dados = {
+        consultarTextos : true,
+        id,
+    }
+
+    $.get(controller, dados, function (retorno) {
+        let resposta = JSON.parse(retorno);
+
+        $("#modal_textos form").html("");
+        if (Array.isArray(resposta)) {
+            $.each(resposta, function(idx, texto) {
+                $("#modal_textos form").append(`
+                    <div class="form-row">
+                        <div class="col-12">
+                            <label for="titulo${texto.posicao}">Titulo ${texto.posicao}</label>
+                            <input 
+                                type="text" class="form-control" id="titulo${texto.posicao}" 
+                                placeholder="Titulo" value="${texto.titulo}"
+                            >
+                        </div>
+                        <div class="col-12">
+                            <label for="texto${texto.posicao}">Texto ${texto.posicao}</label>
+                            <textarea id="texto${texto.posicao}" rows="3">${texto.texto}</textarea>
+                        </div>
+                    </div>
+                `);
+            });
+
+            $("#modal_textos").modal("show");
+        } else {
+            $.growl.error( {message : resposta} );
+        }
+    });
+}
+$("#editar_textos").click(function() {
+    const dados = {
+        editarTextos : true,
+        id : id_link_page,
+    }
+
+    for (let index = 1; index <= 8; index++) {
+        dados["titulo"+index] = $(`#titulo${index}`).val();
+        dados["texto"+index] = $(`#texto${index}`).val();
+    }
+    
+    const i = $(`#icone_editar_textos`);
+    const button = $(`#editar_textos`);
+    const class_icone = mudancasAoFazerRequisicao(i, button);
+
+    $.post(controller, dados, function (retorno) {
+        button.prop('disabled', false);
+        i.removeClass().addClass(class_icone);  
+        
+        let resposta = JSON.parse(retorno)
+
+        if (Array.isArray(resposta)) {
+            id_link_page = 0;
+
+            $.growl.notice( {message : resposta[0]} );
+        } else {
+            $.growl.warning( {message : resposta} );
+        }
+    });
+})

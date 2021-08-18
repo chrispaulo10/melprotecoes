@@ -76,6 +76,43 @@
 
         /*======================================================================================*/
 
+        public function consultarTextos($id) {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "SELECT textos_link_page.* FROM " .self::TABELA. " 
+                        INNER JOIN textos_link_page ON id_link_page_fk = " .self::TABELA. ".id
+                        WHERE link_page.id = :id 
+                        ORDER BY posicao
+                        LIMIT 8";
+
+                $consulta = $connection->prepare($sql);
+
+                $consulta->bindParam(":id", $id);
+
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+
+                $dados = [];
+
+                if ($vl > 0) {
+                    $regioes = $consulta->fetchAll($connection::FETCH_ASSOC);
+                    $dados = $regioes;
+                } else $dados = self::SEM_REGISTROS;
+
+                return $dados;
+
+            } catch (PDOException $e) {
+                return "Erro de consultar link: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
+
+        /*======================================================================================*/
+
         public function cadastrar($id_categoria, $h1, $url, $title, $description, $og_title, $site_name, $keywords) {
             $conexao = new Conexao();
             $connection = $conexao->conectar();
@@ -139,6 +176,42 @@
 
             } catch (PDOException $e) {
                 return "Erro de editar link: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
+
+        /*======================================================================================*/
+
+        public function editarTextos($id, $textos) {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "";
+
+                for ($i=1; $i <= 8; $i++) { 
+                    $sql .= "UPDATE textos_link_page 
+                            SET titulo = :titulo$i, texto = :texto$i
+                            WHERE id_link_page_fk = :id AND posicao = $i;
+                    ";
+                }
+
+                $consulta = $connection->prepare($sql);
+                
+                $consulta->bindParam(":id", $id);
+                
+                for ($i=1; $i <= 8; $i++) { 
+                    $consulta->bindValue(":titulo$i", $textos["titulo$i"]);
+                    $consulta->bindValue(":texto$i", $textos["texto$i"]);
+                }
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+                
+                return ($vl > 0) ? ["Registro Atualizado com Sucesso!"] : $sql;
+            } catch (PDOException $e) {
+                return "Erro de editar textos: " . $e->getMessage();
             } catch (Exception $e) {
                 return "Erro: " . $e->getMessage();
             }

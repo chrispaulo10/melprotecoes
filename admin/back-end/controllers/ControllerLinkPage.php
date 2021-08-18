@@ -14,6 +14,12 @@
         $retorno = (empty($id)) ? "Id é obrigatório" : $linkPage->consultar($id);
     }
 
+    if (isset($_GET['consultarTextos'])) {
+        $id = $_GET['id'] ?? "";
+
+        $retorno = (empty($id)) ? "Id é obrigatório" : $linkPage->consultarTextos($id);
+    }
+
     if (isset($_GET['deletar'])) {
         $id = $_GET['id'] ?? "";
 
@@ -70,5 +76,24 @@
             $retorno = $linkPage->editar($id, $id_categoria, $h1, $url, $title, $description, $og_title, $site_name, $keywords);
     }
 
-    
+    if (isset($_POST['editarTextos'])) {
+        $retorno = "Preencha todos os campos!";
+        $valido = true;
+
+        $id = $_POST['id'] ?? "";
+        $textos = [];
+
+        for ($index = 1; $index <= 8; $index++) {
+            $textos["titulo".$index] = $_POST["titulo".$index];
+            $textos["texto".$index] = $_POST["texto".$index];
+
+            if (empty($textos["titulo".$index]) || empty($textos["texto".$index])) {
+                $valido = false;
+                break;
+            }
+        }
+
+        if ($valido) $retorno = $linkPage->editarTextos($id, $textos);
+    }
+
     echo json_encode($retorno);
