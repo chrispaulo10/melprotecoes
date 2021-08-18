@@ -192,7 +192,7 @@
 
                 for ($i=1; $i <= 8; $i++) { 
                     $sql .= "UPDATE textos_link_page 
-                            SET titulo = :titulo$i, texto = :texto$i
+                            SET titulo = :titulo$i, subtitulo = :subtitulo$i, texto = :texto$i
                             WHERE id_link_page_fk = :id AND posicao = $i;
                     ";
                 }
@@ -203,6 +203,7 @@
                 
                 for ($i=1; $i <= 8; $i++) { 
                     $consulta->bindValue(":titulo$i", $textos["titulo$i"]);
+                    $consulta->bindValue(":subtitulo$i", $textos["subtitulo$i"]);
                     $consulta->bindValue(":texto$i", $textos["texto$i"]);
                 }
                 $consulta->execute();

@@ -257,11 +257,18 @@ function consultar_textos(id) {
             $.each(resposta, function(idx, texto) {
                 $("#modal_textos form").append(`
                     <div class="form-row">
-                        <div class="col-12">
+                        <div class="col-6">
                             <label for="titulo${texto.posicao}">Titulo ${texto.posicao}</label>
                             <input 
                                 type="text" class="form-control" id="titulo${texto.posicao}" 
                                 placeholder="Titulo" value="${texto.titulo}"
+                            >
+                        </div>
+                        <div class="col-6">
+                            <label for="subtitulo${texto.posicao}">Subtitulo ${texto.posicao}</label>
+                            <input 
+                                type="text" class="form-control" id="subtitulo${texto.posicao}" 
+                                placeholder="Subtitulo" value="${texto.subtitulo}"
                             >
                         </div>
                         <div class="col-12">
@@ -286,6 +293,7 @@ $("#editar_textos").click(function() {
 
     for (let index = 1; index <= 8; index++) {
         dados["titulo"+index] = $(`#titulo${index}`).val();
+        dados["subtitulo"+index] = $(`#subtitulo${index}`).val();
         dados["texto"+index] = $(`#texto${index}`).val();
     }
     

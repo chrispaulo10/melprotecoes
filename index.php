@@ -60,6 +60,7 @@
     
     $regioes = $listagem->regioes(false, true);
     $links = $listagem->links();
+    $link_page = $listagem->linksPage();
 
     $rotas_sp = [];
 
@@ -124,8 +125,22 @@ if (is_array($links)) {
     }
 }
 
+$pagina_links_page = 'tela-manual';
+
+if (!empty($link_page)) {
+    foreach ($link_page as $idx => $link) {
+        $link['url'] = mb_strtolower(str_replace(" ", "-", $link['url']), 'UTF-8');
+        
+        foreach ($chars_especiais as $codigo => $char) {
+            $link['url'] = str_replace($codigo, $char, $link['url']);
+        }
+
+        $rotas["{$link['url']}"] = "{$prefixo}conteudos/$pagina_links_page.php";
+    }
+}
+
 // echo '<pre>'; 
-// var_dump($rotas_sp);
+// var_dump($rotas);
 // exit;
 
 // $listagem->siteMap($rotas_sp);
@@ -160,7 +175,14 @@ if (isset($_GET['url'])) {
 
 if (!file_exists($page)) $page = $nao_encontrado;
 else {
-    if ($page != "index.html") {
+    if ($page == "{$prefixo}conteudos/$pagina_links_page.php") {
+        $url_completa = $_SERVER["REQUEST_URI"];
+        $url_particionada = explode('/', $url_completa);
+        
+        $url_link = $url_particionada[count($url_particionada) - 1];
+
+        $dados_link = $listagem->consultarLinkPage($url);
+    } else if ($page != "index.html") {
         $url_completa = $_SERVER["REQUEST_URI"];
         $url_particionada = explode('/', $url_completa);
 

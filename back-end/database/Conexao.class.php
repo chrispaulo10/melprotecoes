@@ -8,7 +8,7 @@
             // USER : u402480197_melredes
             // SENHA : K#f:S>F9o
 
-            $host= "mysql:host=localhost;dbname=redesdeprotecoes";
+            $host= "mysql:host=localhost;dbname=melprotecoes";
             $user= "root";
             $pass= "";
 

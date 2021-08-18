@@ -85,9 +85,10 @@
 
         for ($index = 1; $index <= 8; $index++) {
             $textos["titulo".$index] = $_POST["titulo".$index];
+            $textos["subtitulo".$index] = $_POST["subtitulo".$index];
             $textos["texto".$index] = $_POST["texto".$index];
 
-            if (empty($textos["titulo".$index]) || empty($textos["texto".$index])) {
+            if (empty($textos["titulo".$index]) || empty($textos["subtitulo".$index]) || empty($textos["texto".$index])) {
                 $valido = false;
                 break;
             }

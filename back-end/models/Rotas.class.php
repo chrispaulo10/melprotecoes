@@ -260,6 +260,73 @@ class Listagem
 
         exit;
     }
+        
+    /*======================================================================================*/
+
+    public function linksPage() {
+        $conexao = new Conexao();
+        $connection = $conexao->conectar();
+
+        try {
+            $sql = "SELECT url FROM link_page";
+
+            $consulta = $connection->prepare($sql);
+
+            $consulta->execute();
+
+            $vl = $consulta->rowCount();
+
+            $dados = [];
+
+            if ($vl > 0) {
+                $dados = $consulta->fetchAll($connection::FETCH_ASSOC);
+            };
+
+            return $dados;
+
+        } catch (PDOException $e) {
+            return "Erro de consultar link: " . $e->getMessage();
+        } catch (Exception $e) {
+            return "Erro: " . $e->getMessage();
+        }
+    }
+        
+    /*======================================================================================*/
+
+    public function consultarLinkPage($url) {
+        $conexao = new Conexao();
+        $connection = $conexao->conectar();
+
+        try {
+            $sql = "SELECT * FROM link_page 
+                    INNER JOIN textos_link_page ON id_link_page_fk = link_page.id
+                    WHERE link_page.url = :url 
+                    ORDER BY posicao
+                    LIMIT 8
+                ";
+
+            $consulta = $connection->prepare($sql);
+
+            $consulta->bindValue(":url", $url);
+
+            $consulta->execute();
+
+            $vl = $consulta->rowCount();
+
+            $dados = [];
+
+            if ($vl > 0) {
+                $dados = $consulta->fetchAll($connection::FETCH_ASSOC);
+            };
+
+            return $dados;
+
+        } catch (PDOException $e) {
+            return "Erro de consultar link: " . $e->getMessage();
+        } catch (Exception $e) {
+            return "Erro: " . $e->getMessage();
+        }
+    }
     /*================================================================================*/
     /*================================================================================*/
     /*================================================================================*/
