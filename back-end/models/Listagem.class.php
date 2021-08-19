@@ -280,15 +280,9 @@
 
                 $vl = $consulta->rowCount();
 
-                $dados = [];
-
-                if ($vl > 0) {
-                    $regioes = $consulta->fetchAll($connection::FETCH_ASSOC);
-                    $dados = $regioes;
-                } else $dados = self::SEM_REGISTROS;
+                $dados = ($vl > 0) ? $consulta->fetchAll($connection::FETCH_ASSOC) : [];
 
                 return $dados;
-
             } catch (PDOException $e) {
                 return "Erro de listar links: " . $e->getMessage();
             } catch (Exception $e) {
