@@ -210,7 +210,7 @@
 
                 $vl = $consulta->rowCount();
                 
-                return ($vl > 0) ? ["Registro Atualizado com Sucesso!"] : $sql;
+                return ($vl > 0) ? ["Registro Atualizado com Sucesso!"] : self::SEM_REGISTROS;
             } catch (PDOException $e) {
                 return "Erro de editar textos: " . $e->getMessage();
             } catch (Exception $e) {
