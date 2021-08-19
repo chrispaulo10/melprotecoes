@@ -184,7 +184,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> <?php echo $dados_link[0]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[0]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[0]['texto'];?>
@@ -202,7 +202,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[1]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[1]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[1]['texto'];?>
@@ -221,7 +221,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[2]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[2]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[2]['texto'];?>
@@ -239,7 +239,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[3]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[3]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[3]['texto'];?>
@@ -257,7 +257,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[4]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[4]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[4]['texto'];?>
@@ -275,7 +275,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[5]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[5]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[5]['texto'];?>
@@ -293,7 +293,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[6]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[6]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[6]['texto'];?>
@@ -311,7 +311,7 @@
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[7]['titulo'];?></a></h5>
                                 <p class="card-text">
-                                    <span class="font-weight-bold">
+                                    <span class="font-weight-bold" id="titulo-span">
                                         <?php echo $dados_link[7]['subtitulo'];?>
                                     </span>
                                     <?php echo $dados_link[7]['texto'];?>
