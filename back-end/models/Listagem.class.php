@@ -261,4 +261,38 @@
                 return "Erro: " . $e->getMessage();
             }
         }
+        /*======================================================================================*/
+
+        public function pegarLinksPageNav() {
+            $conexao = new Conexao();
+            $connection = $conexao->conectar();
+
+            try {
+                $sql = "SELECT
+                            link_page.id, url, title, titulo
+                        FROM link_page
+                        INNER JOIN categoria_link ON id_categoria_fk = categoria_link.id
+                        ";
+
+                $consulta = $connection->prepare($sql);
+
+                $consulta->execute();
+
+                $vl = $consulta->rowCount();
+
+                $dados = [];
+
+                if ($vl > 0) {
+                    $regioes = $consulta->fetchAll($connection::FETCH_ASSOC);
+                    $dados = $regioes;
+                } else $dados = self::SEM_REGISTROS;
+
+                return $dados;
+
+            } catch (PDOException $e) {
+                return "Erro de listar links: " . $e->getMessage();
+            } catch (Exception $e) {
+                return "Erro: " . $e->getMessage();
+            }
+        }
     }

@@ -6,7 +6,9 @@
 
     $retorno = "";
 
-    if (isset($_GET['link']) && $_GET['link'] != "") $retorno = $listagem->pegarDadosLink($_GET['link']);
+    if (isset($_GET['listar_links_page'])) $retorno = $listagem->pegarLinksPageNav();
+
+    else if (isset($_GET['link']) && $_GET['link'] != "") $retorno = $listagem->pegarDadosLink($_GET['link']);
     else if (isset($_GET['nome_cidade']) && $_GET['nome_cidade'] != "") $retorno = $listagem->nomeCidade($_GET['nome_cidade']);
     else if (isset($_GET['listar_links'])) $retorno = $listagem->links();
     else if (isset($_GET['listar_cidades'])) $retorno = $listagem->cidades($_GET['id_estado'] ?? 0);
