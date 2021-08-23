@@ -6,20 +6,21 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
-  <title>Grades de Alumínio para Janelas | Mel Grades de Alumínio</title>
-  <meta name="description" content="Buscando Grades de Alumínio para Proteção de Janelas ? Acesse o site da Mel Proteções e encontre esse e outros itens de segurança ante quedas."/>
+  <title><?php echo $dados_link[0]['title'];?> | Mel Cercas de Piscinas</title>
+  <meta name="description" content="<?php echo $dados_link[0]['description'];?>" />
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://redesdeprotecoes.com.br/grades/"/>
+  <link rel="canonical" href="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="Grades de Alumínio para Janelas | Mel Grades de Alumínio"/>
-  <meta property="og:description" content="Buscando Grades de Alumínio para Proteção de Janelas ? Acesse o site da Mel Proteções e encontre esse e outros itens de segurança ante quedas."/>
-  <meta property="og:url" content="https://redesdeprotecoes.com.br/grades/"/>
-  <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção"/>
+  <meta property="og:title" content="<?php echo $dados_link[0]['og_title'];?> | Mel Cercas de Piscinas." />
+  <meta property="og:description" content="<?php echo $dados_link[0]['description'];?>" />
+  <meta property="og:url" content="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
+  <meta property="og:site_name" content="<?php echo $dados_link[0]['site_name'];?>" />
   <meta property="article:modified_time" content="2021-01-13T22:32:12+00:00"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="keywords" content="<?php echo $dados_link[0]['keywords'];?>">  
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -98,17 +99,23 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="drop-down"><a href="#">Redes</a>
-            <ul>
-              <li><a href="redes-de-protecao">Redes de Proteção</a></li>
-              <li ><a href="tela-para-pets">Tela para Pets</a></li>
-              <li><a href="redes-esportivas">Redes Esportivas</a></li>
-            </ul>
+            <ul id="redes-de-protecao"></ul>
           </li>
-          <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
-          <li><a href="mosquiteira">Mosquiteira</a></li>
-          <li><a href="limitadores">Limitadores</a></li>
-          <li class="active"><a href="grades">Grades</a></li>
-          <li><a href="capas">Capas</a></li>
+          <li class="drop-down"><a href="#">Cerca de Piscina</a>
+            <ul id="cerca-de-piscina"></ul>
+          </li>
+          <li class="drop-down"><a href="#">Mosquiteira</a>
+            <ul id="mosquiteira"></ul>
+          </li>
+          <li class="drop-down"><a href="#">Limitadores</a>
+            <ul id="limitadores"></ul>
+          </li>
+          <li class="drop-down"><a href="#">Grades</a>
+            <ul id="grades"></ul>
+          </li>
+          <li class="drop-down"><a href="#">Capas</a>
+            <ul id="capas"></ul>
+          </li>
           <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -144,7 +151,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline services-head text-center">
-              <h1 class="mb-5">GRADES DE ALUMÍNIO PARA PROTEÇÃO DE JANELAS</h1>
+              <h1 class="mb-5"><?php echo $dados_link[0]['title'];?></h1>
             </div>
           </div>
         </div>
@@ -154,100 +161,16 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img1.jpg" alt="GRADES DE ALUMÍNIO PARA PROTEÇÃO DE JANELAS" title="GRADES DE ALUMÍNIO PARA PROTEÇÃO DE JANELAS">
+                  <img src="assets/img/telas-servicos/grades/img1.jpg" alt="<?php echo $dados_link[0]['titulo'];?>" title="<?php echo $dados_link[0]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> GRADES DE ALUMÍNIO PARA PROTEÇÃO DE JANELAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Buscando Grades de Alumínio para Proteção de Janelas?</span>
-                    Aqui na Mel Proteções Fabricamos sua Grade em Alumínio para Proteção de Janelas. Entre em contato agora mesmo através do Whatsapp (11) 99873-0710 e saiba mais sobre nossos modelos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img2.jpg" alt="GRADES DE ALUMÍNIO PARA JANELAS MAXIM-AIR" title="GRADES DE ALUMÍNIO PARA JANELAS MAXIM-AIR">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA JANELAS MAXIM-AIR</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Existe Grade de Alumínio para Janelas Maxim-ar?</span>
-                    Para Janela Maxim-ar produzimos a peça sob medida. A instalação é feita pelo lado de dentro da janela. Essa Grade é muito utilizada em janela de banheiro. Orçamento grátis via Whatsapp (11) 99873-0710.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img3.jpg" alt="GRADES DE ALUMÍNIO PARA JANELAS DE APARTAMENTOS" title="GRADES DE ALUMÍNIO PARA JANELAS DE APARTAMENTOS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA JANELAS DE apartamentos</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Procurando Grade de Alumínio para Proteção em Janelas de Apartamento Sob Medida?</span>
-                    Na Mel Proteções produzimos Grade de Alumínio sob medida para Proteção de Janelas de Apartamentos, Casas, Empresas entre outros. Orçamento grátis via Whatsapp (11) 99873-0710.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img4.jpg" alt="GRADES DE ALUMÍNIO PARA JANELAS BASCULANTE" title="GRADES DE ALUMÍNIO PARA JANELAS BASCULANTE">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA janelas basculante</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Onde Comprar Grades de Alumínio para Janelas Basculantes?</span>
-                    Compre Grade de Alumínio para Janela Basculante com Bom Preço na Mel Proteções Através do Whatsapp (11) 99873-0710. Mel Proteções Sempre a Melhor Solução. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img5.jpg" alt="GRADES DE ALUMÍNIO PARA PROTEÇÃO DE CRIANÇAS" title="GRADES DE ALUMÍNIO PARA PROTEÇÃO DE CRIANÇAS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> GRADES DE ALUMÍNIO PARA PROTEÇÃO DE CRIANÇAS?</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Buscando Grade de Alumínio para Proteção de Crianças?</span>
-                    A Mel proteções é especializada em Proteção ante Quedas de Crianças, seja com Grades de Alumínio ou Redes de Proteção. Orçamento grátis via Whatsapp (11) 99873-0710.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img6.jpg" alt="GRADES DE ALUMÍNIO PARA SEGURANÇA" title="GRADES DE ALUMÍNIO PARA SEGURANÇA">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA segurança</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Onde Comprar Grades de Alumínio para Segurança?</span>
-                    Aqui Você encontra Grades de Alumínio para as mais diversas situações, seja para evitar quedas ou até mesmo evitar que sua casa ou estabelecimento seja invadido, entre em contato e saiba mais.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img7.jpg" alt="GRADES DE ALUMÍNIO PARA VENEZIANAS" title="GRADES DE ALUMÍNIO PARA VENEZIANAS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA VENEZIANAS </a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Como Instalar Grade de Alumínio em Janelas Venezianas?</span>
-                    Instalamos Grade de Alumínio para Janela Veneziana entre a Folha de Abertura e o Vidro da Janela isso quando o vão entre as duas partes tenha a medida necessária para colocação da grade.
-
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> <?php echo $dados_link[0]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[0]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[0]['texto'];?>
                 </p>
               </div>
             </div>
@@ -256,13 +179,125 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img8.jpg" alt="GRADES DE ALUMÍNIO PARA JANELAS DE CORRER" title="GRADES DE ALUMÍNIO PARA JANELAS DE CORRER">
+                  <img src="assets/img/telas-servicos/grades/img2.jpg" alt="<?php echo $dados_link[1]['titulo'];?>" title="<?php echo $dados_link[1]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">GRADES DE ALUMÍNIO PARA JANELAS DE CORRER</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">Onde colocar a Grade de Alumínio para Janela de Correr?</span>
-                    A instalação mais utilizada é pelo lado externo, porém em situações sem acesso a instalação pode ser interna com um vão feito na grade para abertura das folhas da janela. 
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[1]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[1]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[1]['texto'];?>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img3.jpg" alt="<?php echo $dados_link[2]['titulo'];?>" title="<?php echo $dados_link[2]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[2]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[2]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[2]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img4.jpg" alt="<?php echo $dados_link[3]['titulo'];?>" title="<?php echo $dados_link[3]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[3]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[3]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[3]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img5.jpg" alt="<?php echo $dados_link[4]['titulo'];?>" title="<?php echo $dados_link[4]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> <?php echo $dados_link[4]['titulo'];?>?</a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[4]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[4]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img6.jpg" alt="<?php echo $dados_link[5]['titulo'];?>" title="<?php echo $dados_link[5]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[5]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[5]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[5]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img7.jpg" alt="<?php echo $dados_link[6]['titulo'];?>" title="<?php echo $dados_link[6]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[6]['titulo'];?> </a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[6]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[6]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img src="assets/img/telas-servicos/grades/img8.jpg" alt="<?php echo $dados_link[7]['titulo'];?>" title="<?php echo $dados_link[7]['titulo'];?>">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[7]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[7]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[7]['texto'];?>
                 </p>
               </div>
             </div>
@@ -472,6 +507,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 
 </body>

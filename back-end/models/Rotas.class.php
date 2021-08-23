@@ -268,7 +268,7 @@ class Listagem
         $connection = $conexao->conectar();
 
         try {
-            $sql = "SELECT url FROM link_page";
+            $sql = "SELECT url, titulo FROM link_page INNER JOIN categoria_link ON categoria_link.id = id_categoria_fk";
 
             $consulta = $connection->prepare($sql);
 

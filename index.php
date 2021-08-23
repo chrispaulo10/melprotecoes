@@ -135,7 +135,7 @@ if (!empty($link_page)) {
             $link['url'] = str_replace($codigo, $char, $link['url']);
         }
 
-        $rotas["{$link['url']}"] = "{$prefixo}conteudos/$pagina_links_page.php";
+        $rotas["{$link['url']}"] = "{$prefixo}".mb_strtolower(str_replace(" ", "-", $link['titulo']), 'UTF-8').".php";
     }
 }
 
@@ -175,7 +175,11 @@ if (isset($_GET['url'])) {
 
 if (!file_exists($page)) $page = $nao_encontrado;
 else {
-    if ($page == "{$prefixo}conteudos/$pagina_links_page.php") {
+if ($page != "index.html" &&
+        (mb_strpos($page, "regioes/") === false &&
+        mb_strpos($page, "conteudos/") === false &&
+        mb_strpos($page, "piscina/") === false)
+    ) {
         $url_completa = $_SERVER["REQUEST_URI"];
         $url_particionada = explode('/', $url_completa);
         
