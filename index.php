@@ -74,7 +74,7 @@
             "detalhes" => "blog-details"
         ],
         "redes-de-protecao" => $prefixo."redes-de-protecao". $extensao,
-        "cerca-de-piscina" => $prefixo."cerca-piscina". $extensao,
+        "cerca-de-piscina" => $prefixo."cerca-de-piscina". $extensao,
         "tela-para-pets" => $prefixo."tela-gatos". $extensao,
         "mosquiteira" => $prefixo."mosquiteira". $extensao,
         "limitadores" => $prefixo."limitadores". $extensao,
