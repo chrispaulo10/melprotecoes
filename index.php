@@ -86,44 +86,44 @@
     //  "URL" => "NOME ARQUIVO"
 );
 
-foreach ($regioes as $key => $regiao) {
-    $regiao['regiao'] = mb_strtolower(str_replace(" ", "-", $regiao['regiao']), 'UTF-8');
+// foreach ($regioes as $key => $regiao) {
+//     $regiao['regiao'] = mb_strtolower(str_replace(" ", "-", $regiao['regiao']), 'UTF-8');
 
-    $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
-    $rotas["cerca-de-piscina-{$regiao['regiao']}"] = "{$prefixo}piscina/regioes/piscina-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
+//     $rotas["redes-de-protecao-{$regiao['regiao']}"] = "{$prefixo}regioes/protecao-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
+//     $rotas["cerca-de-piscina-{$regiao['regiao']}"] = "{$prefixo}piscina/regioes/piscina-" . substr(str_replace("zona-", "", $regiao['regiao']), 3) . ".php";
 
-    if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
-        $rotas_sp["redes-de-protecao-{$regiao['regiao']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
-        $rotas_sp["cerca-de-piscina-{$regiao['regiao']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
-    }
+//     if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
+//         $rotas_sp["redes-de-protecao-{$regiao['regiao']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+//         $rotas_sp["cerca-de-piscina-{$regiao['regiao']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+//     }
 
-    foreach ($regiao['cidades'] as $key => $cidade) {
-        foreach ($chars_especiais as $codigo => $char) {
-            $cidade['nome'] = str_replace($codigo, $char, $cidade['nome']);
-        }
+//     foreach ($regiao['cidades'] as $key => $cidade) {
+//         foreach ($chars_especiais as $codigo => $char) {
+//             $cidade['nome'] = str_replace($codigo, $char, $cidade['nome']);
+//         }
 
-        $cidade['nome'] = mb_strtolower(str_replace(" ", "-", $cidade['nome']), 'UTF-8');
-        $rotas["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
-        $rotas["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+//         $cidade['nome'] = mb_strtolower(str_replace(" ", "-", $cidade['nome']), 'UTF-8');
+//         $rotas["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+//         $rotas["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
 
-        if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
-            $rotas_sp["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
-            $rotas_sp["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
-        }
-    }
-}
+//         if (substr(str_replace("zona-", "", $regiao['regiao']), 3) == 'são-paulo') {
+//             $rotas_sp["redes-de-protecao-{$cidade['nome']}"] = $rotas["redes-de-protecao-{$regiao['regiao']}"];
+//             $rotas_sp["cerca-de-piscina-{$cidade['nome']}"] = $rotas["cerca-de-piscina-{$regiao['regiao']}"];
+//         }
+//     }
+// }
 
-if (is_array($links)) {
-    foreach ($links as $idx => $link) {
-        $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
+// if (is_array($links)) {
+//     foreach ($links as $idx => $link) {
+//         $link['link'] = mb_strtolower(str_replace(" ", "-", $link['link']), 'UTF-8');
         
-        foreach ($chars_especiais as $codigo => $char) {
-            $link['link'] = str_replace($codigo, $char, $link['link']);
-        }
+//         foreach ($chars_especiais as $codigo => $char) {
+//             $link['link'] = str_replace($codigo, $char, $link['link']);
+//         }
 
-        $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
-    }
-}
+//         $rotas["{$link['link']}"] = "{$prefixo}conteudos/tela-conteudos.php";
+//     }
+// }
 
 $pagina_links_page = 'tela-manual';
 
@@ -132,7 +132,7 @@ if (!empty($link_page)) {
         $link['url'] = mb_strtolower(str_replace(" ", "-", $link['url']), 'UTF-8');
         
         foreach ($chars_especiais as $codigo => $char) {
-            $link['url'] = str_replace($codigo, $char, $link['url']);
+            $link['titulo'] = str_replace($codigo, $char, $link['titulo']);
         }
 
         $rotas["{$link['url']}"] = "{$prefixo}".mb_strtolower(str_replace(" ", "-", $link['titulo']), 'UTF-8').".php";
