@@ -79,6 +79,7 @@
         "mosquiteira" => $prefixo."mosquiteira". $extensao,
         "limitadores" => $prefixo."limitadores". $extensao,
         "redes-esportivas" => $prefixo."redes-esportivas". $extensao,
+        "grades" => $prefixo."grades" . $extensao,
         "capas" => $prefixo."capas". $extensao,
         "seja-um-parceiro" => $prefixo."seja-um-parceiro". $extensao,
         "laudos" => $prefixo."laudos". $extensao,
