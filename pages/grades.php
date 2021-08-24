@@ -99,7 +99,11 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="drop-down"><a href="#">Redes</a>
-            <ul id="redes-de-protecao"></ul>
+            <ul id="redes-de-protecao">
+            <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+              <li ><a href="tela-para-pets">Tela para Pets</a></li>
+              <li><a href="redes-esportivas">Redes Esportivas</a></li>
+            </ul>
           </li>
           <li class="drop-down"><a href="#">Cerca de Piscina</a>
             <ul id="cerca-de-piscina"></ul>
