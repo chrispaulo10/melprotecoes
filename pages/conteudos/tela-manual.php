@@ -96,7 +96,7 @@
             <div class="logo mr-auto">
                 <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
@@ -178,7 +178,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg" alt="<?php echo $dados_link[0]['titulo'];?>" title="<?php echo $dados_link[0]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img1.jpg" alt="<?php echo $dados_link[0]['titulo'];?>" title="<?php echo $dados_link[0]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -196,7 +196,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img2.jpg" alt="<?php echo $dados_link[1]['titulo'];?>" title="<?php echo $dados_link[1]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img2.jpg" alt="<?php echo $dados_link[1]['titulo'];?>" title="<?php echo $dados_link[1]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -215,7 +215,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" alt="<?php echo $dados_link[2]['titulo'];?>" title="<?php echo $dados_link[2]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img3.jpg" alt="<?php echo $dados_link[2]['titulo'];?>" title="<?php echo $dados_link[2]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -233,7 +233,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg" alt="<?php echo $dados_link[3]['titulo'];?>" title="<?php echo $dados_link[3]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img4.jpg" alt="<?php echo $dados_link[3]['titulo'];?>" title="<?php echo $dados_link[3]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -251,7 +251,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img5.jpg" alt="<?php echo $dados_link[4]['titulo'];?>" title="<?php echo $dados_link[4]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img5.jpg" alt="<?php echo $dados_link[4]['titulo'];?>" title="<?php echo $dados_link[4]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -269,7 +269,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img6.jpg" alt="<?php echo $dados_link[5]['titulo'];?>" title="<?php echo $dados_link[5]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img6.jpg" alt="<?php echo $dados_link[5]['titulo'];?>" title="<?php echo $dados_link[5]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -287,7 +287,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" alt="<?php echo $dados_link[6]['titulo'];?>" title="<?php echo $dados_link[6]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img7.jpg" alt="<?php echo $dados_link[6]['titulo'];?>" title="<?php echo $dados_link[6]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -305,7 +305,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <a href="http://wa.me/5511998730710" target="_blank">
-                                    <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg" alt="<?php echo $dados_link[7]['titulo'];?>" title="<?php echo $dados_link[7]['titulo'];?>">
+                                    <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img8.jpg" alt="<?php echo $dados_link[7]['titulo'];?>" title="<?php echo $dados_link[7]['titulo'];?>">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -350,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <img src="assets/img/van-mel.png" class="img-fluid" alt="">
+                        <img loading='lazy' src="assets/img/van-mel.png" class="img-fluid" alt="">
                     </div>
                 </div>
         </section><!-- End Frequently Asked Questions Section -->
@@ -479,7 +479,7 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>

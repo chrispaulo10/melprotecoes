@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
-  <title><?php echo $dados_link[0]['title'];?> | Mel Cercas de Piscinas</title>
+  <title><?php echo $dados_link[0]['title'];?> | Mel Grades de Alumínio</title>
   <meta name="description" content="<?php echo $dados_link[0]['description'];?>" />
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="<?php echo $dados_link[0]['og_title'];?> | Mel Cercas de Piscinas." />
+  <meta property="og:title" content="<?php echo $dados_link[0]['og_title'];?> | Mel Grades de Alumínio." />
   <meta property="og:description" content="<?php echo $dados_link[0]['description'];?>" />
   <meta property="og:url" content="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
   <meta property="og:site_name" content="<?php echo $dados_link[0]['site_name'];?>" />
@@ -93,37 +93,47 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="drop-down"><a href="#">Redes</a>
-            <ul id="redes-de-protecao">
-            <li><a href="redes-de-protecao">Redes de Proteção</a></li>
-              <li ><a href="tela-para-pets">Tela para Pets</a></li>
-              <li><a href="redes-esportivas">Redes Esportivas</a></li>
-            </ul>
-          </li>
-          <li class="drop-down"><a href="#">Cerca de Piscina</a>
-            <ul id="cerca-de-piscina"></ul>
-          </li>
-          <li class="drop-down"><a href="#">Mosquiteira</a>
-            <ul id="mosquiteira"></ul>
-          </li>
-          <li class="drop-down"><a href="#">Limitadores</a>
-            <ul id="limitadores"></ul>
-          </li>
-          <li class="drop-down"><a href="#">Grades</a>
-            <ul id="grades"></ul>
-          </li>
-          <li class="drop-down"><a href="#">Capas</a>
-            <ul id="capas"></ul>
-          </li>
-          <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+                <ul>
+                    <li class="drop-down"><a href="#">Redes</a>
+                        <ul id="redes-de-protecao">
+                            <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+                            <li><a href="tela-para-pets">Tela para Pets</a></li>
+                            <li><a href="redes-esportivas">Redes Esportivas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Cerca de Piscina</a>
+                        <ul id="cerca-de-piscina">
+                            <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Mosquiteira</a>
+                        <ul id="mosquiteira">
+                            <li><a href="mosquiteira">Tela Mosquiteira</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Limitadores</a>
+                        <ul id="limitadores">
+                            <li><a href="limitadores">Limitadores para Janelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Grades</a>
+                        <ul id="grades">
+                            <li><a href="grades">Grades de Alumínio</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Capas</a>
+                        <ul id="capas">
+                            <li><a href="capas">Capas de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
@@ -134,20 +144,48 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-    <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
-      <div class="container bread-cont">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Grades de Alumínio</h6></div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
-            <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
-              Você está aqui: &nbsp;
-              <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Grades de Alumínio</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </nav>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-8">
+                        <h2>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h2>
+                        <h3 class="mt-3">Solicite seu orçamento</h3>
+                    </div>
+                    <div class="col-lg-4 mt-2 my-md-0 mb-2">
+                        <div class="card card-body shadow rounded-lg">
+                            <div class="form contact-form">
+                                <form role="form" class="php-email-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
+                                            placeholder="Seu nome" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="name" class="form-control" id="fone_orcamento"
+                                            placeholder="Seu WhatsApp" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-center"><button id="solicitar_orcamento"
+                                                class="btn btn-outline-primary">Solicitar orçamento</button></div>
+                                    </div>
+                                    <div class="" id="alerta_mail_orcamento">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero -->
 
     <!-- ======= Services Section ======= -->
     <div id="services" class="services section-bg pt-5">
@@ -165,7 +203,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img1.jpg" alt="<?php echo $dados_link[0]['titulo'];?>" title="<?php echo $dados_link[0]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img1.jpg" alt="<?php echo $dados_link[0]['titulo'];?>" title="<?php echo $dados_link[0]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -183,7 +221,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img2.jpg" alt="<?php echo $dados_link[1]['titulo'];?>" title="<?php echo $dados_link[1]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img2.jpg" alt="<?php echo $dados_link[1]['titulo'];?>" title="<?php echo $dados_link[1]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -202,7 +240,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img3.jpg" alt="<?php echo $dados_link[2]['titulo'];?>" title="<?php echo $dados_link[2]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img3.jpg" alt="<?php echo $dados_link[2]['titulo'];?>" title="<?php echo $dados_link[2]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -220,7 +258,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img4.jpg" alt="<?php echo $dados_link[3]['titulo'];?>" title="<?php echo $dados_link[3]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img4.jpg" alt="<?php echo $dados_link[3]['titulo'];?>" title="<?php echo $dados_link[3]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -238,7 +276,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img5.jpg" alt="<?php echo $dados_link[4]['titulo'];?>" title="<?php echo $dados_link[4]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img5.jpg" alt="<?php echo $dados_link[4]['titulo'];?>" title="<?php echo $dados_link[4]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -256,7 +294,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img6.jpg" alt="<?php echo $dados_link[5]['titulo'];?>" title="<?php echo $dados_link[5]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img6.jpg" alt="<?php echo $dados_link[5]['titulo'];?>" title="<?php echo $dados_link[5]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -274,7 +312,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img7.jpg" alt="<?php echo $dados_link[6]['titulo'];?>" title="<?php echo $dados_link[6]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img7.jpg" alt="<?php echo $dados_link[6]['titulo'];?>" title="<?php echo $dados_link[6]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -292,7 +330,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/grades/img8.jpg" alt="<?php echo $dados_link[7]['titulo'];?>" title="<?php echo $dados_link[7]['titulo'];?>">
+                  <img loading='lazy' src="assets/img/telas-servicos/grades/img8.jpg" alt="<?php echo $dados_link[7]['titulo'];?>" title="<?php echo $dados_link[7]['titulo'];?>">
                 </a>
               </div>
               <div class="card-body">
@@ -428,7 +466,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -511,9 +549,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
-
+  <script src="assets/js/mail_orcamento.js"></script>
   <script src="assets/js/dropdowns-nav.js"></script>
-
 
 </body>
 

@@ -91,7 +91,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -168,7 +168,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img1.jpg" alt="INSTALAÇÃO DE TELA MOSQUETEIRA PARA JANELAS" title="INSTALAÇÃO DE TELA MOSQUETEIRA PARA JANELAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img1.jpg" alt="INSTALAÇÃO DE TELA MOSQUETEIRA PARA JANELAS" title="INSTALAÇÃO DE TELA MOSQUETEIRA PARA JANELAS">
                 </a>
               </div>
               <div class="card-body">
@@ -182,7 +182,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img2.jpg" alt="TELA MOSQUITEIRO PARA PROTEÇÃO DE JANELAS E PORTAS" title="TELA MOSQUITEIRO PARA PROTEÇÃO DE JANELAS E PORTAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img2.jpg" alt="TELA MOSQUITEIRO PARA PROTEÇÃO DE JANELAS E PORTAS" title="TELA MOSQUITEIRO PARA PROTEÇÃO DE JANELAS E PORTAS">
                 </a>
               </div>
               <div class="card-body">
@@ -198,7 +198,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img3.jpg" alt="TÉCNICOS EM TELA MOSQUETEIRA A MAIS DE UMA DÉCADA" title="TÉCNICOS EM TELA MOSQUETEIRA A MAIS DE UMA DÉCADA">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img3.jpg" alt="TÉCNICOS EM TELA MOSQUETEIRA A MAIS DE UMA DÉCADA" title="TÉCNICOS EM TELA MOSQUETEIRA A MAIS DE UMA DÉCADA">
                 </a>
               </div>
               <div class="card-body">
@@ -212,7 +212,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img4.jpg" alt="QUALIDADE E PREÇO JUSTO PARA TELAS MOSQUETEIRAS" title="QUALIDADE E PREÇO JUSTO PARA TELAS MOSQUETEIRAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img4.jpg" alt="QUALIDADE E PREÇO JUSTO PARA TELAS MOSQUETEIRAS" title="QUALIDADE E PREÇO JUSTO PARA TELAS MOSQUETEIRAS">
                 </a>
               </div>
               <div class="card-body">
@@ -226,7 +226,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img5.jpg" alt="BOM PREÇO EM TELA MOSQUETEIRA É NA MEL PROTEÇÕES" title="BOM PREÇO EM TELA MOSQUETEIRA É NA MEL PROTEÇÕES">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img5.jpg" alt="BOM PREÇO EM TELA MOSQUETEIRA É NA MEL PROTEÇÕES" title="BOM PREÇO EM TELA MOSQUETEIRA É NA MEL PROTEÇÕES">
                 </a>
               </div>
               <div class="card-body">
@@ -240,7 +240,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/mosquiteiro/img6.jpg" alt="AQUI VOCÊ ENCONTRA A SOLUÇÃO EM TELAS PARA EVITAR INSETOS" title="AQUI VOCÊ ENCONTRA A SOLUÇÃO EM TELAS PARA EVITAR INSETOS">
+                  <img loading='lazy' src="assets/img/telas-servicos/mosquiteiro/img6.jpg" alt="AQUI VOCÊ ENCONTRA A SOLUÇÃO EM TELAS PARA EVITAR INSETOS" title="AQUI VOCÊ ENCONTRA A SOLUÇÃO EM TELAS PARA EVITAR INSETOS">
                 </a>
               </div>
               <div class="card-body">
@@ -373,7 +373,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -484,6 +484,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 </body>
 

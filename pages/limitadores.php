@@ -90,7 +90,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -152,7 +152,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img1.jpg" alt="CORRENTE LIMITADORA PARA JANELAS BASCULANTES" title="CORRENTE LIMITADORA PARA JANELAS BASCULANTES">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img1.jpg" alt="CORRENTE LIMITADORA PARA JANELAS BASCULANTES" title="CORRENTE LIMITADORA PARA JANELAS BASCULANTES">
                 </a>
               </div>
               <div class="card-body">
@@ -166,7 +166,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img2.jpg" alt="CORRENTE LIMITADORA PARA JANELAS MAXIM-AIR" title="CORRENTE LIMITADORA PARA JANELAS MAXIM-AIR">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img2.jpg" alt="CORRENTE LIMITADORA PARA JANELAS MAXIM-AIR" title="CORRENTE LIMITADORA PARA JANELAS MAXIM-AIR">
                 </a>
               </div>
               <div class="card-body">
@@ -181,7 +181,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img3.jpg" alt="CORRENTE LIMITADORA PARA JANELAS CAPELINHA" title="CORRENTE LIMITADORA PARA JANELAS CAPELINHA">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img3.jpg" alt="CORRENTE LIMITADORA PARA JANELAS CAPELINHA" title="CORRENTE LIMITADORA PARA JANELAS CAPELINHA">
                 </a>
               </div>
               <div class="card-body">
@@ -195,7 +195,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img4.jpg" alt="LIMITADOR PARA JANELAS BASCULANTES DE MADEIRA" title="LIMITADOR PARA JANELAS BASCULANTES DE MADEIRA">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img4.jpg" alt="LIMITADOR PARA JANELAS BASCULANTES DE MADEIRA" title="LIMITADOR PARA JANELAS BASCULANTES DE MADEIRA">
                 </a>
               </div>
               <div class="card-body">
@@ -209,7 +209,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img5.jpg" alt="HASTE LIMITADORA PARA JANELAS BASCULANTES" title="HASTE LIMITADORA PARA JANELAS BASCULANTES">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img5.jpg" alt="HASTE LIMITADORA PARA JANELAS BASCULANTES" title="HASTE LIMITADORA PARA JANELAS BASCULANTES">
                 </a>
               </div>
               <div class="card-body">
@@ -223,7 +223,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img6.jpg" alt="HASTE LIMITADORA PARA JANELAS MAXIM-AIR" title="HASTE LIMITADORA PARA JANELAS MAXIM-AIR">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img6.jpg" alt="HASTE LIMITADORA PARA JANELAS MAXIM-AIR" title="HASTE LIMITADORA PARA JANELAS MAXIM-AIR">
                 </a>
               </div>
               <div class="card-body">
@@ -238,7 +238,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img7.jpg" alt="HASTE LIMITADORA PARA JANELAS CAPELINHA" title="HASTE LIMITADORA PARA JANELAS CAPELINHA">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img7.jpg" alt="HASTE LIMITADORA PARA JANELAS CAPELINHA" title="HASTE LIMITADORA PARA JANELAS CAPELINHA">
                 </a>
               </div>
               <div class="card-body">
@@ -253,7 +253,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/limitadores/img8.jpg" alt="HASTE PARA JANELAS BASCULANTES DE MADEIRA" title="HASTE PARA JANELAS BASCULANTES DE MADEIRA">
+                  <img loading='lazy' src="assets/img/telas-servicos/limitadores/img8.jpg" alt="HASTE PARA JANELAS BASCULANTES DE MADEIRA" title="HASTE PARA JANELAS BASCULANTES DE MADEIRA">
                 </a>
               </div>
               <div class="card-body">
@@ -386,7 +386,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -468,6 +468,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 </body>
 

@@ -91,7 +91,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -153,7 +153,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img1.jpg" alt="CAPA DE PROTEÇÃO PARA PISCINA" title="CAPA DE PROTEÇÃO PARA PISCINA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img1.jpg" alt="CAPA DE PROTEÇÃO PARA PISCINA" title="CAPA DE PROTEÇÃO PARA PISCINA">
                 </a>
               </div>
               <div class="card-body">
@@ -167,7 +167,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img2.jpg" alt="CAPA TÉRMICA PARA PISCINA" title="CAPA TÉRMICA PARA PISCINA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img2.jpg" alt="CAPA TÉRMICA PARA PISCINA" title="CAPA TÉRMICA PARA PISCINA">
                 </a>
               </div>
               <div class="card-body">
@@ -182,7 +182,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img3.jpg" alt="CAPA DE TELA PARA PISCINA" title="CAPA DE TELA PARA PISCINA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img3.jpg" alt="CAPA DE TELA PARA PISCINA" title="CAPA DE TELA PARA PISCINA">
                 </a>
               </div>
               <div class="card-body">
@@ -196,7 +196,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img4.jpg" alt="CAPA DE PISCINA REDONDA" title="CAPA DE PISCINA REDONDA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img4.jpg" alt="CAPA DE PISCINA REDONDA" title="CAPA DE PISCINA REDONDA">
                 </a>
               </div>
               <div class="card-body">
@@ -210,7 +210,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img5.jpg" alt="CAPA PARA PISCINA SOB MEDIDA" title="CAPA PARA PISCINA SOB MEDIDA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img5.jpg" alt="CAPA PARA PISCINA SOB MEDIDA" title="CAPA PARA PISCINA SOB MEDIDA">
                 </a>
               </div>
               <div class="card-body">
@@ -224,7 +224,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img6.jpg" alt="CAPA BOLHA PARA PISCINAS" title="CAPA BOLHA PARA PISCINAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img6.jpg" alt="CAPA BOLHA PARA PISCINAS" title="CAPA BOLHA PARA PISCINAS">
                 </a>
               </div>
               <div class="card-body">
@@ -239,7 +239,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img7.jpg" alt="CAPA PARA PISCINA RETANGULAR" title="CAPA PARA PISCINA RETANGULAR">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img7.jpg" alt="CAPA PARA PISCINA RETANGULAR" title="CAPA PARA PISCINA RETANGULAR">
                 </a>
               </div>
               <div class="card-body">
@@ -255,7 +255,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/capas/img8.jpg" alt="CAPAS PARA PISCINAS DE FIBRA" title="CAPAS PARA PISCINAS DE FIBRA">
+                  <img loading='lazy' src="assets/img/telas-servicos/capas/img8.jpg" alt="CAPAS PARA PISCINAS DE FIBRA" title="CAPAS PARA PISCINAS DE FIBRA">
                 </a>
               </div>
               <div class="card-body">
@@ -388,7 +388,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -471,6 +471,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 
 </body>
