@@ -156,15 +156,15 @@
                     <div class="col-lg-4 mt-2 my-md-0">
                         <div class="card card-body shadow rounded-lg">
                             <div class="form contact-form">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <form role="form" class="php-email-form">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="nome"
+                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
                                             placeholder="Seu nome" data-rule="minlen:4"
                                             data-msg="Please enter at least 4 chars" />
                                         <div class="validate"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" name="name" class="form-control" id="fone"
+                                        <input type="tel" name="name" class="form-control" id="fone_orcamento"
                                             placeholder="Seu WhatsApp" data-rule="minlen:4"
                                             data-msg="Please enter at least 4 chars" />
                                         <div class="validate"></div>
@@ -175,9 +175,9 @@
                                         <div class="sent-message">Your message has been sent. Thank you!</div>
                                     </div>
                                     <div class="text-center">
-                                        <div class="text-center"><button type="submit">Enviar</button></div>
+                                        <div class="text-center"><button id="solicitar_orcamento" type="button">Enviar</button></div>
                                     </div>
-                                    <div class="" id="alerta_mail">
+                                    <div class="" id="alerta_mail_orcamento">
                                     </div>
                                 </form>
                             </div>
@@ -714,6 +714,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/mail_orcamento.js"></script>
 
 
 </body>
