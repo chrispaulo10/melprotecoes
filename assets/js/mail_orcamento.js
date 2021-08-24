@@ -11,8 +11,6 @@ $("#solicitar_orcamento").click(function () {
     $.post("back-end/controller/ControllerMail.php", dados, function (retorno) {
         button.prop('disabled', false);
 
-        console.log(retorno);
-
         $("#nome_orcamento").val('');
         $("#fone_orcamento").val('');
 
