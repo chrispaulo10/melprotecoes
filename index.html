@@ -140,294 +140,340 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Slider Section ======= -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div class="slides w-100 d-block" style="width: 100%;">
-        <img loading='lazy' id="baner" src="assets/img/slider/mobile-slid.webp" height="1920"
-          alt="Banner Mel Proteções" />
-      </div>
-    </div>
-  </div><!-- End Slider -->
-
   <main id="main">
-
-    <div class="d-none">
-      <h1>
-        Encontre redes de proteção na Mel Proteções. A melhor rede de proteção com qualidade e preço justo. Entre em
-        contato e confira nossos produtos. Atendimento personalizado para serviços de redes de segurança
-      </h1>
-      <h2>
-        redesdeprotecoes.com.br, redes de proteção, telas de proteção, redes de proteção com melhor preço, onde comprar
-        redes, tela para proteção, rede de proteção para gatos, redes de proteção para janelas, redes de proteção para
-        crianças, redes de proteção para criança.
-      </h2>
-    </div>
-
-    <section class="section-bg area-padding">
-      <div class="section-headline services-head text-center">
-        <h2>Redes de Proteção</h2>
-      </div>
-
-      <div class="container text-center">
-        <p>
-          <span id="zona"></span>
-          As redes de proteção são necessárias para quem tem crianças e ou Pets em casa. Acessório útil para garantir
-          total segurança para família.
-        <div class="collapse" id="collapseExample">
-          Um dos aspectos mais positivos dessa rede de proteção é que não agride a estética do ambiente. A Rede de
-          proteção é composta por malhas permitindo ar livre e a iluminação solar. Por isso, elas também são muito
-          usadas em espaços de diversão como, quadras de esporte e playgrounds. As redes inspiram cuidado e proteção,
-          garantindo mais liberdade para a brincadeira das crianças e mais tranquilidade aos pais. As telas são
-          instaladas por medidas e podem se adaptar ao tamanho necessário para sua sacada. Assim, elas podem cobrir
-          diferentes espaços – desde escadas até janelas.<br> <br>
-
-          Essa tela de proteção é geralmente feitas em polietileno, que é um material de altíssima resistência.
-
-          Ele é muito difícil de estourar – o que o torna perfeito para segurança total das redes de proteção. As redes
-          fabricadas com esse material são instaladas em sacadas e janelas de prédios, onde residem crianças, idosos e
-          animais de estimação. Elas também podem revestir escadas, piscinas ou até mesmo coberturas. <br> <br>
-
-          Na hora da instalação, também é importante fixar os ganchos de forma correta. Eles são feitos de metal
-          resistente e devem ser presos na parede a cada 35 centímetros.
-
-          A Mel Proteções disponibiliza redes para proteção de diferentes espessuras, cores e tamanhos. Branca, areia e
-          preta são as redes mais escolhidas, pois os padrões dos condomínios exigem a mesma cor para não alterar a
-          faixada do prédio e na maior parte das vezes optam pelas cores branca e preta. A rede em polietileno de
-          fábrica tem a medida de 35 metros de comprimento e 7 metros na altura, muito uteis para cobrir partes
-          extensas. Essas redes são recomendadas por muitas ONGS de crianças e gatos, inclusive a rede de proteção é um
-          item obrigatório para poder adotar um gato. Aqui na Mel Proteções você encontra diversos modelos de redes,
-          para atender diferentes necessidades. <br> <br>
-
-          A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e morcegos em galpões, armazéns,
-          docas, escolas e hospitais. Elas podem ser instaladas em todos os vãos onde o pássaro posso ter acesso, com
-          malhas menores que os dos modelos de proteção para crianças ela elimina 100% a entrada de pássaros no
-          ambiente. A Mel Proteções disponibiliza diferentes redes de Proteção, ótima para a segurança de toda família.
-          Confira mais aqui em nosso site!
-        </div>
-        </p>
-        <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample"
-          aria-expanded="false" aria-controls="collapseExample">
-          Abrir/Fechar Detalhes
-        </button>
-      </div>
-
-    </section>
-
-    <!-- ======= Services Section ======= -->
-    <div id="services" class="services section-bg area-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline services-head text-center ">
-              <h2>Nossos serviços</h2>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="container text-center text-md-left" data-aos="fade-up">
+        <div class="row align-items-stretch">
+          <div class="col-lg-8">
+            <h2>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h2>
+            <h3 class="mt-3">Solicite seu orçamento</h3>
+          </div>
+          <div class="col-lg-4 mt-2 my-md-0 mb-2">
+            <div class="card card-body shadow rounded-lg">
+              <div class="form contact-form">
+                <form role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="nome_orcamento" placeholder="Seu nome"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="name" class="form-control" id="fone_orcamento" placeholder="Seu WhatsApp"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-center"><button id="solicitar_orcamento" class="btn btn-outline-primary">Solicitar
+                        orçamento</button></div>
+                  </div>
+                  <div class="" id="alerta_mail_orcamento">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section><!-- End Hero -->
 
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch ">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img1.webp" alt="Redes de Proteção"
-                  title="Redes de Proteção">
+    <main id="main">
+
+      <div class="d-none">
+        <h1>
+          Encontre redes de proteção na Mel Proteções. A melhor rede de proteção com qualidade e preço justo. Entre em
+          contato e confira nossos produtos. Atendimento personalizado para serviços de redes de segurança
+        </h1>
+        <h2>
+          redesdeprotecoes.com.br, redes de proteção, telas de proteção, redes de proteção com melhor preço, onde
+          comprar
+          redes, tela para proteção, rede de proteção para gatos, redes de proteção para janelas, redes de proteção para
+          crianças, redes de proteção para criança.
+        </h2>
+      </div>
+
+      <section class="section-bg area-padding">
+        <div class="section-headline services-head text-center">
+          <h2>Redes de Proteção</h2>
+        </div>
+
+        <div class="container text-center">
+          <p>
+            <span id="zona"></span>
+            As redes de proteção são necessárias para quem tem crianças e ou Pets em casa. Acessório útil para garantir
+            total segurança para família.
+          <div class="collapse" id="collapseExample">
+            Um dos aspectos mais positivos dessa rede de proteção é que não agride a estética do ambiente. A Rede de
+            proteção é composta por malhas permitindo ar livre e a iluminação solar. Por isso, elas também são muito
+            usadas em espaços de diversão como, quadras de esporte e playgrounds. As redes inspiram cuidado e proteção,
+            garantindo mais liberdade para a brincadeira das crianças e mais tranquilidade aos pais. As telas são
+            instaladas por medidas e podem se adaptar ao tamanho necessário para sua sacada. Assim, elas podem cobrir
+            diferentes espaços – desde escadas até janelas.<br> <br>
+
+            Essa tela de proteção é geralmente feitas em polietileno, que é um material de altíssima resistência.
+
+            Ele é muito difícil de estourar – o que o torna perfeito para segurança total das redes de proteção. As
+            redes
+            fabricadas com esse material são instaladas em sacadas e janelas de prédios, onde residem crianças, idosos e
+            animais de estimação. Elas também podem revestir escadas, piscinas ou até mesmo coberturas. <br> <br>
+
+            Na hora da instalação, também é importante fixar os ganchos de forma correta. Eles são feitos de metal
+            resistente e devem ser presos na parede a cada 35 centímetros.
+
+            A Mel Proteções disponibiliza redes para proteção de diferentes espessuras, cores e tamanhos. Branca, areia
+            e
+            preta são as redes mais escolhidas, pois os padrões dos condomínios exigem a mesma cor para não alterar a
+            faixada do prédio e na maior parte das vezes optam pelas cores branca e preta. A rede em polietileno de
+            fábrica tem a medida de 35 metros de comprimento e 7 metros na altura, muito uteis para cobrir partes
+            extensas. Essas redes são recomendadas por muitas ONGS de crianças e gatos, inclusive a rede de proteção é
+            um
+            item obrigatório para poder adotar um gato. Aqui na Mel Proteções você encontra diversos modelos de redes,
+            para atender diferentes necessidades. <br> <br>
+
+            A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e morcegos em galpões, armazéns,
+            docas, escolas e hospitais. Elas podem ser instaladas em todos os vãos onde o pássaro posso ter acesso, com
+            malhas menores que os dos modelos de proteção para crianças ela elimina 100% a entrada de pássaros no
+            ambiente. A Mel Proteções disponibiliza diferentes redes de Proteção, ótima para a segurança de toda
+            família.
+            Confira mais aqui em nosso site!
+          </div>
+          </p>
+          <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Abrir/Fechar Detalhes
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ======= Services Section ======= -->
+      <div id="services" class="services section-bg area-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline services-head text-center ">
+                <h2>Nossos serviços</h2>
               </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="redes-de-protecao">Redes de Proteção</a></h2>
-                <p class="card-text">A rede de proteção é um acessório útil para garantir total segurança. <br>
-                  Essas telas de proteção são geralmente feitas em polietileno, que é um material de altíssima
-                  resistência.</p>
-                <div class="read-more"><a href="redes-de-protecao">Saiba mais <i class="icofont-arrow-right"></i> </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch ">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img1.webp" alt="Redes de Proteção"
+                    title="Redes de Proteção">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="redes-de-protecao">Redes de Proteção</a></h2>
+                  <p class="card-text">A rede de proteção é um acessório útil para garantir total segurança. <br>
+                    Essas telas de proteção são geralmente feitas em polietileno, que é um material de altíssima
+                    resistência.</p>
+                  <div class="read-more"><a href="redes-de-protecao">Saiba mais <i class="icofont-arrow-right"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch ">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img2.webp" alt="Cerca para piscina"
+                    title="Cerca para piscina">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="cerca-de-piscina">Cerca para piscina</a></h2>
+                  <p class="card-text">Cerca Removível para Proteção de Crianças em Piscinas. <br>
+                    E a melhor maneira de proteger sua família e seus animais de estimação contra um possível
+                    afogamento.
+                  </p>
+                  <div class="read-more"><a href="cerca-de-piscina">Saiba mais <i class="icofont-arrow-right"></i> </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch ">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img4.webp" alt="Redes para pets" title="Redes para pets">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="tela-para-pets">Redes para pets</a></h2>
+                  <p class="card-text">A rede de proteção para pets é um acessório indispensável para garantir total
+                    segurança.
+                    <br>
+                    Essas telas de proteção para gatos, cães e aves são geralmente feitas em polietileno, que é um
+                    material de altíssima resistência.
+                  </p>
+                  <div class="read-more"><a href="tela-para-pets">Saiba mais <i class="icofont-arrow-right"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img3.webp" alt="Tela Mosquiteiro"
+                    title="Tela Mosquiteiro">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="mosquiteira">Tela Mosquiteiro</a></h2>
+                  <p class="card-text">A tela mosquiteiro é a melhor defesa de sua casa e sua família contra os insetos.
+                    <br>
+                    Extremamente importante para impedir que mosquitos, pernilongos e outros seres voadores passem por
+                    janelas, portas e vãos.
+                  </p>
+                  <div class="read-more"><a href="mosquiteira">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch ">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img5.webp" alt="Limitadores" title="Limitadores">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="limitadores">Limitadores</a></h2>
+                  <p class="card-text">A tela mosquiteiro é a melhor defesa de sua casa e sua família contra os insetos.
+                    <br>
+                    Extremamente importante para impedir que mosquitos, pernilongos e outros seres voadores passem por
+                    janelas, portas e vãos.
+                  </p>
+                  <div class="read-more"><a href="limitadores">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img6.webp" alt="Redes esportivas"
+                    title="Redes esportivas">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="redes-esportivas">Redes esportivas</a></h2>
+                  <p class="card-text">As redes esportivas são fabricadas com fio torcido o que garante ao material
+                    maior
+                    resistência e durabilidade, diferente dos modelos em fio Varal também encontrado no mercado que
+                    apresentam uma vida útil menor pelas suas características de interior ôco.
+                  </p>
+                  <div class="read-more"><a href="redes-esportivas">Saiba mais <i class="icofont-arrow-right"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img7.webp" alt="Grades de alumínio"
+                    title="Grades de alumínio">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="grades">Grades de alumínio</a></h2>
+                  <p class="card-text">Quer evitar invasão de ladrões no seu comercio, indústria ou residência? <br>
+                    Coloque já grades de alumínio em suas janelas. A Mel Proteções fornece grades reforçadas, com
+                    material
+                    de qualidade.</p>
+                  <div class="read-more"><a href="grades">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img loading='lazy' src="assets/img/services/img8.webp" alt="Capas para piscina"
+                    title="Capas para piscina">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-uppercase"><a href="capas">Capas para piscina</a></h2>
+                  <p class="card-text">A capa de proteção serve para proteger a piscina de sujeiras como folhas, galhos,
+                    poeira ou insetos. Isso além de ser um item de segurança importante para quem tem crianças em casa.
+                    Elas deveriam ser item básico para qualquer área de lazer</p>
+                  <div class="read-more"><a href="capas">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch ">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img2.webp" alt="Cerca para piscina"
-                  title="Cerca para piscina">
+        </div>
+      </div><!-- End Services Section -->
+
+      <!-- ======= Rviews Section ======= -->
+      <div class="reviews-area ">
+        <div class="row no-gutters">
+          <div class="col-lg-6 py-0">
+            <img loading='lazy' src="assets/img/bannerquali.webp" alt="Banner Qualidade Mel Proteções" class="img-fluid"
+              width="100%">
+          </div>
+          <div class="col-lg-6 work-right-text d-flex align-items-center">
+            <div class="px-5 py-5 py-lg-0">
+              <h2>A qualidade que você merece</h2>
+              <h5>Nossa prioridade é levar segurança e tranquilidade a todos os lares.</h5>
+              <a href="#contact" class="ready-btn scrollto">Contate-nos</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Rviews Section -->
+
+      <!-- ======= About Section ======= -->
+      <div id="about" class="about-area section-bg area-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+              <div class="section-headline text-center">
+                <h2>Sobre nós</h2>
               </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="cerca-de-piscina">Cerca para piscina</a></h2>
-                <p class="card-text">Cerca Removível para Proteção de Crianças em Piscinas. <br>
-                  E a melhor maneira de proteger sua família e seus animais de estimação contra um possível afogamento.
-                </p>
-                <div class="read-more"><a href="cerca-de-piscina">Saiba mais <i class="icofont-arrow-right"></i> </a>
+            </div>
+          </div>
+          <div class="row">
+            <!-- single-well start-->
+            <div class="col-md-6 col-sm-12 col-xs-12 col-12 ">
+              <div class="well-left">
+                <div class="single-well">
+                  <a href="#">
+                    <img loading='lazy' src="assets/img/sobres.jpg" class="img-thumbnail shadow-sm"
+                      alt="Imagem Sobre Mel Proteções">
+                  </a>
                 </div>
               </div>
             </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch ">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img4.webp" alt="Redes para pets" title="Redes para pets">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="tela-para-pets">Redes para pets</a></h2>
-                <p class="card-text">A rede de proteção para pets é um acessório indispensável para garantir total
-                  segurança.
-                  <br>
-                  Essas telas de proteção para gatos, cães e aves são geralmente feitas em polietileno, que é um
-                  material de altíssima resistência.
-                </p>
-                <div class="read-more"><a href="tela-para-pets">Saiba mais <i class="icofont-arrow-right"></i> </a>
+            <!-- single-well end-->
+            <div class="col-md-6 col-sm-12 col-xs-12 col-12 ">
+              <div class="well-middle">
+                <div class="single-well">
+                  <a href="#">
+                    <h4 class="sec-head">Mel Proteções</h4>
+                  </a>
+                  <p>
+                    A Mel Proteções é uma empresa especializada em redes de proteção, cujos serviços consistem no
+                    fornecimento, instalação e manutenção de redes de proteção de alta qualidade – que, por sua vez,
+                    podem
+                    ser constituídos de diferentes tipos de materiais. As redes de proteção podem ser instaladas nos
+                    mais
+                    variados ambientes, dependendo da finalidade desejada. Podem ser colocadas, por exemplo, em sacadas,
+                    janelas, piscinas, quadras, escadas, playgrounds infantis, entre outros.
+                    <br>
+                    Hoje além de ser uma empresa especializada em redes de proteção para crianças e adultos, também
+                    trabalhamos com redes de proteção para gatos e pets, cercas removíveis para piscina, capa para
+                    piscina, tela mosquiteira, varais, estruturas metálicas, grades de aluminio, entre outros serviços
+                    direcionados a segurança de sua família.
+                    Também somos distribuidores de materiais para empresas.
+                    Fazemos parte das empresas fundadoras no único curso de rede de proteção em São Paulo, para pessoas
+                    que querem empreender em um novo ramo de atividade.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img3.webp" alt="Tela Mosquiteiro" title="Tela Mosquiteiro">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="mosquiteira">Tela Mosquiteiro</a></h2>
-                <p class="card-text">A tela mosquiteiro é a melhor defesa de sua casa e sua família contra os insetos.
-                  <br>
-                  Extremamente importante para impedir que mosquitos, pernilongos e outros seres voadores passem por
-                  janelas, portas e vãos.</p>
-                <div class="read-more"><a href="mosquiteira">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch ">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img5.webp" alt="Limitadores" title="Limitadores">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="limitadores">Limitadores</a></h2>
-                <p class="card-text">A tela mosquiteiro é a melhor defesa de sua casa e sua família contra os insetos.
-                  <br>
-                  Extremamente importante para impedir que mosquitos, pernilongos e outros seres voadores passem por
-                  janelas, portas e vãos.</p>
-                <div class="read-more"><a href="limitadores">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img6.webp" alt="Redes esportivas" title="Redes esportivas">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="redes-esportivas">Redes esportivas</a></h2>
-                <p class="card-text">As redes esportivas são fabricadas com fio torcido o que garante ao material maior
-                  resistência e durabilidade, diferente dos modelos em fio Varal também encontrado no mercado que
-                  apresentam uma vida útil menor pelas suas características de interior ôco.
-                </p>
-                <div class="read-more"><a href="redes-esportivas">Saiba mais <i class="icofont-arrow-right"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img7.webp" alt="Grades de alumínio"
-                  title="Grades de alumínio">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="grades">Grades de alumínio</a></h2>
-                <p class="card-text">Quer evitar invasão de ladrões no seu comercio, indústria ou residência? <br>
-                  Coloque já grades de alumínio em suas janelas. A Mel Proteções fornece grades reforçadas, com material
-                  de qualidade.</p>
-                <div class="read-more"><a href="grades">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img loading='lazy' src="assets/img/services/img8.webp" alt="Capas para piscina"
-                  title="Capas para piscina">
-              </div>
-              <div class="card-body">
-                <h2 class="card-title text-uppercase"><a href="capas">Capas para piscina</a></h2>
-                <p class="card-text">A capa de proteção serve para proteger a piscina de sujeiras como folhas, galhos,
-                  poeira ou insetos. Isso além de ser um item de segurança importante para quem tem crianças em casa.
-                  Elas deveriam ser item básico para qualquer área de lazer</p>
-                <div class="read-more"><a href="capas">Saiba mais <i class="icofont-arrow-right"></i> </a></div>
-              </div>
-            </div>
+            <!-- End col-->
           </div>
         </div>
-      </div>
-    </div><!-- End Services Section -->
+      </div><!-- End About Section -->
 
-    <!-- ======= Rviews Section ======= -->
-    <div class="reviews-area ">
-      <div class="row no-gutters">
-        <div class="col-lg-6 py-0">
-          <img loading='lazy' src="assets/img/bannerquali.webp" alt="Banner Qualidade Mel Proteções" class="img-fluid"
-            width="100%">
-        </div>
-        <div class="col-lg-6 work-right-text d-flex align-items-center">
-          <div class="px-5 py-5 py-lg-0">
-            <h2>A qualidade que você merece</h2>
-            <h5>Nossa prioridade é levar segurança e tranquilidade a todos os lares.</h5>
-            <a href="#contact" class="ready-btn scrollto">Contate-nos</a>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Rviews Section -->
-
-    <!-- ======= About Section ======= -->
-    <div id="about" class="about-area section-bg area-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-            <div class="section-headline text-center">
-              <h2>Sobre nós</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- single-well start-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 ">
-            <div class="well-left">
-              <div class="single-well">
-                <a href="#">
-                  <img loading='lazy' src="assets/img/sobres.jpg" class="img-thumbnail shadow-sm"
-                    alt="Imagem Sobre Mel Proteções">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- single-well end-->
-          <div class="col-md-6 col-sm-12 col-xs-12 col-12 ">
-            <div class="well-middle">
-              <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">Mel Proteções</h4>
-                </a>
-                <p>
-                  A Mel Proteções é uma empresa especializada em redes de proteção, cujos serviços consistem no
-                  fornecimento, instalação e manutenção de redes de proteção de alta qualidade – que, por sua vez, podem
-                  ser constituídos de diferentes tipos de materiais. As redes de proteção podem ser instaladas nos mais
-                  variados ambientes, dependendo da finalidade desejada. Podem ser colocadas, por exemplo, em sacadas,
-                  janelas, piscinas, quadras, escadas, playgrounds infantis, entre outros.
-                  <br>
-                  Hoje além de ser uma empresa especializada em redes de proteção para crianças e adultos, também
-                  trabalhamos com redes de proteção para gatos e pets, cercas removíveis para piscina, capa para
-                  piscina, tela mosquiteira, varais, estruturas metálicas, grades de aluminio, entre outros serviços
-                  direcionados a segurança de sua família.
-                  Também somos distribuidores de materiais para empresas.
-                  Fazemos parte das empresas fundadoras no único curso de rede de proteção em São Paulo, para pessoas
-                  que querem empreender em um novo ramo de atividade.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End col-->
-        </div>
-      </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <div id="pricing" class="pricing-area area-padding">
+      <!-- ======= Pricing Section ======= -->
+      <!-- <div id="pricing" class="pricing-area area-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
@@ -489,408 +535,424 @@
         </div>
       </div>
     </div> -->
-    <!-- End Pricing Section -->
+      <!-- End Pricing Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <div id="testimonials" class="testimonials-area">
-      <div class="testi-inner area-padding">
-        <div class="testi-overly"></div>
-        <div class="container ">
+      <!-- ======= Testimonials Section ======= -->
+      <div id="testimonials" class="testimonials-area">
+        <div class="testi-inner area-padding">
+          <div class="testi-overly"></div>
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <!-- Start testimonials Start -->
+                <div class="testimonial-content text-center">
+                  <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
+                  <!-- start testimonial carousel -->
+                  <div class="owl-carousel testimonial-carousel">
+                    <div class="single-testi">
+                      <div class="testi-text">
+                        <p>
+                          Liguei para orçamento e no dia seguinte já estava com a rede instalada. Processo rápido desde
+                          o
+                          ótimo atendimento da Sônia aos instaladores Bruno e Mateus que só precisarem de 20 minitos
+                          para
+                          fazer o serviço!! Melhor custo benefício da região, super indico! Nota 10!
+                        </p>
+                        <h6>Sérgio</h6>
+                      </div>
+                    </div>
+                    <!-- End single item -->
+                    <div class="single-testi">
+                      <div class="testi-text">
+                        <p>
+                          Ótimo serviço dos instaladores Mateus e Bruno. Recomendo!
+                        </p>
+                        <h6>Fábio Vinícius Amorim</h6>
+                      </div>
+                    </div>
+                    <!-- End single item -->
+                    <div class="single-testi">
+                      <div class="testi-text">
+                        <p>
+                          Materiais certificados, preço justo e atendimento extremamente atencioso. Recomendo!
+                        </p>
+                        <h6>Bianca Alves de Oliveira</h6>
+                      </div>
+                    </div>
+                    <!-- End single item -->
+                  </div>
+                </div>
+                <!-- End testimonials end -->
+              </div>
+              <!-- End Right Feature -->
+            </div>
+          </div>
+        </div>
+      </div><!-- End Testimonials Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg area-padding">
+        <div class="container mb-4">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <!-- Start testimonials Start -->
-              <div class="testimonial-content text-center">
-                <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
-                <!-- start testimonial carousel -->
-                <div class="owl-carousel testimonial-carousel">
-                  <div class="single-testi">
-                    <div class="testi-text">
-                      <p>
-                        Liguei para orçamento e no dia seguinte já estava com a rede instalada. Processo rápido desde o
-                        ótimo atendimento da Sônia aos instaladores Bruno e Mateus que só precisarem de 20 minitos para
-                        fazer o serviço!! Melhor custo benefício da região, super indico! Nota 10!
-                      </p>
-                      <h6>Sérgio</h6>
-                    </div>
-                  </div>
-                  <!-- End single item -->
-                  <div class="single-testi">
-                    <div class="testi-text">
-                      <p>
-                        Ótimo serviço dos instaladores Mateus e Bruno. Recomendo!
-                      </p>
-                      <h6>Fábio Vinícius Amorim</h6>
-                    </div>
-                  </div>
-                  <!-- End single item -->
-                  <div class="single-testi">
-                    <div class="testi-text">
-                      <p>
-                        Materiais certificados, preço justo e atendimento extremamente atencioso. Recomendo!
-                      </p>
-                      <h6>Bianca Alves de Oliveira</h6>
-                    </div>
-                  </div>
-                  <!-- End single item -->
-                </div>
-              </div>
-              <!-- End testimonials end -->
-            </div>
-            <!-- End Right Feature -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg area-padding">
-      <div class="container mb-4">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline services-head text-center">
-              <h2>Regiões Atendidas</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-5  ">
-            <div class="card shadow-sm">
-              <div class="card-header bg-light">
-                <h6 class="text-center mb-0">Instalações em São Paulo-SP, Litoral-SP e Interior-SP</h6>
-              </div>
-              <div class="card-header bg-primary">
-                <h6 class="text-center mb-0 text-light">Kit sob medida para todo Brasil. <br> Instalações em outros
-                  estados e cidades somente sob consulta.</h6>
-              </div>
-              <div class="card-body">
-                <ul class="faq-list" id="regioes">
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <img loading='lazy' src="assets/img/van-mel.png" class="img-fluid" alt="Van Mel Proteções">
-          </div>
-        </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Suscribe Section ======= -->
-    <div class="suscribe-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-            <div class="suscribe-text text-center">
-              <h3>Seja bem-vindo à melhor empresa de redes de proteção | Mel Proteções </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Suscribe Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <div id="contact" class="contact-area section-bg">
-      <div class="contact-inner area-padding">
-        <div class="contact-overly"></div>
-        <div class="container ">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="section-headline text-center">
-                <h2>Contato</h2>
+              <div class="section-headline services-head text-center">
+                <h2>Regiões Atendidas</h2>
               </div>
             </div>
           </div>
           <div class="row">
-            <!-- Start contact icon column -->
-            <div class="col-md-4 col-sm-4 col-xs-12  ">
-              <div class="contact-icon text-center ">
-                <div class="single-icon">
-                  <i class="fa fa-mobile"></i>
-                  <p>
-                    Tel: <a href="tel:+55112682-3893" target="_blank" class="text-dark">(11) 2682-3893</a><br>
-                    <span>Das 8h às 18h00 de segunda a sábado.</span>
-                  </p>
+            <div class="col-lg-5  ">
+              <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                  <h6 class="text-center mb-0">Instalações em São Paulo-SP, Litoral-SP e Interior-SP</h6>
                 </div>
-              </div>
-            </div>
-            <!-- Start contact icon column -->
-            <div class="col-md-4 col-sm-4 col-xs-12 ">
-              <div class="contact-icon text-center">
-                <div class="single-icon">
-                  <i class="fa fa-whatsapp"></i>
-                  <p>
-                    Whats: <a target="_blank" class="text-dark"
-                      href="https://api.whatsapp.com/send/?phone=5511998730710">(11) 99873-0710</a><br>
-                    <span>Atendimento 24 horas de segunda a segunda.</span>
-                  </p>
+                <div class="card-header bg-primary">
+                  <h6 class="text-center mb-0 text-light">Kit sob medida para todo Brasil. <br> Instalações em outros
+                    estados e cidades somente sob consulta.</h6>
                 </div>
-              </div>
-            </div>
-            <!-- Start contact icon column -->
-            <div class="col-md-4 col-sm-4 col-xs-12 ">
-              <div class="contact-icon text-center">
-                <div class="single-icon">
-                  <i class="fa fa-map-marker"></i>
-                  <p>
-                    R. Iara Xavier, 55 - Jardim Piratininga<br>
-                    <span>São Paulo - SP</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-1">
-
-            <!-- Start Google Map -->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <!-- Start Map -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7491010191266!2d-46.53587368520825!3d-23.505544965418174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fc85acab575%3A0xb6e544389da1d6b2!1.5sR.%20Iara%20Xavier%2C%2055%20-%20Jardim%20Piratininga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003716-070!5e0!3m2!1spt-BR!1.5sbr!4v1616541525897!5m2!1spt-BR!1.5sbr"
-                width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <!-- End Map -->
-            </div>
-            <!-- End Google Map -->
-
-            <!-- Start  contact -->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="form contact-form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="nome" placeholder="Seu nome"
-                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="tel" name="name" class="form-control" id="fone" placeholder="Seu WhatsApp"
-                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu email"
-                      data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto"
-                      data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" id="mensagem" rows="5" data-rule="required"
-                      data-msg="Please write something for us" placeholder="Mensagem"></textarea>
-                    <div class="validate"></div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center">
-                    <div class="text-center"><button type="submit">Enviar</button></div>
-                  </div>
-                  <div class="" id="alerta_mail">
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- End Left contact -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>MEL PROTEÇÕES</h4>
-                <p>
-                  A Mel Proteções é uma empresa especializada em instalação e venda de redes de proteção, Telas de
-                  proteção, Redes de Proteção para quadras, Tela de Proteção para piscinas, rede de proteção, rede de
-                  proteção em São Paulo SP.</p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/melprotecoes" target="_blank"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/melprotecoes/" target="_blank"><i
-                          class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/channel/UCsaM4KCZ93ebF-v4KQVJbUg" target="_blank"><i
-                          class="fa fa-youtube"></i></a>
-                    </li>
+                <div class="card-body">
+                  <ul class="faq-list" id="regioes">
                   </ul>
                 </div>
               </div>
             </div>
+            <div class="col-lg-7">
+              <img loading='lazy' src="assets/img/van-mel.png" class="img-fluid" alt="Van Mel Proteções">
+            </div>
           </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Informações</h4>
-                <div class="footer-contacts">
-                  <p class="mb-2"><span>Endereço</span> Rua Iara Xavier , 55 – Cangaiba – São Paulo / SP – 03716-070</p>
-                  <div class="mb-3">
-                    <a href="https://goo.gl/maps/1mGJqkf5Msjg5qnQA" target="_blank">
-                      <h6 class="text-white">Ver local no Google Maps</h6>
-                    </a>
+      </section><!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Suscribe Section ======= -->
+      <div class="suscribe-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+              <div class="suscribe-text text-center">
+                <h3>Seja bem-vindo à melhor empresa de redes de proteção | Mel Proteções </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Suscribe Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <div id="contact" class="contact-area section-bg">
+        <div class="contact-inner area-padding">
+          <div class="contact-overly"></div>
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                  <h2>Contato</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Start contact icon column -->
+              <div class="col-md-4 col-sm-4 col-xs-12  ">
+                <div class="contact-icon text-center ">
+                  <div class="single-icon">
+                    <i class="fa fa-mobile"></i>
+                    <p>
+                      Tel: <a href="tel:+55112682-3893" target="_blank" class="text-dark">(11) 2682-3893</a><br>
+                      <span>Das 8h às 18h00 de segunda a sábado.</span>
+                    </p>
                   </div>
-                  <p><span>Televenda:</span> <a href="tel:+55112682-3893" target="_blank" class="text-white">(11)
-                      2682-3893</a></p>
-                  <p><span>WhatsApp:</span> <a href="https://api.whatsapp.com/send/?phone=5511998730710" target="_blank"
-                      class="text-white">(11) 99873-0710</a></p>
-                  <p><span>E-mail:</span> <a href="mailto:melprotecoes@gmail.com" target="_blank" class="text-white">
-                      melprotecoes@gmail.com </a></p>
+                </div>
+              </div>
+              <!-- Start contact icon column -->
+              <div class="col-md-4 col-sm-4 col-xs-12 ">
+                <div class="contact-icon text-center">
+                  <div class="single-icon">
+                    <i class="fa fa-whatsapp"></i>
+                    <p>
+                      Whats: <a target="_blank" class="text-dark"
+                        href="https://api.whatsapp.com/send/?phone=5511998730710">(11) 99873-0710</a><br>
+                      <span>Atendimento 24 horas de segunda a segunda.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Start contact icon column -->
+              <div class="col-md-4 col-sm-4 col-xs-12 ">
+                <div class="contact-icon text-center">
+                  <div class="single-icon">
+                    <i class="fa fa-map-marker"></i>
+                    <p>
+                      R. Iara Xavier, 55 - Jardim Piratininga<br>
+                      <span>São Paulo - SP</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-1">
+
+              <!-- Start Google Map -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <!-- Start Map -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7491010191266!2d-46.53587368520825!3d-23.505544965418174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fc85acab575%3A0xb6e544389da1d6b2!1.5sR.%20Iara%20Xavier%2C%2055%20-%20Jardim%20Piratininga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003716-070!5e0!3m2!1spt-BR!1.5sbr!4v1616541525897!5m2!1spt-BR!1.5sbr"
+                  width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- End Map -->
+              </div>
+              <!-- End Google Map -->
+
+              <!-- Start  contact -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="form contact-form">
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" id="nome" placeholder="Seu nome"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="name" class="form-control" id="fone" placeholder="Seu WhatsApp"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Seu email"
+                        data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto"
+                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" id="mensagem" rows="5" data-rule="required"
+                        data-msg="Please write something for us" placeholder="Mensagem"></textarea>
+                      <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-center"><button type="submit">Enviar</button></div>
+                    </div>
+                    <div class="" id="alerta_mail">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- End Left contact -->
+            </div>
+          </div>
+        </div>
+      </div><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="footer-area">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <h4>MEL PROTEÇÕES</h4>
+                  <p>
+                    A Mel Proteções é uma empresa especializada em instalação e venda de redes de proteção, Telas de
+                    proteção, Redes de Proteção para quadras, Tela de Proteção para piscinas, rede de proteção, rede de
+                    proteção em São Paulo SP.</p>
+                  <div class="footer-icons">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/melprotecoes" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/melprotecoes/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCsaM4KCZ93ebF-v4KQVJbUg" target="_blank"><i
+                            class="fa fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single footer -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <h4>Informações</h4>
+                  <div class="footer-contacts">
+                    <p class="mb-2"><span>Endereço</span> Rua Iara Xavier , 55 – Cangaiba – São Paulo / SP – 03716-070
+                    </p>
+                    <div class="mb-3">
+                      <a href="https://goo.gl/maps/1mGJqkf5Msjg5qnQA" target="_blank">
+                        <h6 class="text-white">Ver local no Google Maps</h6>
+                      </a>
+                    </div>
+                    <p><span>Televenda:</span> <a href="tel:+55112682-3893" target="_blank" class="text-white">(11)
+                        2682-3893</a></p>
+                    <p><span>WhatsApp:</span> <a href="https://api.whatsapp.com/send/?phone=5511998730710"
+                        target="_blank" class="text-white">(11) 99873-0710</a></p>
+                    <p><span>E-mail:</span> <a href="mailto:melprotecoes@gmail.com" target="_blank" class="text-white">
+                        melprotecoes@gmail.com </a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single footer -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <h4 class="text-white">CERTIFICAÇÕES</h4>
+                  <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="Selo Mel Proteções">
                 </div>
               </div>
             </div>
           </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="Selo Mel Proteções">
+          <div class="footer-head mt-4">
+            <h4 class="mb-0">SERVIÇOS MAIS BUSCADOS</h4>
+          </div>
+          <div class="row" id="links">
+          </div>
+        </div>
+      </div>
+      <div class="footer-area-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="copyright text-center">
+                <p>
+                  &copy; <strong>Redes de Proteções</strong>. Direitos Reservados.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+
+    <div class='container mt-4 mb-4'>
+
+      <h3> Como instalar redes de proteção? </h3> <br>
+
+      Não faça você mesmo! Consulte sempre profissionais especializados para a instalação das redes de proteção. Esse
+      mecanismo de segurança exige muitas técnicas para serem instaladas, caso a pessoa que venha instalar não aplicar
+      as
+      redes de proteção conforme as normas da ABNT, a segurança de todos estará vulnerável. Para começar, antes da
+      contratação você precisa verificar se a empresa possui CNPJ atualizado, e é sempre bom fazer também uma pesquisa
+      de
+      mercado sobre a empresa no Google, Reclame – Aqui e Procon. <br> <br>
+
+      <h3> Por que devo instalar uma rede de proteção? </h3>
+      <br>
+
+      A rede de proteção é um dos principais itens de segurança que deve ser instalado para segurança de crianças,
+      evitando quedas. Com as redes de proteção você pode proteger, janelas, sacadas, varandas, terraços, piscinas,
+      decks
+      e até vãos de escada. Este produto não serve só para a proteção para crianças, mas também para diminuir o risco de
+      eventuais quedas com animais de estimação. No térreo a rede de proteção pode funcionar como uma proteção ante fuga
+      para gatos, se você tem um espaço dedicado para seu pet essa é a melhor solução, evitando a saída para parte
+      externa. Também pode ser usada para proteger espaços como terraços e decks, playgrounds ou até mesmo para um
+      gatil.
+      Além de todo esse potencial de proteção em diversos ambientes, uma das principais vantagens das redes é que elas
+      têm
+      as malhas, que formam uma barreira protetora sem atrapalhar a passagem da luz solar e a vista para fora do
+      ambiente.
+      <br> <br>
+
+      <h3> Qual a rede de proteção ideal para crianças? </h3> <br>
+
+      Para instalação das redes de proteção, você deve verificar se a mesma contém todos os laudos técnicos conforme a
+      norma NBR 16.046 estabelecida pela ABNT. Quanto às cores, você pode escolher entre a branca, preta, areia e
+      marrom.
+      As cores acabam dando opções discretas para cada ambiente por isso, funcionam bem em qualquer ambiente, seja na
+      madeira ou até mesmo na alvenaria você pode optar pela cor que combine mais e mantêm a aparência intacta. <br>
+      <br>
+
+      <h3> Qual a rede de proteção ideal para gatinhos e cães? </h3>
+      <br>
+
+      Para instalação das redes de proteção de gatos e cães, você deve verificar se a mesma contém todos os laudos
+      técnicos conforme a norma NBR 16.046 estabelecida pela ABNT. Quanto às cores, você pode escolher entre a branca,
+      preta, areia e marrom. As cores acabam dando opções discretas para cada ambiente, por isso funcionam bem em
+      qualquer
+      ambiente, seja na madeira ou até mesmo na alvenaria você pode optar pela cor que combine mais e mantêm a aparência
+      intacta. <br> <br>
+
+      <h3> Proteja as Crianças! </h3>
+      <br>
+
+      Para garantir total segurança para as crianças, vá além das redes. Proteja a descida das escadas com portões que
+      só
+      você conseguirá abrir, coloque travas em janelas basculantes. Cuidado com pisos escorregadios e coloque
+      antiderrapante nos tapetes. Mantenha sempre uma mão segurando o bebê durante a troca de fraldas. Nunca deixe um
+      bebê
+      sozinho em mesas, camas ou outros móveis, mesmo que seja por pouco tempo <br> <br> <br>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="input_pesquisa">
+                <h5 class="mb-1"> Pesquisa de Regiões </h5>
+              </label>
+              <div class="input-group">
+                <input type="search" class="form-control" id="input_pesquisa"
+                  placeholder="Digite um local (min 3 letras)">
+                <div class="input-group-append">
+                  <button id="btn_pesquisa" class="btn btn-outline-primary"> <i class="fa fa-search"></i></button>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="footer-head mt-4">
-          <h4 class="mb-0">SERVIÇOS MAIS BUSCADOS</h4>
-        </div>
-        <div class="row" id="links">
-        </div>
-      </div>
-    </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; <strong>Redes de Proteções</strong>. Direitos Reservados.
-              </p>
+
+            <hr>
+
+            <h6>Resultados da Pesquisa</h6>
+
+            <div class="list-group" id="div-resultados_pesquisa">
             </div>
 
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          </div>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <div class='container mt-4 mb-4'>
+    <a target="_blank" onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511998730710');"
+      href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i
+        class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
+    <div id="preloader"></div>
 
-    <h3> Como instalar redes de proteção? </h3> <br>
-
-    Não faça você mesmo! Consulte sempre profissionais especializados para a instalação das redes de proteção. Esse
-    mecanismo de segurança exige muitas técnicas para serem instaladas, caso a pessoa que venha instalar não aplicar as
-    redes de proteção conforme as normas da ABNT, a segurança de todos estará vulnerável. Para começar, antes da
-    contratação você precisa verificar se a empresa possui CNPJ atualizado, e é sempre bom fazer também uma pesquisa de
-    mercado sobre a empresa no Google, Reclame – Aqui e Procon. <br> <br>
-
-    <h3> Por que devo instalar uma rede de proteção? </h3>
-    <br>
-
-    A rede de proteção é um dos principais itens de segurança que deve ser instalado para segurança de crianças,
-    evitando quedas. Com as redes de proteção você pode proteger, janelas, sacadas, varandas, terraços, piscinas, decks
-    e até vãos de escada. Este produto não serve só para a proteção para crianças, mas também para diminuir o risco de
-    eventuais quedas com animais de estimação. No térreo a rede de proteção pode funcionar como uma proteção ante fuga
-    para gatos, se você tem um espaço dedicado para seu pet essa é a melhor solução, evitando a saída para parte
-    externa. Também pode ser usada para proteger espaços como terraços e decks, playgrounds ou até mesmo para um gatil.
-    Além de todo esse potencial de proteção em diversos ambientes, uma das principais vantagens das redes é que elas têm
-    as malhas, que formam uma barreira protetora sem atrapalhar a passagem da luz solar e a vista para fora do ambiente.
-    <br> <br>
-
-    <h3> Qual a rede de proteção ideal para crianças? </h3> <br>
-
-    Para instalação das redes de proteção, você deve verificar se a mesma contém todos os laudos técnicos conforme a
-    norma NBR 16.046 estabelecida pela ABNT. Quanto às cores, você pode escolher entre a branca, preta, areia e marrom.
-    As cores acabam dando opções discretas para cada ambiente por isso, funcionam bem em qualquer ambiente, seja na
-    madeira ou até mesmo na alvenaria você pode optar pela cor que combine mais e mantêm a aparência intacta. <br> <br>
-
-    <h3> Qual a rede de proteção ideal para gatinhos e cães? </h3>
-    <br>
-
-    Para instalação das redes de proteção de gatos e cães, você deve verificar se a mesma contém todos os laudos
-    técnicos conforme a norma NBR 16.046 estabelecida pela ABNT. Quanto às cores, você pode escolher entre a branca,
-    preta, areia e marrom. As cores acabam dando opções discretas para cada ambiente, por isso funcionam bem em qualquer
-    ambiente, seja na madeira ou até mesmo na alvenaria você pode optar pela cor que combine mais e mantêm a aparência
-    intacta. <br> <br>
-
-    <h3> Proteja as Crianças! </h3>
-    <br>
-
-    Para garantir total segurança para as crianças, vá além das redes. Proteja a descida das escadas com portões que só
-    você conseguirá abrir, coloque travas em janelas basculantes. Cuidado com pisos escorregadios e coloque
-    antiderrapante nos tapetes. Mantenha sempre uma mão segurando o bebê durante a troca de fraldas. Nunca deixe um bebê
-    sozinho em mesas, camas ou outros móveis, mesmo que seja por pouco tempo <br> <br> <br>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="input_pesquisa">
-              <h5 class="mb-1"> Pesquisa de Regiões </h5>
-            </label>
-            <div class="input-group">
-              <input type="search" class="form-control" id="input_pesquisa"
-                placeholder="Digite um local (min 3 letras)">
-              <div class="input-group-append">
-                <button id="btn_pesquisa" class="btn btn-outline-primary"> <i class="fa fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <hr>
-
-          <h6>Resultados da Pesquisa</h6>
-
-          <div class="list-group" id="div-resultados_pesquisa">
-          </div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <a target="_blank" onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511998730710');"
-    href="https://api.whatsapp.com/send/?phone=5511998730710" class="back-to-top shadow-lg"><i
-      class="fa fa-whatsapp"></i>&nbsp; Atendimento via Whatsapp</a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/appear/jquery.appear.js"></script>
-  <script src="assets/vendor/knob/jquery.knob.js"></script>
-  <script src="assets/vendor/parallax/parallax.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-
-  <script src="assets/js/functions.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/appear/jquery.appear.js"></script>
+    <script src="assets/vendor/knob/jquery.knob.js"></script>
+    <script src="assets/vendor/parallax/parallax.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 
 </body>
