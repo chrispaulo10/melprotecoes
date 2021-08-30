@@ -95,7 +95,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -168,7 +168,7 @@
             <div class="well-left">
               <div class="single-well text-center">
 
-                <img src="" class="img-thumbnail img-link shadow-sm" alt="">
+                <img loading='lazy' src="" class="img-thumbnail img-link shadow-sm" alt="">
 
               </div>
             </div>
@@ -412,7 +412,7 @@
     <div class="reviews-area mb-5">
       <div class="row no-gutters">
         <div class="col-lg-6 py-0">
-          <img src="assets/img/bannerquali.webp" alt="" class="img-fluid">
+          <img loading='lazy' src="assets/img/bannerquali.webp" alt="" class="img-fluid">
         </div>
         <div class="col-lg-6 work-right-text d-flex align-items-center">
           <div class="px-5 py-5 py-lg-0">
@@ -476,7 +476,7 @@
               <div class="footer-content">
                 <div class="footer-head">
                   <h4 class="text-white">CERTIFICAÇÕES</h4>
-                  <img src="assets/img/selos.png" class="img-fluid" alt="">
+                  <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
                 </div>
               </div>
             </div>

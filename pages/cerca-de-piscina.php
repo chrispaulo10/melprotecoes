@@ -5,25 +5,23 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link rel="alternate" type="application/rss+xml"
-    title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed"
-    href="https://redesdeprotecoes.com.br/feed/">
-  <title>Cerca Removível de Piscina | Mel Cercas de Piscinas</title>
-  <meta name="description"
-    content="A melhor Cerca Removível para Proteção em Piscina do Brasil! Acesse o site da Mel Proteções e encontre a melhor Cerca Removível do mercado!" />
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <link rel="canonical" href="https://redesdeprotecoes.com.br/cerca-piscina/" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Cerca Removível para Piscina | Mel Cercas de Piscinas." />
-  <meta property="og:description"
-    content="A melhor Cerca Removível para Proteção em Piscina do Brasil! Acesse o site da Mel Proteções e encontre a melhor Cerca Removível do mercado!" />
-  <meta property="og:url" content="https://redesdeprotecoes.com.br/cerca-piscina/" />
-  <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção" />
-  <meta property="article:modified_time" content="2021-03-20T00:43:39+00:00" />
-  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
+  <title><?php echo $dados_link[0]['title'];?> | Mel Cercas de Piscina</title>
+  <meta name="description" content="<?php echo $dados_link[0]['description'];?>" />
+  <meta name="robots" content="index, follow"/>
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <link rel="canonical" href="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="<?php echo $dados_link[0]['og_title'];?> | Mel Cercas de Piscina." />
+  <meta property="og:description" content="<?php echo $dados_link[0]['description'];?>" />
+  <meta property="og:url" content="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
+  <meta property="og:site_name" content="<?php echo $dados_link[0]['site_name'];?>" />
+  <meta property="article:modified_time" content="2021-01-13T22:32:12+00:00"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="keywords" content="<?php echo $dados_link[0]['keywords'];?>">  
 
 
   <!-- Favicons -->
@@ -104,27 +102,47 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="drop-down"><a href="#">Redes</a>
-            <ul>
-              <li><a href="redes-de-protecao">Redes de Proteção</a></li>
-              <li><a href="tela-para-pets">Tela para Pets</a></li>
-              <li><a href="redes-esportivas">Redes Esportivas</a></li>
-            </ul>
-          </li>
-          <li class="active"><a href="cerca-de-piscina">Cerca de Piscina</a></li>
-          <li><a href="mosquiteira">Mosquiteira</a></li>
-          <li><a href="limitadores">Limitadores</a></li>
-          <li><a href="grades">Grades</a></li>
-          <li><a href="capas">Capas</a></li>
-          <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+                <ul>
+                    <li class="drop-down"><a href="#">Redes</a>
+                        <ul id="redes-de-protecao">
+                            <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+                            <li><a href="tela-para-pets">Tela para Pets</a></li>
+                            <li><a href="redes-esportivas">Redes Esportivas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Cerca de Piscina</a>
+                        <ul id="cerca-de-piscina">
+                            <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Mosquiteira</a>
+                        <ul id="mosquiteira">
+                            <li><a href="mosquiteira">Tela Mosquiteira</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Limitadores</a>
+                        <ul id="limitadores">
+                            <li><a href="limitadores">Limitadores para Janelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Grades</a>
+                        <ul id="grades">
+                            <li><a href="grades">Grades de Alumínio</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Capas</a>
+                        <ul id="capas">
+                            <li><a href="capas">Capas de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
@@ -135,47 +153,48 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="container text-center text-md-left" data-aos="fade-up">
-        <div class="row align-items-stretch">
-          <div class="col-lg-8">
-            <h1>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h1>
-            <h2 class="mt-3">Solicite seu orçamento</h2>
-          </div>
-          <div class="col-lg-4 mt-2 my-md-0">
-            <div class="card card-body shadow rounded-lg">
-              <div class="form contact-form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="nome" placeholder="Seu nome"
-                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="tel" name="name" class="form-control" id="fone" placeholder="Seu WhatsApp"
-                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center">
-                    <div class="text-center"><button type="submit">Enviar</button></div>
-                  </div>
-                  <div class="" id="alerta_mail">
-                  </div>
-                </form>
-              </div>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-8">
+                        <h2>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h2>
+                        <h3 class="mt-3">Solicite seu orçamento</h3>
+                    </div>
+                    <div class="col-lg-4 mt-2 my-md-0 mb-2">
+                        <div class="card card-body shadow rounded-lg">
+                            <div class="form contact-form">
+                                <form role="form" class="php-email-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
+                                            placeholder="Seu nome" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="name" class="form-control" id="fone_orcamento"
+                                            placeholder="Seu WhatsApp" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-center"><button id="solicitar_orcamento"
+                                                class="btn btn-outline-primary">Solicitar orçamento</button></div>
+                                    </div>
+                                    <div class="" id="alerta_mail_orcamento">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Hero -->
-
+        </section><!-- End Hero -->
 
     <!-- ======= Services Section ======= -->
     <div id="services" class="services section-bg pt-5">
@@ -183,7 +202,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline services-head text-center">
-              <h1 class="mb-5">CERCA REMOVÍVEL PARA PISCINA</h1>
+            <h1 class="mb-5"><?php echo $dados_link[0]['title'];?></h1>
             </div>
             <div class="text-center mb-5">
               <p>
@@ -212,17 +231,22 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img1.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img1.jpg"
                     alt="INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINAS" title="INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINAS">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"> INSTALAÇÃO
-                    CERCA REMOVÍVEL PARA PISCINAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR CERCA REMOVÍVEL PARA
-                    PISCINA?</span>
-                  Instalamos sua Cerca Removível para Piscina. Agende uma visita através da nossa central telefônica
-                  (11) 2682-3893. Cerca Removível para Proteção de Crianças e Pets.</p>
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[0]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[0]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[0]['texto'];?>
+                </p>
               </div>
             </div>
           </div>
@@ -230,18 +254,23 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img2.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img2.jpg"
                     alt="CERCA DE PISCINAS PARA PETS DE PEQUENO PORTE"
                     title="CERCA DE PISCINAS PARA PETS DE PEQUENO PORTE">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA DE
-                    PISCINAS PARA PETS DE PEQUENO PORTE</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR CERCA REMOVÍVEL PARA
-                    PROTEÇÃO DE CRIANÇAS E PETS?</span>
-                  A Mel Proteções instala Cerca Removível para Proteção de Crianças e Pets a mais de uma década.
-                  Orçamento imediato através do WhatsApp (11) 99873-0710.</p>
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[1]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[1]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[1]['texto'];?>
+                </p>
               </div>
             </div>
 
@@ -250,17 +279,22 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img3.jpg" alt="INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINA"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img3.jpg" alt="INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINA"
                     title="INSTALAÇÃO CERCA REMOVÍVEL PARA PISCINA">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">INSTALAÇÃO
-                    CERCA REMOVÍVEL PARA PISCINA</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO PROFISSIONAIS PARA COLOCAR
-                    CERCA REMOVÍVEL PARA PISCINA?</span>
-                  Cerca Removível para Proteção de Crianças e Pets é na Mel Proteções. Aqui você encontra Cerca
-                  Removível para Proteção de Crianças e Pets de qualidade e preço justo.</p>
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[2]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[2]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[2]['texto'];?>
+                </p>
               </div>
             </div>
           </div>
@@ -268,18 +302,23 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img4.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img4.jpg"
                     alt="CERCA PARA PROTEÇÃO DE CRIANÇAS EM PISCINAS"
                     title="CERCA PARA PROTEÇÃO DE CRIANÇAS EM PISCINAS">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA PARA
-                    PROTEÇÃO DE CRIANÇAS EM PISCINAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA
-                    COLOCAR CERCA REMOVÍVEL PARA PISCINAS?</span>
-                  Cerca Removível de Piscinas para Proteção de Crianças e Pets com melhor custo benefício é na Mel
-                  Proteções ligue: (11) 2682-3893. Cerca Removível para Piscinas.</p>
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[3]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[3]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[3]['texto'];?>
+                </p>
               </div>
             </div>
           </div>
@@ -287,17 +326,22 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img5.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img5.jpg"
                     alt="CERCA REMOVÍVEL MELHOR CUSTO E BENEFÍCIO" title="CERCA REMOVÍVEL MELHOR CUSTO E BENEFÍCIO">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA
-                    REMOVÍVEL MELHOR CUSTO E BENEFÍCIO</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR CERCA REMOVÍVEL DE
-                    PISCINAS?</span>
-                  Compre sua Cerca Removível de Piscinas através do WhatsApp (11) 99873-0710. Cerca Removível de
-                  Piscinas é na Mel Proteções.</p>
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[4]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[4]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[4]['texto'];?>
+                </p>
               </div>
             </div>
           </div>
@@ -305,18 +349,22 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img6.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img6.jpg"
                     alt="CERCA REMOVÍVEL PARA PISCINA PREÇO E QUALIDADE"
                     title="CERCA REMOVÍVEL PARA PISCINA PREÇO E QUALIDADE">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">CERCA
-                    REMOVÍVEL PARA PISCINA PREÇO E QUALIDADE</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO CERCA REMOVÍVEL DE
-                    PISCINAS?</span>
-                  Para instalação de Cerca Removível para Piscinas entre em contato através do WhatsApp da Mel Proteções
-                  (11) 99873-0710 e faça já seu orçamento.
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[5]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[5]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[5]['texto'];?>
                 </p>
               </div>
             </div>
@@ -325,17 +373,21 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img7.jpg" alt="ENCONTRE A MELHOR CERCA REMOVÍVEL AQUI"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img7.jpg" alt="ENCONTRE A MELHOR CERCA REMOVÍVEL AQUI"
                     title="ENCONTRE A MELHOR CERCA REMOVÍVEL AQUI">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">ENCONTRE A
-                    MELHOR CERCA REMOVÍVEL AQUI</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">PORQUE ESCOLHER A MEL PROTEÇÕES NA
-                    HORA DE COMPRAR SUA CERCA REMOVÍVEL PARA PISCINAS?</span>
-                  Trabalhamos com Cerca Removível para Piscinas da mais alta qualidade, entre em contato através da
-                  nossa central telefônica (11) 2682-3893. Cerca Removível para Piscinas.
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[6]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[6]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[6]['texto'];?>
                 </p>
               </div>
             </div>
@@ -344,18 +396,22 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/cerca-pisc/img8.jpg"
+                  <img loading='lazy' src="assets/img/telas-servicos/cerca-pisc/img8.jpg"
                     alt="INSTALAÇÃO DE CERCA DE PROTEÇÃO PARA PISCINAS"
                     title="INSTALAÇÃO DE CERCA DE PROTEÇÃO PARA PISCINAS">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">INSTALAÇÃO DE
-                    CERCA DE PROTEÇÃO PARA PISCINAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR CERCA REMOVÍVEL PARA
-                    PISCINAS?</span>
-                  Cerca Removível para Piscinas é na Mel Proteções ligue: (11) 2682-3893 e faça já seu orçamento. Mel
-                  Proteções mais de uma década de experiência.
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[7]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[7]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[7]['texto'];?>
                 </p>
               </div>
             </div>
@@ -391,7 +447,7 @@
             </div>
           </div>
           <div class="col-lg-7">
-            <img src="assets/img/van-mel.png" class="img-fluid" alt="">
+            <img loading='lazy' src="assets/img/van-mel.png" class="img-fluid" alt="">
           </div>
         </div>
     </section><!-- End Frequently Asked Questions Section -->
@@ -524,7 +580,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -650,6 +706,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 
 </body>

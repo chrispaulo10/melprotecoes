@@ -92,7 +92,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -162,7 +162,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img8.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img8.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -177,7 +177,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img1.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img1.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -191,7 +191,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img6.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img6.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -206,7 +206,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img7.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img7.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -221,7 +221,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img2.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img2.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -236,7 +236,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img3.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img3.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -250,7 +250,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img4.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img4.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -264,7 +264,7 @@
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/zonas/leste/img5.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
+                  <img loading='lazy' src="assets/img/zonas/leste/img5.jpg" title="<?php echo $canonical; ?>" alt="<?php echo $canonical; ?>">
                 </a>
               </div>
               <div class="card-body">
@@ -396,7 +396,7 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -479,6 +479,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 </body>
 

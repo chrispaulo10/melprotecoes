@@ -4,21 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <link rel="alternate" type="application/rss+xml" title="Redes de proteção - Mel Proteções a Melhor Rede de Proteção Feed" href="https://redesdeprotecoes.com.br/feed/">
-  <title>Redes de Proteção | Mel Redes de Proteção</title>
-  <meta name="description" content="Buscando Redes de proteção? Acesse o site da Mel Proteções e encontre as melhores redes de proteção!"/>
+  <title><?php echo $dados_link[0]['title'];?> | Mel Redes de Proteção</title>
+  <meta name="description" content="<?php echo $dados_link[0]['description'];?>" />
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://redesdeprotecoes.com.br/redes-de-protecao/"/>
+  <link rel="canonical" href="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
   <meta property="og:locale" content="pt_BR"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:title" content="Redes de Proteção | Mel Redes de Proteção"/>
-  <meta property="og:description" content="Buscando Redes de proteção? Acesse o site da Mel Proteções e encontre as melhores redes de proteção!"/>
-  <meta property="og:url" content="https://redesdeprotecoes.com.br/redes-de-protecao/"/>
-  <meta property="og:site_name" content="Redes de proteção - Mel Proteções a Melhor Rede de Proteção"/>
-  <meta property="article:modified_time" content="2021-01-15T03:17:47+00:00"/>
-  <meta name="twitter:card" content="summary_large_image"/> 
+  <meta property="og:title" content="<?php echo $dados_link[0]['og_title'];?> | Mel Redes de Proteção." />
+  <meta property="og:description" content="<?php echo $dados_link[0]['description'];?>" />
+  <meta property="og:url" content="https://redesdeprotecoes.com.br/<?php echo $dados_link[0]['url'];?>/" />
+  <meta property="og:site_name" content="<?php echo $dados_link[0]['site_name'];?>" />
+  <meta property="article:modified_time" content="2021-01-13T22:32:12+00:00"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="keywords" content="<?php echo $dados_link[0]['keywords'];?>">  
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
    <link href="assets/img/favicon.png" rel="apple-touch-icon">
@@ -90,27 +92,47 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="home"><span>e</span>Business</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="home"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="home"><img loading='lazy' src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="drop-down active"><a href="#">Redes</a>
-            <ul>
-              <li><a href="redes-de-protecao">Redes de Proteção</a></li>
-              <li ><a href="tela-para-pets">Tela para Pets</a></li>
-              <li><a href="redes-esportivas">Redes Esportivas</a></li>
-            </ul>
-          </li>
-          <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
-          <li><a href="mosquiteira">Mosquiteira</a></li>
-          <li><a href="limitadores">Limitadores</a></li>
-          <li><a href="grades">Grades</a></li>
-          <li><a href="capas">Capas</a></li>
-          <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+                <ul>
+                    <li class="drop-down"><a href="#">Redes</a>
+                        <ul id="redes-de-protecao">
+                            <li><a href="redes-de-protecao">Redes de Proteção</a></li>
+                            <li><a href="tela-para-pets">Tela para Pets</a></li>
+                            <li><a href="redes-esportivas">Redes Esportivas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Cerca de Piscina</a>
+                        <ul id="cerca-de-piscina">
+                            <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Mosquiteira</a>
+                        <ul id="mosquiteira">
+                            <li><a href="mosquiteira">Tela Mosquiteira</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Limitadores</a>
+                        <ul id="limitadores">
+                            <li><a href="limitadores">Limitadores para Janelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Grades</a>
+                        <ul id="grades">
+                            <li><a href="grades">Grades de Alumínio</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Capas</a>
+                        <ul id="capas">
+                            <li><a href="capas">Capas de Piscina</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
@@ -121,28 +143,55 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-    <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
-      <div class="container bread-cont">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Redes de Proteção</h6></div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
-            <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
-              Você está aqui: &nbsp;
-              <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Redes de Proteção</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-8">
+                        <h2>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h2>
+                        <h3 class="mt-3">Solicite seu orçamento</h3>
+                    </div>
+                    <div class="col-lg-4 mt-2 my-md-0 mb-2">
+                        <div class="card card-body shadow rounded-lg">
+                            <div class="form contact-form">
+                                <form role="form" class="php-email-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
+                                            placeholder="Seu nome" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="name" class="form-control" id="fone_orcamento"
+                                            placeholder="Seu WhatsApp" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-center"><button id="solicitar_orcamento"
+                                                class="btn btn-outline-primary">Solicitar orçamento</button></div>
+                                    </div>
+                                    <div class="" id="alerta_mail_orcamento">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero -->
     <!-- ======= Services Section ======= -->
     <div id="services" class="services section-bg pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline services-head text-center">
-              <h1 class="mb-5">REDES DE PROTEÇÃO</h1>
+            <h1 class="mb-5"><?php echo $dados_link[0]['title'];?></h1>
             </div>
             <div class="text-center mb-5">
                 <p>
@@ -193,13 +242,14 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img1.jpg" alt="REDES DE PROTEÇÃO" title="REDES DE PROTEÇÃO">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img1.jpg" alt="REDES DE PROTEÇÃO" title="REDES DE PROTEÇÃO">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">Redes de Proteção</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE INSTALAR REDES DE PROTEÇÃO?</span>
-                    Instalamos as Redes de Proteção em seu Apartamento, entre em contato com nossa central telefônica (11) 2682-3893. Mel Telas e Redes de Proteção.</p>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[0]['titulo'];?></a></h5>
+                <p class="card-text"><span class="font-weight-bold" id="titulo-span"><?php echo $dados_link[0]['subtitulo'];?></span>
+                <?php echo $dados_link[0]['texto'];?>
+              </p>
               </div>
             </div>
           </div>
@@ -207,13 +257,17 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img2.jpg" alt="REDES DE PROTEÇÃO PARA GATOS E CÃES" title="REDES DE PROTEÇÃO PARA GATOS E CÃES">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img2.jpg" alt="REDES DE PROTEÇÃO PARA GATOS E CÃES" title="REDES DE PROTEÇÃO PARA GATOS E CÃES">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">redes de proteção para pets</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO PARA GATOS E CÃES?</span>
-                    A Mel Proteções instala Redes de Proteção para Gatos e Cachorros a mais de uma década. Orçamento imediato através do WhatsApp (11) 99873-0710.</p>
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[1]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[1]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[1]['texto'];?>
+                </p>
               </div>
             </div>
 
@@ -222,70 +276,16 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img3.jpg" alt="REDES DE PROTEÇÃO PARA CRIANÇAS" title="REDES DE PROTEÇÃO PARA CRIANÇAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img3.jpg" alt="REDES DE PROTEÇÃO PARA CRIANÇAS" title="REDES DE PROTEÇÃO PARA CRIANÇAS">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA CRIANÇAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO PROFISSIONAIS PARA COLOCAR REDES DE PROTEÇÃO?</span>
-                  Redes de Proteção para Crianças e Pets é na Mel Proteções. Aqui você encontra Redes de Proteçãos com qualidade e bom preço.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img4.jpg" alt="REDES DE PROTEÇÃO EM SACADA" title="REDES DE PROTEÇÃO EM SACADA">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA SACADAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUAL MELHOR CUSTO BENEFÍCIO PARA COLOCAR REDES DE PROTEÇÃO EM SACADA?</span>
-                  Redes de Proteção para Sacada com melhor custo benefício é na Mel Proteções ligue: (11) 2682-3893. Mel Telas e Redes de Proteção para Sacada.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img5.jpg" alt="REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS" title="REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COMPRAR REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS?</span>
-                  Compre sua Rede de Proteção para Quadra Poliesportivas através do WhatsApp (11) 99873-0710. Telas de Proteção para quadras é na Mel Proteções.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img6.jpg" alt="REDES DE PROTEÇÃO PARA JANELAS" title="REDES DE PROTEÇÃO PARA JANELAS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA JANELAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">BUSCANDO REDES DE PROTEÇÃO PARA JANELAS?</span>
-                  Para instalação de Redes para Proteção em Janelas entre em contato através do WhatsApp da Mel Proteções (11) 99873-0710 e faça já seu orçamento.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="card">
-              <div class="card-img">
-                <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img7.jpg" alt="REDES DE PROTEÇÃO PARA IDOSOS" title="QUERENDO COMPRAR REDES DE PROTEÇÃO PARA IDOSOS">
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA IDOSOS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">QUERENDO COMPRAR REDES DE PROTEÇÃO PARA IDOSOS?</span>
-                  Trabalhamos com Rede de Proteção para idosos, entre em contato através da nossa central telefônica (11) 2682-3893. Mel Redes e Telas para Proteção.
+                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710"><?php echo $dados_link[2]['titulo'];?></a></h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[2]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[2]['texto'];?>
                 </p>
               </div>
             </div>
@@ -294,13 +294,108 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
             <div class="card">
               <div class="card-img">
                 <a href="http://wa.me/5511998730710" target="_blank">
-                  <img src="assets/img/telas-servicos/redes-prot/img8.jpg" alt="REDES DE PROTEÇÃO PARA PISCINAS" title="REDES DE PROTEÇÃO PARA PISCINAS">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img4.jpg" alt="REDES DE PROTEÇÃO EM SACADA" title="REDES DE PROTEÇÃO EM SACADA">
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title text-uppercase"><a target="_blank" href="http://wa.me/5511998730710">REDES DE PROTEÇÃO PARA PISCINAS</a></h5>
-                <p class="card-text"><span class="font-weight-bold" id="titulo-span">ONDE COLOCAR REDES DE PROTEÇÃO PARA PISCINAS?</span>
-                  Rede de Proteção para Piscina é na Mel Proteções ligue: (11) 2682-3893 e faça já seu orçamento. Mel Proteções mais de uma década de experiência.
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[3]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[3]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[3]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img5.jpg" alt="REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS" title="REDES DE PROTEÇÃO PARA QUADRAS POLIESPORTIVAS">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[4]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[4]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[4]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img6.jpg" alt="REDES DE PROTEÇÃO PARA JANELAS" title="REDES DE PROTEÇÃO PARA JANELAS">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[5]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[5]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[5]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img7.jpg" alt="REDES DE PROTEÇÃO PARA IDOSOS" title="QUERENDO COMPRAR REDES DE PROTEÇÃO PARA IDOSOS">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[6]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[6]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[6]['texto'];?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <a href="http://wa.me/5511998730710" target="_blank">
+                  <img loading='lazy' src="assets/img/telas-servicos/redes-prot/img8.jpg" alt="REDES DE PROTEÇÃO PARA PISCINAS" title="REDES DE PROTEÇÃO PARA PISCINAS">
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">
+                  <a target="_blank" href="http://wa.me/5511998730710">
+                  <?php echo $dados_link[7]['titulo'];?>
+                  </a>
+                </h5>
+                <p class="card-text">
+                  <span class="font-weight-bold" id="titulo-span">
+                      <?php echo $dados_link[7]['subtitulo'];?>
+                  </span>
+                  <?php echo $dados_link[7]['texto'];?>
                 </p>
               </div>
             </div>
@@ -427,7 +522,7 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
             <div class="footer-content">
               <div class="footer-head">
                 <h4 class="text-white">CERTIFICAÇÕES</h4>
-                <img src="assets/img/selos.png" class="img-fluid" alt="">
+                <img loading='lazy' src="assets/img/selos.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -537,6 +632,8 @@ A tela com a malha 3, por exemplo, é ótima para impedir a entrada de pombos e 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mail_orcamento.js"></script>
+  <script src="assets/js/dropdowns-nav.js"></script>
 
 </body>
 
