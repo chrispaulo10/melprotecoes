@@ -139,9 +139,9 @@ if (!empty($link_page)) {
     }
 }
 
-echo '<pre>'; 
-var_dump($rotas);
-exit;
+// echo '<pre>'; 
+// var_dump($rotas);
+// exit;
 
 // $listagem->siteMap($rotas_sp);
 

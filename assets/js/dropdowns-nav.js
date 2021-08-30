@@ -24,7 +24,7 @@ $(document).ready(function() {
         
         $.each(dropdowns, function(id, dados) {
             $.each(dados, function(idx, link) {
-                $(`#${id}`).append(`
+                $(`.${id}`).append(`
                     <li><a href="${link.url}">${link.title}</a></li>
                 `);
             });

@@ -98,34 +98,34 @@
       <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="drop-down"><a href="#">Redes</a>
-                        <ul id="redes-de-protecao">
+                        <ul class="redes-de-protecao">
                             <li><a href="redes-de-protecao">Redes de Proteção</a></li>
                             <li><a href="tela-para-pets">Tela para Pets</a></li>
                             <li><a href="redes-esportivas">Redes Esportivas</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Cerca de Piscina</a>
-                        <ul id="cerca-de-piscina">
+                        <ul class="cerca-de-piscina">
                             <li><a href="cerca-de-piscina">Cerca de Piscina</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Mosquiteira</a>
-                        <ul id="mosquiteira">
+                        <ul class="mosquiteira">
                             <li><a href="mosquiteira">Tela Mosquiteira</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Limitadores</a>
-                        <ul id="limitadores">
+                        <ul class="limitadores">
                             <li><a href="limitadores">Limitadores para Janelas</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Grades</a>
-                        <ul id="grades">
+                        <ul class="grades">
                             <li><a href="grades">Grades de Alumínio</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Capas</a>
-                        <ul id="capas">
+                        <ul class="capas">
                             <li><a href="capas">Capas de Piscina</a></li>
                         </ul>
                     </li>
