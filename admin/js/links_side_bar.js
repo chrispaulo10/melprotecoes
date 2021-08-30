@@ -7,7 +7,7 @@ function redirect(event, page, title) {
 
 $(document).ready(function () {
     document.title = "Administrador - Páginas de Conteúdo";
-    $("#main-content").load('link_page.html');
+    $("#main-content").load('conteudo.html');
 
     $(".link_conteudos").click(function (event) {
         redirect(event, "conteudo", "Páginas de Conteúdo");
