@@ -1,5 +1,5 @@
 var id_link_page = 0;
-var controller = "back-end/controllers/ControllerLinkPage.php";
+var controllerLinkPage = "back-end/controllers/ControllerLinkPage.php";
 
 $("#cadastrar_link_page").click(function() {
     const dados = {
@@ -18,7 +18,7 @@ $("#cadastrar_link_page").click(function() {
     const button = $(`#cadastrar_link_page`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.post(controller, dados, function (retorno) {
+    $.post(controllerLinkPage, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
 
@@ -69,7 +69,7 @@ function categorias() {
 categorias();
 
 function listar() {
-    $.get(controller + "?listagem", function (retorno) {
+    $.get(controllerLinkPage + "?listagem", function (retorno) {
         $("#tbody_link_page").html("");
         
         let resposta = JSON.parse(retorno);
@@ -115,7 +115,7 @@ function consultar_link_page(id) {
         id,
     }
 
-    $.get(controller, dados, function (retorno) {
+    $.get(controllerLinkPage, dados, function (retorno) {
         let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
@@ -155,7 +155,7 @@ $("#editar_link_page").click(function() {
     const button = $(`#editar_link_page`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.post(controller, dados, function (retorno) {
+    $.post(controllerLinkPage, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
         
@@ -195,7 +195,7 @@ $("#deletar_link_page").click(function () {
     const button = $(`#deletar_link_page`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.get(controller, dados, function (retorno) {
+    $.get(controllerLinkPage, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
 
@@ -249,7 +249,7 @@ function consultar_textos(id) {
         id,
     }
 
-    $.get(controller, dados, function (retorno) {
+    $.get(controllerLinkPage, dados, function (retorno) {
         let resposta = JSON.parse(retorno);
 
         $("#modal_textos form").html("");
@@ -301,7 +301,7 @@ $("#editar_textos").click(function() {
     const button = $(`#editar_textos`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.post(controller, dados, function (retorno) {
+    $.post(controllerLinkPage, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
         

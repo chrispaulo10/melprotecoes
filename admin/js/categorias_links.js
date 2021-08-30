@@ -1,5 +1,5 @@
 var id_categoria = 0;
-var controller = "back-end/controllers/ControllerCategoria.php";
+var controllerCategoria = "back-end/controllers/ControllerCategoria.php";
 
 $("#cadastrar_categoria").click(function() {
     const dados = {
@@ -11,7 +11,7 @@ $("#cadastrar_categoria").click(function() {
     const button = $(`#cadastrar_categoria`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.post(controller, dados, function (retorno) {
+    $.post(controllerCategoria, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
 
@@ -33,7 +33,7 @@ $("#cadastrar_categoria").click(function() {
 /*====================================================================================*/
 
 function listar() {
-    $.get(controller + "?listagem", function (retorno) {
+    $.get(controllerCategoria + "?listagem", function (retorno) {
         $("#tbody_categorias").html("");
         
         let resposta = JSON.parse(retorno);
@@ -74,7 +74,7 @@ function consultar_categoria(id) {
         id,
     }
 
-    $.get(controller, dados, function (retorno) {
+    $.get(controllerCategoria, dados, function (retorno) {
         let resposta = JSON.parse(retorno)
 
         if (Array.isArray(resposta)) {
@@ -100,7 +100,7 @@ $("#editar_categoria").click(function() {
     const button = $(`#editar_categoria`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.post(controller, dados, function (retorno) {
+    $.post(controllerCategoria, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
         
@@ -134,7 +134,7 @@ $("#deletar_categoria").click(function () {
     const button = $(`#deletar_categoria`);
     const class_icone = mudancasAoFazerRequisicao(i, button);
 
-    $.get(controller, dados, function (retorno) {
+    $.get(controllerCategoria, dados, function (retorno) {
         button.prop('disabled', false);
         i.removeClass().addClass(class_icone);  
 
