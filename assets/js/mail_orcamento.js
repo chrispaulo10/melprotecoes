@@ -6,6 +6,7 @@ $("#solicitar_orcamento").click(function () {
         solicitar_orcamento : true,
         nome : $("#nome_orcamento").val(),
         fone : $("#fone_orcamento").val(),
+        cep : $("#cep_orcamento").val(),
     };
 
     $.post("back-end/controller/ControllerMail.php", dados, function (retorno) {
@@ -13,6 +14,7 @@ $("#solicitar_orcamento").click(function () {
 
         $("#nome_orcamento").val('');
         $("#fone_orcamento").val('');
+        $("#cep_orcamento").val('');
 
         const mensagem = JSON.parse(retorno);
 

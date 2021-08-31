@@ -112,6 +112,7 @@
                             <li><a href="redes-de-protecao">Redes de Proteção</a></li>
                             <li><a href="tela-para-pets">Tela para Pets</a></li>
                             <li><a href="redes-esportivas">Redes Esportivas</a></li>
+                            <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Cerca de Piscina</a>
@@ -124,22 +125,22 @@
                             <li><a href="mosquiteira">Tela Mosquiteira</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="#">Limitadores</a>
+                    <li class="drop-down"><a href="#">Limitadores Janela</a>
                         <ul id="limitadores">
                             <li><a href="limitadores">Limitadores para Janelas</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="#">Grades</a>
+                    <li class="drop-down"><a href="#">Grades Alumínio</a>
                         <ul id="grades">
                             <li><a href="grades">Grades de Alumínio</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="#">Capas</a>
+                    <li class="drop-down"><a href="#">Capas Piscina</a>
                         <ul id="capas">
                             <li><a href="capas">Capas de Piscina</a></li>
                         </ul>
                     </li>
-                    <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+                     
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -158,37 +159,39 @@
             <div class="container text-center text-md-left" data-aos="fade-up">
                 <div class="row align-items-stretch">
                     <div class="col-lg-8">
-                        <h2>A melhor empresa <br> de proteção do <br> <span> Brasil !!! </span></h2>
+                        <h2>A melhor empresa  de<br>rede de proteção do <br> <span> Brasil !!! </span></h2>
                         <h3 class="mt-3">Solicite seu orçamento</h3>
                     </div>
                     <div class="col-lg-4 mt-2 my-md-0 mb-2">
                         <div class="card card-body shadow rounded-lg">
                             <div class="form contact-form">
-                                <form role="form" class="php-email-form">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
-                                            placeholder="Seu nome" data-rule="minlen:4"
-                                            data-msg="Please enter at least 4 chars" />
-                                        <div class="validate"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" name="name" class="form-control" id="fone_orcamento"
-                                            placeholder="Seu WhatsApp" data-rule="minlen:4"
-                                            data-msg="Please enter at least 4 chars" />
-                                        <div class="validate"></div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="text-center"><button id="solicitar_orcamento"
-                                                class="btn btn-outline-primary">Solicitar orçamento</button></div>
-                                    </div>
-                                    <div class="" id="alerta_mail_orcamento">
-                                    </div>
-                                </form>
+                            <form role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="nome_orcamento" placeholder="Seu nome"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="cellphone" class="form-control" id="fone_orcamento"
+                      placeholder="Seu WhatsApp" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="zip" class="form-control" id="cep_orcamento" placeholder="Seu CEP" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-center"><button id="solicitar_orcamento" class="btn btn-outline-primary">Solicitar
+                        orçamento</button></div>
+                  </div>
+                  <div class="" id="alerta_mail_orcamento">
+                  </div>
+                </form>
                             </div>
                         </div>
                     </div>

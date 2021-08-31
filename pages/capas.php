@@ -108,7 +108,7 @@
           <li><a href="limitadores">Limitadores</a></li>
           <li><a href="grades">Grades</a></li>
           <li class="active"><a href="capas">Capas</a></li>
-          <li><a href="seja-um-parceiro" target="_blank">Seja um Parceiro</a></li>
+           
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -122,21 +122,54 @@
     </div>
   </div><!-- End Slider -->
   <main id="main">
-    <nav aria-label="breadcrumb" class="section-bg mt-sm-2">
-      <div class="container bread-cont">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-12"> <h6 class="mt-3 text-ex-center">Capas de Piscina</h6></div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-12 mt-m4">
-            <ol class="breadcrumb mb-0 bg-transparent justify-content-md-end justify-content-center">
-              Você está aqui: &nbsp;
-              <li class="breadcrumb-item"><a href="home"><i class="fa fa-home"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Capas de Piscina</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-8">
+                        <h2>A melhor empresa de<br>rede de proteção do <br> <span> Brasil !!! </span></h2>
+                        <h3 class="mt-3">Solicite seu orçamento</h3>
+                    </div>
+                    <div class="col-lg-4 mt-2 my-md-0 mb-2">
+                        <div class="card card-body shadow rounded-lg">
+                            <div class="form contact-form">
+                                <form role="form" class="php-email-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome_orcamento"
+                                            placeholder="Seu nome" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="cellphone" class="form-control" id="fone_orcamento"
+                                            placeholder="Seu WhatsApp" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="zip" class="form-control" id="cep_orcamento"
+                                            placeholder="Seu CEP" />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-center"><button id="solicitar_orcamento"
+                                                class="btn btn-outline-primary">Solicitar
+                                                orçamento</button></div>
+                                    </div>
+                                    <div class="" id="alerta_mail_orcamento">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Hero -->
     <!-- ======= Services Section ======= -->
     <div id="services" class="services section-bg pt-5">
       <div class="container">
